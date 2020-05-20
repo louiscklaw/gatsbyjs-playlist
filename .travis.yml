@@ -19,13 +19,13 @@ script:
 jobs:
   include:
     - stage: Build
+      before_script:
+        - npm install -g gatsby-cli
       script:
         - cd gatsbys-helloworld
         - ../scripts/build.sh
 
     - stage: Merge
-      before_script:
-        - npm install -g gatsby-cli
       script:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
         - bash merge_if_success.sh
