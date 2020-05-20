@@ -16,4 +16,10 @@ yarn add gatsby-source-filesystem
 
 yarn add gatsby-transformer-remark
 
+# PWA
+yarn add gatsby-plugin-manifest gatsby-plugin-offline
+
+# page metadata
+yarn add gatsby-plugin-react-helmet react-helmet
+
 gatsby develop
