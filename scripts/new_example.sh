@@ -11,4 +11,9 @@ yarn add gatsby-plugin-typography react-typography typography typography-theme-f
 
 yarn add gatsby-plugin-typography typography react-typography typography-theme-kirkham gatsby-plugin-emotion @emotion/core
 
+# plugins
+yarn add gatsby-source-filesystem
+
+yarn add gatsby-transformer-remark
+
 gatsby develop

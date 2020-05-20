@@ -2,6 +2,6 @@
 
 set -x
 
-../scripts/destroy.sh
+../scripts/_destroy.sh
 
 ../scripts/new_example.sh
