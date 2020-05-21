@@ -34,7 +34,14 @@ yarn add gatsby-plugin-google-analytics
 
 yarn add gatsby-plugin-sitemap
 
+# page transition
+yarn add gatsby-plugin-transition-link
+yarn add gsap
+
+echo -e "\a"
 read -p 'press any key to build'
+
+
 
 gatsby build
 
