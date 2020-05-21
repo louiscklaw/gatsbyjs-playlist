@@ -17,7 +17,9 @@ yarn add gatsby-source-filesystem
 yarn add gatsby-transformer-remark
 
 # PWA
-yarn add gatsby-plugin-manifest gatsby-plugin-offline
+yarn add --dev https
+yarn add gatsby-plugin-manifest
+yarn add gatsby-plugin-offline
 
 # page metadata
 yarn add gatsby-plugin-react-helmet react-helmet
@@ -38,10 +40,11 @@ yarn add gatsby-plugin-sitemap
 yarn add gatsby-plugin-transition-link
 yarn add gsap
 
+# i18n
+yarn add gatsby-plugin-i18n
+
 echo -e "\a"
 read -p 'press any key to build'
-
-
 
 gatsby build
 
