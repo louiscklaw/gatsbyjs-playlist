@@ -4,4 +4,6 @@ set -ex
 
 yarn install
 
+gatsby clean
+
 gatsby build
