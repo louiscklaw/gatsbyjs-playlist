@@ -2,8 +2,7 @@
 
 set -ex
 
-rm -rf ../docs
 
-cp -r public ../docs
+yarn deploy
 
 # done
