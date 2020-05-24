@@ -9,20 +9,24 @@ function Default(){
       <ul>
         <li>
           <Link to="/app/login">
-            <a>Go to login</a>
+            Go to login
           </Link>
         </li>
 
         <li>
           <Link to="/app/details">
-            <a>Go to details</a>
+            Go to details
           </Link>
         </li>
 
         <li>
           <Link to="/app/profile">
-            <a>Go to profile</a>
+            Go to profile
           </Link>
+        </li>
+
+        <li>
+          <Link to='/'>back to index</Link>
         </li>
 
       </ul>

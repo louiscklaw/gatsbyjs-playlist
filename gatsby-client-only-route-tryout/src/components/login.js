@@ -7,7 +7,7 @@ function Login(){
     <>
       Login page
       <Link to='/app'>
-        <a>back</a>
+       back
       </Link>
     </>
   )

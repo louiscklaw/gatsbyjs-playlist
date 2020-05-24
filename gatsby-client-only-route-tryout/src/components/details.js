@@ -7,7 +7,7 @@ function Details(){
     <>
       Details page
       <Link to='/app'>
-        <a>back</a>
+       back
       </Link>
     </>
   )
