@@ -2,10 +2,11 @@
 
 set -ex
 
+yarn
 
-gatsby clean
+nodemon -w src --exec "yarn clean && yarn develop"
 
 # https
 # gatsby develop -S
 
-gatsby develop
+yarn start
