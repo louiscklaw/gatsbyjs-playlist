@@ -18,9 +18,9 @@ export default function HTML(props) {
         />
         {props.headComponents}
 
-        <link rel="stylesheet" href="/darcula.css" />
-        <script src="/highlight.pack.js" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
 
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -31,10 +31,6 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
-
-        <script dangerouslySetInnerHTML={
-          {__html: "hljs.initHighlightingOnLoad();"}
-        } />
       </body>
     </html>
   )
