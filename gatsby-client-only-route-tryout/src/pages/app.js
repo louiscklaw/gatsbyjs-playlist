@@ -8,6 +8,8 @@ import Details from "../components/details"
 import Login from "../components/login"
 import DefaultPage from "../components/default_page"
 
+import TestRouteParameters from '../components/test_route_parameters'
+
 const App = () => {
   return (
     <Layout>
@@ -16,6 +18,7 @@ const App = () => {
         <Details path="/details" />
         <Login path="/login" />
         <DefaultPage path="/" />
+        <TestRouteParameters path="/TestRouteParameters/:test_param" />
       </Router>
     </Layout>
   )
