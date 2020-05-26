@@ -4,20 +4,18 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import TestLinks from '../components/test_links'
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <p>中文 page 2</p>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
     <div>伯母你好</div>
-    <Link to="/en/">en</Link>
-    <Link to="/zh/page-2">zh/page-2</Link>
-    <Link to="/page-2/">Go to page 2</Link>
+    <TestLinks />
   </Layout>
 )
 

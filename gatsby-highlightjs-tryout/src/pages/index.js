@@ -5,14 +5,22 @@ import Layout from "../components/layout"
 
 import SEO from "../components/seo"
 
+import TestJavascript from "../components/test_javascript"
+import TestHtml from '../components/test_html'
+import TestBash from '../components/test_bash'
+import TestPython from "../components/test_python"
+import TestJson from '../components/test_json'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <pre>
-      <code className="js">
-        console.log('helloworld 123321')
-      </code>
-    </pre>
+
+    <TestJavascript />
+    <TestHtml />
+    <TestBash />
+    <TestPython />
+    <TestJson />
+
   </Layout>
 )
 

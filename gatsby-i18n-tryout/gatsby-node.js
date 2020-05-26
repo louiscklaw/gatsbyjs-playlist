@@ -1,7 +1,28 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+// Implement the Gatsby API “onCreatePage”. This is
+// called after every page is created.
+exports.onCreatePage = async ({ page, actions }) => {
+  console.log(page.path)
+  if (page.path.match(/^\/en/)) {
+  //   page.matchPath = `/^\/en/*`
+  //   createPage(page)
+  //   console.log(`creating page for ${lang}`)
+    const { createPage } = actions
+    console.log(page.path)
 
-// You can delete this file if you're not using it
+    page.matchPath = ``
+    createPage(page)
+
+    console.log(
+      page.path,
+      page.matchPath
+    )
+
+    page.matchPath = `/en`
+    createPage(page)
+
+    console.log(
+      page.path,
+      page.matchPath
+    )
+  }
+}

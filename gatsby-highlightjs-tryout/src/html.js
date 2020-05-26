@@ -18,8 +18,11 @@ export default function HTML(props) {
         />
         {props.headComponents}
 
-        <link rel="stylesheet" href="/darcula.css" />
-        <script src="/highlight.pack.js" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet" />
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/monokai.min.css" />
 
       </head>
       <body {...props.bodyAttributes}>
