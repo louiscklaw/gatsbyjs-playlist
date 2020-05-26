@@ -24,6 +24,7 @@ export default function HTML(props) {
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/monokai.min.css" />
 
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap" rel="stylesheet">
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
@@ -34,10 +35,6 @@ export default function HTML(props) {
         />
         {props.postBodyComponents}
 
-
-        <script dangerouslySetInnerHTML={
-          {__html: "hljs.initHighlightingOnLoad();"}
-        } />
       </body>
     </html>
   )
