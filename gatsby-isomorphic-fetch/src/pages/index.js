@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 function IndexPage(){
-  fetch('/')
+  fetch('/',{ credentials: 'same-origin' })
     .then(result => {
       return result.text()
     })
