@@ -27,17 +27,22 @@ function convertCsvToJson( csv_in ) {
 }
 
 exports.curl_fetch = functions.https.onRequest( ( request, response ) => {
-  console.log( request.body.target_csv )
   // handle wanted var not exist
-  if ( request.body.target_csv == null ) {
+  let json_text = JSON.parse( request.body )
+  let target_csv = JSON.parse( request.body ).target_csv
+
+  if ( target_csv == null || target_csv == undefined ) {
+    console.log( 'handle target_csv not exist' )
     response.writeHead( 200, {
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*'
     } )
-    response.write(JSON.stringify({result: 'error'}))
+    response.write( JSON.stringify( {
+      result: '123321'
+    } ) )
     response.end()
   } else {
-    fetch( request.body.target_csv )
+    fetch( target_csv )
       .then( result => {
         return result.text()
       } )
@@ -46,18 +51,22 @@ exports.curl_fetch = functions.https.onRequest( ( request, response ) => {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
         } )
-        response.write( JSON.stringify( convertCsvToJson( text ) ) )
+        response.write( JSON.stringify( {
+          fetch_result: convertCsvToJson( text )
+        } ) )
         response.end();
         // response.json(convertCsvToJson(text))
       } )
-      .catch((err) => {
+      .catch( ( err ) => {
         response.writeHead( 200, {
           'Content-Type': 'application/json',
           'Access-Control-Allow-Origin': '*'
         } )
-        response.write(JSON.stringify({result: 'target_url_not_found'}))
+        response.write( JSON.stringify( {
+          result: 'target_url_not_found'
+        } ) )
         response.end()
-      })
+      } )
   }
 
 } )

@@ -11,8 +11,8 @@ var csv_content = `From,To,Event,Venue
 19/05/2020 14:00,19/05/2020 17:30,Capital Markets Workshop,TBD
 `
 
-function IndexPage(){
-  var parsed_data = papaparse.parse(csv_content).data
+function convertCsvToJson(csv_in){
+  var parsed_data = papaparse.parse(csv_in).data
   var data_length = parsed_data.length -1
   var row_length = parsed_data[0].length
   var out_json = []
@@ -24,7 +24,11 @@ function IndexPage(){
     }
     out_json=[...out_json, temp_d]
   }
+  return out_json
+}
 
+function IndexPage(){
+  var out_json = convertCsvToJson(csv_content)
   return(
     <>
       <Layout>
