@@ -51,7 +51,7 @@ function IndexPage(){
     <Layout>
       <SEO title="Home" />
       <p>helloworld</p>
-      <div>{json_data}</div>
+      <div>{JSON.stringify(json_data)}</div>
     </Layout>
   )
 }
