@@ -28,6 +28,7 @@ function convertCsvToJson( csv_in ) {
 
 exports.curl_fetch = functions.https.onRequest( ( request, response ) => {
   console.log( request.body.target_csv )
+  // handle wanted var not exist
   if ( request.body.target_csv == null ) {
     response.writeHead( 200, {
       'Content-Type': 'application/json',
@@ -49,6 +50,14 @@ exports.curl_fetch = functions.https.onRequest( ( request, response ) => {
         response.end();
         // response.json(convertCsvToJson(text))
       } )
+      .catch((err) => {
+        response.writeHead( 200, {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*'
+        } )
+        response.write(JSON.stringify({result: 'target_url_not_found'}))
+        response.end()
+      })
   }
 
 } )
