@@ -27,8 +27,8 @@ function convertCsvToJson(csv_in){
 }
 
 exports.curl_fetch = functions.https.onRequest( ( request, response ) => {
-  console.log(request.params)
-  fetch( 'https://istartup.hk/opendata/cev/cyberport_event.csv')
+  console.log(request.body.target_csv)
+  fetch( request.body.target_csv)
     .then( result => {
       return result.text()
     } )
