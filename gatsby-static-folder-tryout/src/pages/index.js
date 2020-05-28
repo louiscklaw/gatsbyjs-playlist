@@ -5,6 +5,8 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import ImgHelloworld from '../components/img_helloworld'
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -12,6 +14,7 @@ const IndexPage = () => (
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
     <img src="/helloworld.png" />
+    <ImgHelloworld />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
