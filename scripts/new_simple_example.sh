@@ -25,4 +25,7 @@ gatsby build
 
 cp .cache/default-html.js src/html.js
 
+git add .
+git commit . -m"ci: init new example $1"
+
 yarn develop
