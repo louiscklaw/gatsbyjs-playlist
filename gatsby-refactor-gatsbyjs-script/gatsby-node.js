@@ -5,3 +5,9 @@
  */
 
 // You can delete this file if you're not using it
+
+const {helloworld} = require('./gatsby-nodes/helloworld')
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  helloworld()
+}
