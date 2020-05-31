@@ -17,6 +17,8 @@ const IndexPage = () => (
     <Link to="/page-2/">Go to page 2</Link> <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     <Link to="/test/">test progress bar</Link>
+
+    <a href="http://localhost:8000/test/">delayed link to test</a>
   </Layout>
 )
 
