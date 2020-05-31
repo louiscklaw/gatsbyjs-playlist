@@ -1,5 +1,5 @@
 ---
-slug: "/blog/my-first-post123231"
+slug: "/blog/hackmd-test"
 date: "2019-05-04"
 title: "My first blog post"
 ---
