@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 import highlight from 'highlight.js'
 
-class TestCodeHighlight extends React.Component{
+class TestHighlight extends React.Component{
   static propTypes = {
     children: PropTypes.node.isRequired,
     className: PropTypes.string,
@@ -39,4 +39,4 @@ class TestCodeHighlight extends React.Component{
   }
 }
 
-export default TestCodeHighlight
+export default TestHighlight
