@@ -1,0 +1,12 @@
+
+h3 {
+  cursor: pointer;
+}
+
+h3 svg {
+  color: white;
+}
+
+h3:hover svg {
+  color: grey;
+}

@@ -1,0 +1,41 @@
+import { Link } from 'gatsby'
+
+import Layout from '../components/layout'
+import Image from '../components/image'
+import SEO from '../components/seo'
+
+import DefaultTemplate from '../templates/default-template.js'
+
+export default DefaultTemplate
+
+<SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+
+# Hi people
+
+Welcome to your new Gatsby site.
+
+Now go build something great.
+
+<div style={{ maxWidth: '300px', marginBottom: '1.45rem' }}>
+  <Image />
+</div>
+<Link to="/page-2/">Go to page 2</Link>
+
+`helloworld()`
+
+```js
+console.log("helloworld")
+
+console.log("helloworld")
+console.log("helloworld")
+
+function Helloworld(){
+  console.log("hi auntie")
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  document.querySelectorAll('pre code').forEach((block) => {
+    hljs.highlightBlock(block);
+  });
+});
+```
