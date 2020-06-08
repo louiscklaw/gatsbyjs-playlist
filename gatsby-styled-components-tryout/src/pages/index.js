@@ -1,6 +1,10 @@
 import React from "react"
 import styled from "styled-components"
 
+// https://polished.js.org/docs/#fontface
+import { between } from 'polished'
+
+
 const Container = styled.div`
   margin: 3rem auto;
   max-width: 600px;
@@ -8,6 +12,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  font-size: ${between('20px', '15px','320px', '1920px')};
 `
 
 const UserWrapper = styled.div`
@@ -35,6 +40,9 @@ const Description = styled.div`
 const Username = styled.h2`
   margin: 0 0 12px 0;
   padding: 0;
+  &:hover {
+    background-color: red;
+  }
 `
 
 const Excerpt = styled.p`
@@ -54,8 +62,13 @@ const User = props => (
 export default function UsersList() {
   return (
     <Container>
+      {window.screen.width}
+      <div style={{fontSize:'20px'}}>20px</div>
+      <div style={{fontSize:'15px'}}>15px</div>
+
       <h1>About Styled Components</h1>
       <p>Styled Components is cool</p>
+
       <User
         username="Jane Doe"
         avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
