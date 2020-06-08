@@ -12,6 +12,11 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
+
+        <link href="//vjs.zencdn.net/7.8.2/video-js.min.css" rel="stylesheet" />
+        <script src="//vjs.zencdn.net/7.8.2/video.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-youtube/2.6.1/Youtube.min.js" integrity="sha256-19ObdfjYiVwh6PJx1rEQU19BPznTSNoh3A5mnSdp7UE=" crossOrigin="anonymous"></script>
+
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
