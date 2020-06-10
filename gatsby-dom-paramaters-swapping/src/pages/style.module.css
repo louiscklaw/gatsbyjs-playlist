@@ -8,6 +8,7 @@
   background-color: gold;
   width: 100px;
   height: 100px;
+  transition: 0.3s;
 }
 
 .box1-placeholder {
@@ -20,6 +21,7 @@
   background-color: green;
   width: 100px;
   height: 100px;
+  transition: 0.3s;
 }
 
 .box2-placeholder {
@@ -32,6 +34,7 @@
   background-color: red;
   width: 100px;
   height: 100px;
+  transition: 0.3s;
 }
 
 .box3-placeholder {
