@@ -4,7 +4,7 @@ set -ex
 
 yarn
 
-yarn build
+# yarn build
 
 yarn start
 
