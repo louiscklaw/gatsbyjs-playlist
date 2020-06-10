@@ -6,16 +6,21 @@ import RightVideoContainer from '../components/right-video-container'
 
 import style from './index.module.css'
 
+import YoutubeCell from '../components/youtube-cell'
+
 function IndexPage(){
   return(
-    <div className={style.videoContainerRow}>
+    <>
+      <div className={style.videoContainerRow}>
 
-      <div className={style.videoContainerColumn}>
-        <MainVideoContainer />
-        <BottomVideoContainer />
+        <div className={style.videoContainerColumn}>
+          <MainVideoContainer />
+          <BottomVideoContainer />
+        </div>
+        <RightVideoContainer />
       </div>
-      <RightVideoContainer />
-    </div>
+      <YoutubeCell v_id={`KGBv8oT5lwk`} />
+    </>
   )
 }
 
