@@ -1,22 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
-const IndexPage = () => (
+import TestBox from '../components/test-box'
+import YoutubeCell from '../components/youtube-cell'
+
+import GlobalContext from '../contexts/global-context'
+
+function IndexPage() {
+  const {channels} = React.useContext(GlobalContext)
+
+  return (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    {channels.map(x => {
+      return (<YoutubeCell pos_id={x.pos_id} v_id={x.v_id}/>)
+    })}
   </Layout>
 )
-
+}
 export default IndexPage
