@@ -1003,6 +1003,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@creativebulma/bulma-tagsinput@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@creativebulma/bulma-tagsinput/-/bulma-tagsinput-1.0.2.tgz#62411a9afc57809eff25d59eef25f22e3b31c36f"
+  integrity sha512-Cahgrmvne4MGx5X7G1jJm+lPif8cTbwmpBlXGM0tcZ30lJY9kc3hkXj6dTSOZ8I8nFyTOpbqTYcFeJbGXUzRNg==
+
 "@emotion/cache@^10.0.27":
   version "10.0.29"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
@@ -3746,15 +3751,15 @@ bulma-checkradio@^1.1.1:
   resolved "https://registry.yarnpkg.com/bulma-checkradio/-/bulma-checkradio-1.1.1.tgz#d94c4bce810089957102670b19cafb194bcb97be"
   integrity sha512-6Wn2faBiFkctSeiaQkeU2MbjkQeuXsN4AthBDEKrHGGPl5wmV2GEj4iZCqzvw7Te7baaHdU8PbUgrmlD5D6oGA==
 
+bulma-divider@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/bulma-divider/-/bulma-divider-0.2.0.tgz#a9b4d9fe8b270c7cb7573023c575062bc62616f3"
+  integrity sha512-REe3k56GECRfDaqFjC8cwLhV4RxXmV0RubuzDJqwior9wlJcdHlN0qfW0tvUX+qphikaTQegIeRuhjRIAqkjkw==
+
 bulma-switch@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/bulma-switch/-/bulma-switch-2.0.0.tgz#7a187cd1bb8073e9a542478d936b89315f1ffcd8"
   integrity sha512-myD38zeUfjmdduq+pXabhJEe3x2hQP48l/OI+Y0fO3HdDynZUY/VJygucvEAJKRjr4HxD5DnEm4yx+oDOBXpAA==
-
-bulma-tagsinput@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/bulma-tagsinput/-/bulma-tagsinput-2.0.0.tgz#ef6653464212f23a50b3b046fc9735bd75fc1768"
-  integrity sha512-BFvd0oaxgeWHOEh3d4cgETy5vpSSjRRBA9w+8TWEuhjFQg38Rb+3vjDCavL+udpdjf+dRV0SK5T4kYCXTOrz5A==
 
 bulma@^0.9.0:
   version "0.9.0"
