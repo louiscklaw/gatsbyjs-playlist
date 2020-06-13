@@ -13,6 +13,10 @@ function BulmaModal(props){
     modal_ref.current.classList.remove(style.isActive)
   }
 
+  const handleCloseButtonOnClick = () => {
+    modal_ref.current.classList.remove(style.isActive)
+  }
+
   return(
     <div className={style.modal} ref={modal_ref}>
       <div className={style.modalBackground} onClick={handleBackgroundClick}></div>
@@ -40,6 +44,9 @@ function BulmaModal(props){
               </div>
             </div>
           </article>
+          <div>
+            <button className={style.button} onClick={handleCloseButtonOnClick}>Close</button>
+          </div>
         </div>
       </div>
       <button className={style.modalClose +' ' + style.isLarge} aria-label="close" onClick={handleOnCloseButtonClick} ></button>
