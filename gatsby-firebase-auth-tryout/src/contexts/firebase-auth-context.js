@@ -53,6 +53,7 @@ function FirebaseAuthContextProvider(props){
     // alert('calling firebase auth context logout')
     console.log('calling firebaseLogout')
     firebase_auth.signOut()
+    setUserInfo(init_context)
   }
 
   const firebaseLogin = (email, password) => {
@@ -63,13 +64,31 @@ function FirebaseAuthContextProvider(props){
   }
 
   const googleLogin = () => {
-    var provider = new firebase.auth.GoogleAuthProvider();
-    provider.setCustomParameters( { 'login_hint': 'user@example.com' } );
+    var provider = new firebase.auth.GoogleAuthProvider()
+    provider.setCustomParameters( { 'login_hint': 'user@example.com' } )
     firebase_auth.signInWithPopup(provider)
       .then((userdata) => {
-        console.log('userdata', userdata.additionalUserInfo.profile.email)
-
+        console.log('google login ok')
       })
+      .catch((err)=>{
+        console.log("google login failed, ",err.message)
+      })
+  }
+
+  const githubLogin = () => {
+    var provider = new firebase.auth.GithubAuthProvider()
+
+    provider.setCustomParameters( {
+      'login_hint': 'user@example.com'
+    } )
+
+    firebase_auth.signInWithPopup( provider )
+    .then( ( userdata )=>{
+      console.log('github login ok')
+    })
+    .catch( (err) =>{
+      console.log('github login fail,', err.message)
+    } )
   }
 
   return(
@@ -78,7 +97,8 @@ function FirebaseAuthContextProvider(props){
       firebase_auth,
       firebaseLogout,
       firebaseLogin,
-      googleLogin
+      googleLogin,
+      githubLogin
       }}>
       {props.children}
     </FirebaseAuthContext.Provider>

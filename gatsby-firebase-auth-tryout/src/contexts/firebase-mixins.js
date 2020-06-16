@@ -14,6 +14,7 @@ function FirebaseMixinsContextProvider(props){
     firebaseLogin,
     firebaseLogout,
     googleLogin,
+    githubLogin,
     user_info
   } = React.useContext(FirebaseAuthContext)
 
@@ -44,7 +45,8 @@ function FirebaseMixinsContextProvider(props){
       addingNewRecord,
       testAddAdminRole,
       googleLogin,
-      user_info
+      user_info,
+      githubLogin
     }}>
       {props.children}
     </FirebaseMixinsContext.Provider>
