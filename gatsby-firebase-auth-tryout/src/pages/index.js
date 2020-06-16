@@ -1,31 +1,18 @@
 import React from "react"
 
-import FirebaseAuthContext from '../contexts/firebase-auth-context'
-import FirebaseDbContext from '../contexts/firebase-db-context'
+import FirebaseMixinsContext from "../contexts/firebase-mixins"
 
 import Layout from "../components/layout"
-import FirebaseFunctionContext from "../contexts/firebase-functions-context"
 
 function IndexPage() {
   let {
     firebase_auth,
     firebaseLogin,
-    firebaseLogout
-  } = React.useContext(FirebaseAuthContext)
-
-  let {
-    addingNewRecord
-  } = React.useContext(FirebaseDbContext)
-
-  let {
-    testAddAdminRole
-  } = React.useContext(FirebaseFunctionContext)
-
-  React.useEffect(()=>{
-    console.log(firebase_auth)
-    // firebaseLogin('user1@example.com', '123456')
-
-  })
+    firebaseLogout,
+    addingNewRecord,
+    testAddAdminRole,
+    createUser
+  } = React.useContext(FirebaseMixinsContext)
 
   const handleLoginButtonClick = () => {
     firebaseLogin('user1@example.com','123456')
@@ -41,6 +28,10 @@ function IndexPage() {
 
   const handleAddAdminClick = () => {
     testAddAdminRole()
+  }
+
+  const handleCreateUserClick = () => {
+    createUser()
   }
 
   return(
@@ -61,6 +52,9 @@ function IndexPage() {
         <button onClick={handleAddAdminClick}>add admin</button>
       </div>
 
+      <div>
+        <button onClick={handleCreateUserClick}>create user</button>
+      </div>
 
       <div>
         <a href="https://console.firebase.google.com/u/1/project/fir-tryout-f4e7a/database/firestore/data~2Fcafes~2F6nCcvPz9IXQ9syC88VBP">link to firebase console</a>

@@ -5,6 +5,7 @@ import firebaseConfig from '../firebase-config'
 import { FirebaseAuthContextProvider } from './firebase-auth-context'
 import { FirebaseDbContextProvider } from './firebase-db-context'
 import { FirebaseFunctionContextProvider } from './firebase-functions-context'
+import { FirebaseMixinsContextProvider } from './firebase-mixins'
 
 let init_context = {
   hello: 'world',
@@ -21,7 +22,9 @@ function FirebaseContextProvider(props){
       <FirebaseAuthContextProvider>
         <FirebaseFunctionContextProvider>
           <FirebaseDbContextProvider>
-            {props.children}
+            <FirebaseMixinsContextProvider>
+              {props.children}
+            </FirebaseMixinsContextProvider>
           </FirebaseDbContextProvider>
         </FirebaseFunctionContextProvider>
       </FirebaseAuthContextProvider>
