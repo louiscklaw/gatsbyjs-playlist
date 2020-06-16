@@ -4,9 +4,9 @@ admin.initializeApp();
 
 // firebase callable function
 exports.addAdminRole = functions.https.onCall( ( data, context ) => {
-  if (context.auth.token.admin !== true ){
-    return {error: "only admin can add admin"}
-  }
+  // if (context.auth.token.admin !== true ){
+  //   return {error: "only admin can add admin"}
+  // }
 
   return admin.auth().getUserByEmail( data.email ).then( user => {
     return admin.auth().setCustomUserClaims( user.uid, {

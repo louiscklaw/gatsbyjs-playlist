@@ -12,10 +12,10 @@ function FirebaseFunctionContextProvider(props){
   let {firebase_app} = React.useContext(FirebaseContext)
   let firebase_functions = firebase_app.functions()
 
-  const testAddAdminRole = () => {
+  const testAddAdminRole = (email_to_add_admin) => {
     // console.log(firebase_functions)
     const addAdminRole = firebase_functions.httpsCallable('addAdminRole')
-    addAdminRole({email: 'user1@example.com'})
+    addAdminRole({email: email_to_add_admin})
       .then(result =>{
         console.log(result)
       })

@@ -6,12 +6,14 @@ import Layout from "../components/layout"
 
 function IndexPage() {
   let {
-    firebase_auth,
     firebaseLogin,
     firebaseLogout,
     addingNewRecord,
     testAddAdminRole,
-    createUser
+    createUser,
+    googleLogin,
+    user_info,
+    changeUserinfo
   } = React.useContext(FirebaseMixinsContext)
 
   const handleLoginButtonClick = () => {
@@ -37,11 +39,22 @@ function IndexPage() {
       </div>
 
       <div>
-        <button onClick={testAddAdminRole}>add admin</button>
+        <button onClick={(e) => {testAddAdminRole(user_info.email)}}>add admin</button>
       </div>
 
       <div>
         <button onClick={createUser}>create user</button>
+      </div>
+
+      <div>
+        <button onClick={googleLogin}>test google login</button>
+      </div>
+
+      <div>
+        userinfo:
+        <pre>
+          {JSON.stringify(user_info, null, 2)}
+        </pre>
       </div>
 
       <div>
