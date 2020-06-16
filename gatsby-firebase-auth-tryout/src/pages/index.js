@@ -18,20 +18,8 @@ function IndexPage() {
     firebaseLogin('user1@example.com','123456')
   }
 
-  const handleLogoutButtonClick = () => {
-    firebaseLogout()
-  }
-
   const handleNewRecordClick = () => {
     addingNewRecord({hello:'world'})
-  }
-
-  const handleAddAdminClick = () => {
-    testAddAdminRole()
-  }
-
-  const handleCreateUserClick = () => {
-    createUser()
   }
 
   return(
@@ -41,7 +29,7 @@ function IndexPage() {
       </div>
 
       <div>
-        <button onClick={handleLogoutButtonClick}>logout</button>
+        <button onClick={firebaseLogout}>logout</button>
       </div>
 
       <div>
@@ -49,11 +37,11 @@ function IndexPage() {
       </div>
 
       <div>
-        <button onClick={handleAddAdminClick}>add admin</button>
+        <button onClick={testAddAdminRole}>add admin</button>
       </div>
 
       <div>
-        <button onClick={handleCreateUserClick}>create user</button>
+        <button onClick={createUser}>create user</button>
       </div>
 
       <div>
