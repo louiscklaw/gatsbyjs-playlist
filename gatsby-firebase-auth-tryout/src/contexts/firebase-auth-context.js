@@ -91,6 +91,22 @@ function FirebaseAuthContextProvider(props){
     } )
   }
 
+  const facebookLogin = () => {
+    var provider = new firebase.auth.FacebookAuthProvider();
+
+    provider.setCustomParameters( {
+      'login_hint': 'user@example.com'
+    } )
+
+    firebase_auth.signInWithPopup( provider )
+    .then( ( userdata )=>{
+      console.log('facebook login ok')
+    })
+    .catch( (err) =>{
+      console.log('facebook login fail,', err.message)
+    } )
+  }
+
   return(
     <FirebaseAuthContext.Provider value={{
       user_info,
@@ -98,7 +114,8 @@ function FirebaseAuthContextProvider(props){
       firebaseLogout,
       firebaseLogin,
       googleLogin,
-      githubLogin
+      githubLogin,
+      facebookLogin
       }}>
       {props.children}
     </FirebaseAuthContext.Provider>

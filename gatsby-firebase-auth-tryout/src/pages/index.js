@@ -13,7 +13,8 @@ function IndexPage() {
     createUser,
     googleLogin,
     user_info,
-    githubLogin
+    githubLogin,
+    facebookLogin
   } = React.useContext(FirebaseMixinsContext)
 
   const handleLoginButtonClick = () => {
@@ -38,7 +39,7 @@ function IndexPage() {
       <div> <button onClick={createUser}>create user</button> </div>
       <div> <button onClick={googleLogin}>test google login</button> </div>
       <div> <button onClick={githubLogin}>test github login</button></div>
-      {/* <div> <button onClick={facebookLogin}>test facebook login</button></div> */}
+      <div> <button onClick={facebookLogin}>test facebook login</button></div>
 
       <div>
         userinfo:
