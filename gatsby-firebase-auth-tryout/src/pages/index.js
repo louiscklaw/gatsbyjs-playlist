@@ -8,23 +8,20 @@ import AdminPanel from "../components/admin-panel"
 
 function IndexPage() {
   let {
+    user_info,
+
     firebaseLogin,
     firebaseLogout,
     addingNewRecord,
     testAddAdminRole,
     createUser,
     googleLogin,
-    user_info,
     githubLogin,
     facebookLogin
   } = React.useContext(FirebaseMixinsContext)
 
   const handleLoginButtonClick = () => {
     firebaseLogin('user1@example.com','123456')
-  }
-
-  const handleNewRecordClick = () => {
-    addingNewRecord({hello:'world'})
   }
 
   return(
@@ -36,7 +33,7 @@ function IndexPage() {
 
       <div> <button onClick={handleLoginButtonClick}>login</button> </div>
       <div> <button onClick={firebaseLogout}>logout</button> </div>
-      <div> <button onClick={handleNewRecordClick}>new record</button> </div>
+
       <div> <button onClick={(e) => {testAddAdminRole(user_info.email)}}>add admin</button> </div>
       <div> <button onClick={createUser}>create user</button> </div>
       <div> <button onClick={googleLogin}>test google login</button> </div>

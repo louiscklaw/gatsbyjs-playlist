@@ -19,10 +19,7 @@ function FirebaseMixinsContextProvider(props){
     user_info
   } = React.useContext(FirebaseAuthContext)
 
-  let {
-    addingNewRecord,
-    firebase_db
-  } = React.useContext(FirebaseDbContext)
+  let firebase_db_context = React.useContext(FirebaseDbContext)
 
   let {
     testAddAdminRole
@@ -33,7 +30,7 @@ function FirebaseMixinsContextProvider(props){
   }
 
   const createUser = (email, password ) => {
-    console.log(firebase_db)
+    console.log('createUser click')
   }
 
   return(
@@ -43,12 +40,12 @@ function FirebaseMixinsContextProvider(props){
       firebase_auth,
       firebaseLogin,
       firebaseLogout,
-      addingNewRecord,
       testAddAdminRole,
       googleLogin,
       user_info,
       githubLogin,
-      facebookLogin
+      facebookLogin,
+      ...firebase_db_context
     }}>
       {props.children}
     </FirebaseMixinsContext.Provider>
