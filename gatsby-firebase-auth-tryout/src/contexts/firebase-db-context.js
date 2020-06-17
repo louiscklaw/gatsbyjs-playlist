@@ -19,6 +19,7 @@ function FirebaseDbContextProvider(props){
 
   let [list_record_value, setListValue] = React.useState()
 
+
   React.useEffect(() => {
     if (document.querySelectorAll('.update-value-form').length != 0){
       document.querySelectorAll('.update-value-form').forEach(form_ele => {
@@ -198,13 +199,21 @@ function FirebaseDbContextProvider(props){
       })
   }
 
+  const searchRecord = (collection_name, field, value) => {
+    return firebase_db.collection(collection_name)
+      .where(field, '==', value)
+      .get()
+
+  }
+
   return(
     <FirebaseDbContext.Provider value={{
       firebase_db,
       addingNewRecord,
       listRecord,
       genRecordTable,
-      deleteRecord
+      deleteRecord,
+      searchRecord
     }}>
       {props.children}
     </FirebaseDbContext.Provider>
