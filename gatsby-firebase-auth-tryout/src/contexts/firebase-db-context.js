@@ -5,6 +5,9 @@ import FirebaseContext from './firebase-context'
 // https://firebase.google.com/docs/database/web/read-and-write
 // https://firebase.google.com/docs/database/admin/retrieve-data#node.js
 
+// transactions
+// https://firebase.google.com/docs/database/web/read-and-write#save_data_as_transactions
+
 let init_context = {
   hello: 'world',
   firebase_db: null
