@@ -3,6 +3,8 @@ import React from "react"
 import FirebaseMixinsContext from "../contexts/firebase-mixins"
 
 import Layout from "../components/layout"
+import RecordPanel from "../components/record-panel"
+import AdminPanel from "../components/admin-panel"
 
 function IndexPage() {
   let {
@@ -48,7 +50,9 @@ function IndexPage() {
         </pre>
       </div>
 
+      <RecordPanel />
 
+      <AdminPanel />
 
     </Layout>
   )
