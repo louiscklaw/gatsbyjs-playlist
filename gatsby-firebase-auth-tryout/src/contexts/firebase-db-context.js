@@ -1,6 +1,10 @@
 import React from 'react'
 import FirebaseContext from './firebase-context'
 
+// https://firebase.google.com/docs/database/web/structure-data
+// https://firebase.google.com/docs/database/web/read-and-write
+// https://firebase.google.com/docs/database/admin/retrieve-data#node.js
+
 let init_context = {
   hello: 'world',
   firebase_db: null
