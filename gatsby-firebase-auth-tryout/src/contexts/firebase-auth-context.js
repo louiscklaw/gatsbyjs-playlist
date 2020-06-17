@@ -57,7 +57,7 @@ function FirebaseAuthContextProvider(props){
   }
 
   const firebaseLogin = (email, password) => {
-    firebase_auth.signInWithEmailAndPassword( email, password )
+    return firebase_auth.signInWithEmailAndPassword( email, password )
       .then( ( cred ) => {
         console.log(cred)
       } )
