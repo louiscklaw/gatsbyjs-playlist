@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,6 +9,8 @@ import BulmaSwitch from '../components/bulma-switch'
 import BumlaTagsInput from '../components/bulma-tags-input'
 import BulmaCheckRadio from '../components/bulma-check-radio'
 import BulmaColumn from '../components/bulma-column'
+
+import style from '../scss/desktop.module.scss'
 
 const IndexPage = () => (
   <Layout>
@@ -44,6 +47,9 @@ const IndexPage = () => (
 
     <h3>bulma tooltip</h3>
     https://creativebulma.net/product/bulmatooltip
+
+    <h3>page transition</h3>
+    <Link className={style.button} to="page2">go page 2</Link>
 
   </Layout>
 )
