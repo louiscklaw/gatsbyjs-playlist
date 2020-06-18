@@ -1,24 +1,21 @@
 import React from 'react'
-import firebase from 'firebase'
+
+import firebase from 'firebase/app'
+import 'firebase/auth'
 
 import FirebaseContext from './firebase-context'
 
-let init_context = {
-  hello: 'world',
-  user_info: null,
-  firebase_auth: null
-}
+let FirebaseAuthContext = React.createContext()
 
-let FirebaseAuthContext = React.createContext(init_context)
+let init_user_info = {
+  email: '',
+  is_admin: false
+}
 
 function FirebaseAuthContextProvider(props){
   let {firebase_app} = React.useContext(FirebaseContext)
   let firebase_auth = firebase_app.auth()
-
-  let [user_info, setUserInfo] = React.useState({
-    email: null,
-    is_admin: false
-  })
+  let [user_info, setUserInfo] = React.useState(init_user_info)
 
   React.useEffect(() => {
     // init checking on auth changed
@@ -26,25 +23,26 @@ function FirebaseAuthContextProvider(props){
 
     return function cleanup() {
       firebaseLogout()
-      setUserInfo({
-        email: '',
-        is_admin: false
-      })
+      setUserInfo(init_user_info)
     }
   },[])
+
+  const firebaseAuthHelloworld = () => {
+    console.log('firebaseAuthHelloworld')
+  }
 
   const firebaseAuthChanged = () => {
     firebase_auth.onAuthStateChanged( user => {
       if(user){
         user.getIdTokenResult()
           .then(idTokenResult => {
-            user.admin = idTokenResult.claims.admin
-            console.log(`idTokenResult,`, idTokenResult)
             setUserInfo({
               email: user.email,
-              admin: user.admin
+              is_admin: idTokenResult.claims.admin
             })
           })
+      }else{
+        setUserInfo(init_user_info)
       }
     })
   }
@@ -53,7 +51,7 @@ function FirebaseAuthContextProvider(props){
     // alert('calling firebase auth context logout')
     console.log('calling firebaseLogout')
     firebase_auth.signOut()
-    setUserInfo(init_context)
+    setUserInfo(init_user_info)
   }
 
   const firebaseLogin = (email, password) => {
@@ -109,17 +107,19 @@ function FirebaseAuthContextProvider(props){
 
   return(
     <FirebaseAuthContext.Provider value={{
-      user_info,
+      facebookLogin,
       firebase_auth,
-      firebaseLogout,
+      firebaseAuthHelloworld,
       firebaseLogin,
-      googleLogin,
+      firebaseLogout,
       githubLogin,
-      facebookLogin
-      }}>
+      googleLogin,
+      user_info
+    }}>
       {props.children}
     </FirebaseAuthContext.Provider>
   )
+
 }
 
 export default FirebaseAuthContext

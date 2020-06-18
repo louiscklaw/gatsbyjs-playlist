@@ -1,6 +1,8 @@
 import React from 'react'
 import FirebaseContext from './firebase-context'
 
+import 'firebase/functions'
+
 let init_context={
   hello: 'world',
   firebase_functions: null
@@ -29,6 +31,7 @@ function FirebaseFunctionContextProvider(props){
       {props.children}
     </FirebaseFunctionContext.Provider>
   )
+
 }
 
 export default FirebaseFunctionContext

@@ -1,11 +1,12 @@
 import React from "react"
 
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
 import FirebaseMixinsContext from "../contexts/firebase-mixins"
 
-import Layout from "../components/layout"
 import RecordPanel from "../components/record-panel"
 import AdminPanel from "../components/admin-panel"
-import { resetWarningCache } from "prop-types"
 
 function IndexPage() {
   let {
@@ -18,12 +19,21 @@ function IndexPage() {
     createUser,
     googleLogin,
     githubLogin,
-    facebookLogin
+    facebookLogin,
+    hello,
+    is_admin
+
   } = React.useContext(FirebaseMixinsContext)
+
+  let FirebaseMixinsValue = React.useContext(FirebaseMixinsContext)
 
   const handleLoginButtonClick = () => {
 
   }
+
+  React.useEffect(()=>{
+    console.log(FirebaseMixinsValue)
+  })
 
   React.useEffect(()=>{
     let login_forms = document.querySelectorAll('.login-form')
@@ -49,7 +59,7 @@ function IndexPage() {
 
   },[])
 
-  return(
+  return (
     <Layout>
 
       <div>
@@ -67,6 +77,8 @@ function IndexPage() {
         </form>
       </div>
 
+      <hr />
+
       <div>
         <h3>testing password correct login</h3>
         <form id="login-form-password-correct" className="login-form">
@@ -77,8 +89,8 @@ function IndexPage() {
           <div id="login-result"></div>
         </form>
       </div>
-      <div> <button onClick={firebaseLogout}>logout</button> </div>
 
+      <hr />
 
       <div>
         <h3>testing admin correct login</h3>
@@ -90,14 +102,25 @@ function IndexPage() {
           <div id="login-result"></div>
         </form>
       </div>
+
+      <hr />
       <div> <button onClick={firebaseLogout}>logout</button> </div>
 
+      <hr />
 
       <div> <button onClick={(e) => {testAddAdminRole(user_info.email)}}>add admin</button> </div>
       <div> <button onClick={createUser}>create user</button> </div>
       <div> <button onClick={googleLogin}>test google login</button> </div>
-      <div> <button onClick={githubLogin}>test github login</button></div>
-      <div> <button onClick={facebookLogin}>test facebook login</button></div>
+      <div>
+        <button onClick={githubLogin}>test github login</button>
+        user
+      </div>
+      <div>
+        <button onClick={facebookLogin}>test facebook login</button>
+        admin
+      </div>
+
+      <hr />
 
       <div>
         userinfo:
@@ -106,14 +129,18 @@ function IndexPage() {
         </pre>
       </div>
 
+      <hr />
+
       <RecordPanel />
+
+      <hr />
 
       <AdminPanel />
 
+      <hr />
+
     </Layout>
   )
-
 }
-
 
 export default IndexPage

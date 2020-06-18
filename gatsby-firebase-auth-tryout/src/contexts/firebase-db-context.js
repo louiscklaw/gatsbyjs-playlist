@@ -1,13 +1,7 @@
 import React from 'react'
-import _ from 'lodash'
+import 'firebase/firestore'
+
 import FirebaseContext from './firebase-context'
-
-// https://firebase.google.com/docs/database/web/structure-data
-// https://firebase.google.com/docs/database/web/read-and-write
-// https://firebase.google.com/docs/database/admin/retrieve-data#node.js
-
-// transactions
-// https://firebase.google.com/docs/database/web/read-and-write#save_data_as_transactions
 
 let init_context = {
   hello: 'world',
@@ -21,7 +15,6 @@ function FirebaseDbContextProvider(props){
   let firebase_db = firebase_app.firestore()
 
   let [list_record_value, setListValue] = React.useState()
-
 
   React.useEffect(() => {
     if (document.querySelectorAll('.update-value-form').length != 0){
@@ -209,6 +202,7 @@ function FirebaseDbContextProvider(props){
 
   }
 
+
   return(
     <FirebaseDbContext.Provider value={{
       firebase_db,
@@ -221,6 +215,7 @@ function FirebaseDbContextProvider(props){
       {props.children}
     </FirebaseDbContext.Provider>
   )
+
 }
 
 export default FirebaseDbContext

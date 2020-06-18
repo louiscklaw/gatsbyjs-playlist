@@ -1,4 +1,3 @@
-
 let firebaseConfig = {
   apiKey: "AIzaSyBnmrMAfoQvVRgXCIPG2wLiGO15s7u4bRY",
   authDomain: "fir-tryout-f4e7a.firebaseapp.com",

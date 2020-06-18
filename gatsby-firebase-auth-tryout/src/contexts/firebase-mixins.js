@@ -1,55 +1,36 @@
 import React from 'react'
 
-import FirebaseDbContext from './firebase-db-context'
 import FirebaseAuthContext from './firebase-auth-context'
 import FirebaseFunctionContext from './firebase-functions-context'
+import FirebaseDbContext from './firebase-db-context'
 
 let default_value = {}
 
 let FirebaseMixinsContext = React.createContext(default_value)
 
 function FirebaseMixinsContextProvider(props){
-  let {
-    firebase_auth,
-    firebaseLogin,
-    firebaseLogout,
-    googleLogin,
-    githubLogin,
-    facebookLogin,
-    user_info
-  } = React.useContext(FirebaseAuthContext)
 
-  let firebase_db_context = React.useContext(FirebaseDbContext)
-
-  let {
-    testAddAdminRole
-  } = React.useContext(FirebaseFunctionContext)
-
-  const helloworld = () => {
-    console.log('helloworld')
+  const helloFirebaseMixins = () => {
+    console.log('helloFirebaseMixins')
   }
 
-  const createUser = (email, password ) => {
-    console.log('createUser click')
-  }
+  let FirebaseAuthValues = React.useContext(FirebaseAuthContext)
+  let FirebaseDbValues = React.useContext(FirebaseDbContext)
+  let FirebaseFunctionValues = React.useContext(FirebaseFunctionContext)
 
   return(
     <FirebaseMixinsContext.Provider value={{
-      helloworld,
-      createUser,
-      firebase_auth,
-      firebaseLogin,
-      firebaseLogout,
-      testAddAdminRole,
-      googleLogin,
-      user_info,
-      githubLogin,
-      facebookLogin,
-      ...firebase_db_context
+      helloFirebaseMixins,
+      ...FirebaseAuthValues,
+      ...FirebaseDbValues,
+      ...FirebaseFunctionValues
     }}>
+
       {props.children}
+
     </FirebaseMixinsContext.Provider>
   )
+
 }
 
 export default FirebaseMixinsContext

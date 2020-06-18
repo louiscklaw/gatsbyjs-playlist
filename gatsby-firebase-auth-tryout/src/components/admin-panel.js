@@ -1,6 +1,6 @@
 import React from 'react'
 
-import FirebaseMixinContext from '../contexts/firebase-mixins'
+import FirebaseMixinsContext from '../contexts/firebase-mixins'
 
 function AdminPanelContent(){
   return(
@@ -14,10 +14,15 @@ function AdminPanelContent(){
 }
 
 function AdminPanel(){
-  const {user_info} = React.useContext(FirebaseMixinContext)
+  const {user_info} = React.useContext(FirebaseMixinsContext)
+
+  React.useEffect(()=>{
+
+  },[])
+
   return(
     <>
-      { user_info.admin ? <AdminPanelContent />: '' }
+      { (typeof(user_info) != 'undefined' && user_info.is_admin) ? <AdminPanelContent /> : ""}
     </>
   )
 }
