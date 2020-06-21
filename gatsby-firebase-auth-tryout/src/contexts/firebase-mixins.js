@@ -18,6 +18,14 @@ function FirebaseMixinsContextProvider(props){
   let FirebaseDbValues = React.useContext(FirebaseDbContext)
   let FirebaseFunctionValues = React.useContext(FirebaseFunctionContext)
 
+  let {firebaseAuthHelloworld} = FirebaseAuthValues
+  let {firebaseDbContext} = FirebaseDbValues
+
+  React.useEffect(()=>{
+    firebaseAuthHelloworld()
+    firebaseDbContext()
+  })
+
   return(
     <FirebaseMixinsContext.Provider value={{
       helloFirebaseMixins,

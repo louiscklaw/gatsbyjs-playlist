@@ -98,6 +98,10 @@ function FirebaseDbContextProvider(props){
 
   })
 
+  const firebaseDbContext = () => {
+    console.log('firebaseDbContext')
+  }
+
   const addingNewRecord = (collection_name,payload) => {
     firebase_db.collection(collection_name)
       .add(payload)
@@ -210,7 +214,8 @@ function FirebaseDbContextProvider(props){
       listRecord,
       genRecordTable,
       deleteRecord,
-      searchRecord
+      searchRecord,
+      firebaseDbContext
     }}>
       {props.children}
     </FirebaseDbContext.Provider>
