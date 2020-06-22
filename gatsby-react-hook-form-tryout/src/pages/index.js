@@ -4,10 +4,12 @@ import Layout from "../components/layout"
 import ErrorDemo from '../components/error-demo'
 import Example from "../components/Example"
 import QuickStart from "../components/quickstart"
+import SevenChannelSelect from "../components/seven-channel-select"
 
 const IndexPage = () => (
   <Layout>
     helloworld
+    <SevenChannelSelect />
     <QuickStart />
     <ErrorDemo />
     <Example />
