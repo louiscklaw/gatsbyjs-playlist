@@ -1,7 +1,7 @@
 import React from 'react';
 import GridLayout from 'react-grid-layout';
 
-function MyFirstGrid(){
+function MyYoutubeGrid(){
 
   let [layout, setLayout] = React.useState(
     [
@@ -56,6 +56,7 @@ function MyFirstGrid(){
 
   return (
     <>
+      <h2>my-youtube-grid.js</h2>
       <button onClick={handleTestOnClick}>Test</button>
       <GridLayout
         className="layout"
@@ -129,4 +130,4 @@ function MyFirstGrid(){
 }
 
 
-export default MyFirstGrid
+export default MyYoutubeGrid
