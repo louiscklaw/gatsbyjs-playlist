@@ -24,6 +24,8 @@ gatsby build
 cp .cache/default-html.js src/html.js
 
 
+cp ../scripts/.editorconfig .editorconfig
+
 git init
 git add .
 git commit . -m"ci: init new example $1"
