@@ -6,9 +6,12 @@ import Example from "../components/Example"
 import QuickStart from "../components/quickstart"
 import SevenChannelSelect from "../components/seven-channel-select"
 
+import ResetForm from '../components/reset-form'
+
 const IndexPage = () => (
   <Layout>
     helloworld
+    <ResetForm />
     <SevenChannelSelect />
     <QuickStart />
     <ErrorDemo />
