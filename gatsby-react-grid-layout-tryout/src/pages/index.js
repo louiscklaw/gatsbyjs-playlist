@@ -9,11 +9,14 @@ import MyResponsiveGrid from '../components/my-responsive-grid'
 import MyYoutubeGrid from '../components/my-youtube-grid'
 import MyDraggableHandle from '../components/my-draggable-handle'
 
+import TestLayout from '../components/test-layout'
+
 const IndexPage = () => (
   <Layout>
-    <MyDraggableHandle />
+    {/* <MyDraggableHandle /> */}
     {/* <MyResponsiveGrid /> */}
     {/* <MyYoutubeGrid /> */}
+    <TestLayout />
   </Layout>
 )
 
