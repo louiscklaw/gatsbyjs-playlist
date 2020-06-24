@@ -14,12 +14,11 @@ function YoutubeTestCell(props){
         />
 
       <div className="handler-drag">
-        drag 123321
+        drag
       </div>
 
     </div>
   )
 }
-
 
 export default YoutubeTestCell
