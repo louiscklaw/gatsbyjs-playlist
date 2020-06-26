@@ -13,14 +13,17 @@ import TestLayout from '../components/test-layout'
 
 import TestBreakpoints from '../components/breakpoint-helloworld'
 
+import TestOnlayoutUpdate from '../components/test-onlayoutupdate'
+
 const IndexPage = () => (
   <Layout>
     {/* <MyDraggableHandle /> */}
     {/* <MyResponsiveGrid /> */}
     {/* <MyYoutubeGrid /> */}
-    <TestLayout />
+    {/* <TestLayout /> */}
     {/* <TestUseMemo /> */}
     {/* <TestBreakpoints /> */}
+    <TestOnlayoutUpdate />
   </Layout>
 )
 
