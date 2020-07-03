@@ -89,20 +89,44 @@ function TestLayout(){
     React.useRef()
   ]
 
-  let preview_ref = React.useRef()
+  let preview_test_contexts = [
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context'),
+    React.useState('init context')
+  ]
 
   const getPreviewBox = (number_of_box) => {
     return new Array(number_of_box).fill(undefined).map((val, idx) => {
       let view_idx = `view_${idx+1}`
       let preview_ref = preview_refs[idx]
+      let [test_context, setTestContext] = preview_test_contexts[idx]
 
       return (
         // preview_refs
 
-        <div ref={preview_ref} className="box" key={view_idx} > {view_idx} </div>
+        <div ref={preview_ref} className="box" key={view_idx} > {test_context} </div>
       )
     });
   }
+
+  React.useEffect(()=>{
+    let [test_context, setTestContext] = preview_test_contexts[1]
+    setTestContext('abcdef')
+  })
 
   let [num_of_preview, setNumOfPreview] = React.useState(16)
   const preview_panel = React.useMemo(()=> getPreviewBox(num_of_preview),[num_of_preview])
@@ -146,14 +170,7 @@ function TestLayout(){
   const onBreakpointChange = (breakpoint_name, num_cols) => {
     // get triggered when breakpoint change
     // regenerate the required children
-    // setPreviewPanel(preview_panel_lg)
-    // layout_seatingplan[]
-    // console.log('test-layout.js', breakpoint_name)
-    // console.log(breakpoint_name)
 
-    // let num_of_preview_cell = layout_seatingplan[breakpoint_name].length
-    // setNumOfPreview(num_of_preview_cell)
-    // setRenderTest(1)
     if (breakpoint_name == 'sm'){
       setTestPreviewPanel(preview_panel_lg)
       preview_refs[6].current.classList.add('hide-box')
