@@ -1,12 +1,17 @@
 import React from "react"
-import style from '../scss/style.module.scss'
+// import style from '../scss/style.module.scss'
 
+import StyleContext from '../context/style-context'
 import ModalContext from '../context/modal-context'
 
 function TestModal(props) {
   let modal_ref = React.useRef()
   let {setModalRef, closeTestModal} = React.useContext(ModalContext)
   setModalRef(modal_ref)
+
+  const {style} = React.useContext(StyleContext)
+
+  console.log('test-modal.js', 'style',style)
 
   return(
     <>
