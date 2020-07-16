@@ -1,0 +1,11 @@
+.hide-box {
+  display: none;
+}
+
+.box {
+  background-color: aqua
+}
+
+.layout {
+  height: 100vh;
+}
