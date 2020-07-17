@@ -3,23 +3,22 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import ClipboardJS from 'clipboard'
+import TestCopyButton from '../components/test-copy-button'
+import TestCopyLink from '../components/test-copy-link'
 
 function IndexPage() {
-  React.useEffect(()=>{
-    new ClipboardJS('.btn');
-  })
 
   return (
     <Layout>
       <SEO title="Home" />
-      helloworld
+      {/* <TestCopyButton /> */}
 
-      <input id="foo" value="https://github.com/zenorocha/clipboard.js.git"></input>
+      <TestCopyLink text="para 1"/>
+      <TestCopyLink text="para 2"/>
+      <TestCopyLink text="para 3"/>
+      <TestCopyLink text="para 4"/>
+      <TestCopyLink text="para 5"/>
 
-      <button class="btn" data-clipboard-target="#foo">
-          <img src="assets/clippy.svg" alt="Copy to clipboard" />
-      </button>
     </Layout>
   )
 }
