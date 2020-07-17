@@ -1,0 +1,21 @@
+@import './fontawesome-free/fontawesome';
+@import './fontawesome-free/solid';
+@import './fontawesome-free/brands';
+@import './fontawesome-free/regular';
+
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+.bigger{
+  font-size: 2em;
+}
+
+.test-class {
+  background-color: red;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
