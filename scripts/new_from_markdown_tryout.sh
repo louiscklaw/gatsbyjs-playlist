@@ -9,7 +9,7 @@ git checkout -b test/$TEST
 
 set -ex
 
-rsync -avz --exclude 'node_modules' ../gatsby-helloworld/ .
+rsync -avz --exclude 'node_modules' ../gatsby-markdown-tryout/ .
 
 yarn
 
