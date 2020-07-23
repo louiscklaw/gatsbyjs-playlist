@@ -3,4 +3,4 @@
 set -x
 rm -rf * .*
 
-new_from_project gatsby-helloworld
+../scripts/new_from.sh gatsby-helloworld

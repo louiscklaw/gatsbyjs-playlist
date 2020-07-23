@@ -1,5 +1,7 @@
 .env
 
+tmp
+offical-example
 **/node_modules
 **/build
 
