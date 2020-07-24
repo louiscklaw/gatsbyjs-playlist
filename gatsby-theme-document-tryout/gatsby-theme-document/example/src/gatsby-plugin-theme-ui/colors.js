@@ -7,11 +7,14 @@ export default {
   borderColor: 'rgba(0, 0, 0, 0.15)',
   modes: {
     dark: {
-      text: '#fff',
-      background: '#182952',
-      primary: '#f638dc',
-      secondary: '#ff7976',
-      sidebar: '#101d3c',
+      text: '#ecf0f1',
+      background: '#2c3e50',
+      primary: '#e74c3c',
+
+      // link color
+      secondary: '#e74c3c',
+
+      sidebar: '#34495e',
       borderColor: 'rgba(255, 255, 255, 0.15)'
     }
   }

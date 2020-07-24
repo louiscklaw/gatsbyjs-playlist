@@ -26,6 +26,7 @@ const globalStyles = css`
 
   body {
     margin: 0;
+    background-color: red;
   }
 
   /* https://github.com/gatsbyjs/gatsby/issues/15486 */
