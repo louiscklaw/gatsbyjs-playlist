@@ -3,6 +3,7 @@
 set -ex
 
 mkdir -p tmp
+mkdir -p offical-example
 
 cd tmp
   rm -rf gatsby
