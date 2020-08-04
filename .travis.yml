@@ -41,3 +41,4 @@ stages:
 
 import:
   - credentials.yml
+  - gatsby-travis-helloworld/.travis.yml
