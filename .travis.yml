@@ -18,6 +18,7 @@ script:
 
 jobs:
   include:
+
     - stage: Build
       before_script:
         - npm install -g gatsby-cli
@@ -44,8 +45,6 @@ jobs:
           github_token: $GITHUB_TOKEN
           on:
             branch: master
-
-      if: branch = master
 
       after_failure:
         - node -v
