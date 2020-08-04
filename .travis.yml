@@ -31,7 +31,7 @@ jobs:
         - bash merge_if_success.sh
 
     - stage: Test
-      name: unittest for gatsby-travis-helloworld
+      name: unittest for (gatsby-travis-helloworld)
 
       script:
         - yarn
@@ -65,4 +65,4 @@ stages:
 
 import:
   - credentials.yml
-  - gatsby-travis-helloworld/.travis.yml
+  # - gatsby-travis-helloworld/.travis.yml
