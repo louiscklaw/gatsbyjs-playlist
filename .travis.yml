@@ -18,12 +18,12 @@ script:
 
 jobs:
   include:
-
     - stage: Build
+      name: build (gatsby-helloworld)
       before_script:
         - npm install -g gatsby-cli
       script:
-        - cd gatsbys-helloworld
+        - cd gatsby-helloworld
         - ../scripts/build.sh
 
     - stage: Merge
