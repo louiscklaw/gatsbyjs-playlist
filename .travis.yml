@@ -54,15 +54,6 @@ jobs:
         # - cat /home/travis/.npm/_logs/*.log
 
 
-stages:
-  - Unit_test
-  - Test
-  - Build
-  - Deploy
-  - Integration_to_other_repo
-  - Publish_dashboard
-  - Merge
-
 import:
   - credentials.yml
   # - gatsby-travis-helloworld/.travis.yml
