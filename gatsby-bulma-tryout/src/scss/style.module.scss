@@ -1,6 +1,15 @@
 @charset "utf-8";
 @import "bulma/bulma.sass";
 
+.card-wrapper {
+  background-color: red;
+
+  display: grid;
+  grid-template-columns: repeat(4, calc(100% /4));
+  gap: 10px 10px;
+
+}
+
 * {
   padding: 0px;
   margin: 0px;
