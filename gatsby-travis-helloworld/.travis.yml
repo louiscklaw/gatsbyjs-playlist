@@ -26,6 +26,7 @@ jobs:
       deploy:
         - provider: pages
           skip_cleanup: true
+          script: skip
           local_dir: gatsby-travis-helloworld/public
           github_token: $GITHUB_TOKEN
           on:
