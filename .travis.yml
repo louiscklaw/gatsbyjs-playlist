@@ -31,25 +31,6 @@ jobs:
         - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
         - bash merge_if_success.sh
 
-    - stage: Test
-      name: unittest for (gatsby-travis-helloworld)
-
-      script:
-        - yarn
-        - yarn build
-
-      deploy:
-        - provider: pages
-          skip_cleanup: true
-          local_dir: gatsby-travis-helloworld/public
-          github_token: $GITHUB_TOKEN
-          on:
-            branch: master
-
-      after_failure:
-        - node -v
-        - ls -l gatsby-travis-helloworld
-        # - cat /home/travis/.npm/_logs/*.log
 
 stages:
   - Unit_test
@@ -64,4 +45,4 @@ stages:
 
 import:
   - credentials.yml
-  # - gatsby-travis-helloworld/.travis.yml
+  - gatsby-travis-helloworld/.travis.yml

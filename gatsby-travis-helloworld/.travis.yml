@@ -1,7 +1,7 @@
 jobs:
   include:
     - stage: Test
-      name: unittest for gatsby-travis-helloworld
+      name: unittest for (gatsby-travis-helloworld)
 
       script:
         - yarn
@@ -10,13 +10,10 @@ jobs:
       deploy:
         - provider: pages
           skip_cleanup: true
-          script: skip
           local_dir: gatsby-travis-helloworld/public
           github_token: $GITHUB_TOKEN
           on:
             branch: master
-
-      if: branch = master
 
       after_failure:
         - node -v
