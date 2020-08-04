@@ -4,8 +4,10 @@ jobs:
       name: unittest for (gatsby-travis-helloworld)
 
       script:
-        - yarn
-        - yarn build
+        - cd gatsby-travis-helloworld
+        -   yarn
+        -   yarn build
+        - cd ..
 
       deploy:
         - provider: pages
