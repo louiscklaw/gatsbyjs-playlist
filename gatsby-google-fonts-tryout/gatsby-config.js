@@ -1,10 +1,26 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `I like Google fonts`,
+    description: 'hello description',
+    author: 'hello i am author'
   },
+
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `limelight`,
+          `Oswald`,
+          `Noto Sans TC`,
+          `Noto Serif TC`,
+          `Rowdies`,
+          `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
+
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
