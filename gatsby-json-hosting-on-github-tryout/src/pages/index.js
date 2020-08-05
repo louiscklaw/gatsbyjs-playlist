@@ -1,23 +1,13 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import Layout from "../components/layout"
-// import Image from "../components/image"
-import SEO from "../components/seo"
-
-import testImage from '../images/gatsby-astronaut.png'
-
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <img src={testImage} alt=""/>
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
+function IndexPage(props){
+  return(
+    <>
+      <img src="/img/helloworld.png" />
+      helloworld
+    </>
+  )
+}
 
 export default IndexPage
