@@ -10,7 +10,7 @@ jobs:
         - cd -
 
     - stage: Deploy
-
+      name: deploy (gatsby-json-hosting-on-github-tryout)
       script:
         - cd gatsby-json-hosting-on-github-tryout
         -   yarn
