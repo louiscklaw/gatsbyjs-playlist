@@ -24,3 +24,7 @@ jobs:
           github_token: $GITHUB_TOKEN
           on:
             branch: master
+
+      after_failure:
+        - node -v
+        - ls -l gatsby-json-hosting-on-github-tryout/public
