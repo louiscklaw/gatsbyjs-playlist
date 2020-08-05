@@ -4,14 +4,18 @@ jobs:
       name: test (gatsby-json-hosting-on-github-tryout)
 
       script:
-        - yarn
-        - yarn build
+        - cd gatsby-json-hosting-on-github-tryout
+        -   yarn
+        -   yarn build
+        - cd -
 
     - stage: Deploy
 
       script:
-        - yarn
-        - yarn build
+        - cd gatsby-json-hosting-on-github-tryout
+        -   yarn
+        -   yarn build
+        - cd -
 
       deploy:
         - provider: pages
