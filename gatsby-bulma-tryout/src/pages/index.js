@@ -11,10 +11,11 @@ import style from '../scss/style.module.scss'
 
 const IndexPage = () => (
   <Layout>
+
     <SEO title="Home" />
     <Navbar />
     <h1 className={style.title}>helloworld</h1>
-    <Cards />
+
   </Layout>
 )
 
