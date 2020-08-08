@@ -13,38 +13,9 @@ cache:
   - npm
   - pip
 
-script:
-  - echo "helloworld"
-
-jobs:
-  include:
-    - stage: Build
-      name: build (gatsby-helloworld)
-      before_script:
-        - npm install -g gatsby-cli
-      script:
-        - cd gatsby-helloworld
-        - ../scripts/build.sh
-
-    - stage: Merge
-      name: merge
-      script:
-        - wget https://raw.githubusercontent.com/louiscklaw/travis-playlist/master/travis-build-merger/merge_if_success.sh
-        - bash merge_if_success.sh
-
-
-stages:
-  - Unit_test
-  - Test
-  - Build
-  - Deploy
-  - Integration_to_other_repo
-  - Publish_dashboard
-  - Merge
-  - Publish_Result
-
-
 import:
   - credentials.yml
+  - .travis-merger.yml
+  - .travis-stages.yml
   - gatsby-travis-helloworld/.travis.yml
   - gatsby-json-hosting-on-github-tryout/.travis.yml
