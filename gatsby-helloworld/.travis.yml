@@ -1,7 +1,7 @@
 jobs:
   include:
-    - stage: Build
-      name: build (gatsby-helloworld)
+    - stage: Unit_test
+      name: test (gatsby-helloworld)
       before_script:
         - npm install -g gatsby-cli
       script:
