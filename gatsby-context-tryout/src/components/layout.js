@@ -2,7 +2,7 @@ import * as React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import ThemeContext from '../context/ThemeContext'
+import ThemeContext from '../contexts/ThemeContext'
 import Header from './header'
 import './layout.css'
 

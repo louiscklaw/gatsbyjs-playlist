@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import ThemeContext from "../context/ThemeContext"
+import ThemeContext from "../contexts/ThemeContext"
 
 const Header = ({ siteTitle }) => (
   <ThemeContext.Consumer>
