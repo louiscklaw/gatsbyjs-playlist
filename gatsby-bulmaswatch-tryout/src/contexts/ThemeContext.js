@@ -9,8 +9,8 @@ import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
 // import default_style from '../scss/default/bulmaswatch.module.scss'
 import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
 import journal_style from '../scss/journal/bulmaswatch.module.scss'
-// import litera_style from '../scss/litera/bulmaswatch.module.scss'
-// import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
+import litera_style from '../scss/litera/bulmaswatch.module.scss'
+import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
 // import lux_style from '../scss/lux/bulmaswatch.module.scss'
 // import materia_style from '../scss/materia/bulmaswatch.module.scss'
 // import minty_style from '../scss/minty/bulmaswatch.module.scss'
@@ -52,8 +52,8 @@ function ThemeContextProvider(props){
     // default_style,
     flatly_style,
     journal_style,
-    // litera_style,
-    // lumen_style,
+    litera_style,
+    lumen_style,
     // lux_style,
     // materia_style,
     // minty_style,
@@ -78,8 +78,8 @@ function ThemeContextProvider(props){
     // 'default',
     'flatly',
     'journal',
-    // 'litera',
-    // 'lumen',
+    'litera',
+    'lumen',
     // 'lux',
     // 'materia',
     // 'minty',
