@@ -13,7 +13,7 @@ function MediaTest(props){
       <article className={active_style.media}>
         <figure className={active_style.mediaLeft}>
           <p className={combineStyles([active_style.image, active_style.is64x64])}>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg" />
           </p>
         </figure>
         <div className={active_style.mediaContent}>
@@ -46,7 +46,7 @@ function MediaTest(props){
       <article className={active_style.media}>
         <figure className={active_style.mediaLeft}>
           <p className={combineStyles([active_style.image, active_style.is64x64])}>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg" />
           </p>
         </figure>
         <div className={active_style.mediaContent}>
@@ -64,7 +64,7 @@ function MediaTest(props){
             <div className={active_style.levelRight}>
               <div className={active_style.levelItem}>
                 <label className={active_style.checkbox}>
-                  <input type="checkbox"> Press enter to submit
+                  <input type="checkbox" /> Press enter to submit
                 </label>
               </div>
             </div>
@@ -76,7 +76,7 @@ function MediaTest(props){
       <article className={active_style.media}>
         <figure className={active_style.mediaLeft}>
           <p className={combineStyles([active_style.image, active_style.is64x64])}>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg" />
           </p>
         </figure>
         <div className={active_style.mediaContent}>
@@ -92,7 +92,7 @@ function MediaTest(props){
           <article className={active_style.media}>
             <figure className={active_style.mediaLeft}>
               <p className={combineStyles([active_style.image, active_style.is48x48])}>
-                <img src="https://bulma.io/images/placeholders/96x96.png">
+                <img src="https://bulma.io/images/placeholders/96x96.png" />
               </p>
             </figure>
             <div className={active_style.mediaContent}>
@@ -119,7 +119,7 @@ function MediaTest(props){
           <article className={active_style.media}>
             <figure className={active_style.mediaLeft}>
               <p className={combineStyles([active_style.image, active_style.is48x48])}>
-                <img src="https://bulma.io/images/placeholders/96x96.png">
+                <img src="https://bulma.io/images/placeholders/96x96.png" />
               </p>
             </figure>
             <div className={active_style.mediaContent}>
@@ -140,7 +140,7 @@ function MediaTest(props){
       <article className={active_style.media}>
         <figure className={active_style.mediaLeft}>
           <p className={combineStyles([active_style.image, active_style.is64x64])}>
-            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+            <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg" />
           </p>
         </figure>
         <div className={active_style.mediaContent}>
