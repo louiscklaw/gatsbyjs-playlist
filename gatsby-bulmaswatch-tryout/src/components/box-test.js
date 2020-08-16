@@ -3,6 +3,26 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCoffee,
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCoins,
+  faDice,
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faReply
+} from '@fortawesome/fontawesome-svg-core'
+
+import {
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+
 function BoxTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -26,10 +46,15 @@ function BoxTest(props){
           <nav className={active_style.level}>
             <div className={active_style.levelLeft}>
               <a className={active_style.levelItem}>
-                <span className={combineStyles([active_style.icon, active_style.isSmall])}> <i className={combineStyles([active_style.fa, active_style.faReply])}> </i> </span>
+                <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                  <FontAwesomeIcon icon={faReply} size="1x" />
+
+                </span>
               </a>
               <a className={active_style.levelItem}>
-                <span className={combineStyles([active_style.icon, active_style.isSmall])}> <i className={combineStyles([active_style.fa, active_style.faRetweet])}> </i> </span>
+                <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                  <i className={combineStyles([active_style.fa, active_style.faRetweet])}> </i>
+                </span>
               </a>
               <a className={active_style.levelItem}>
                 <span className={combineStyles([active_style.icon, active_style.isSmall])}> <i className={combineStyles([active_style.fa, active_style.faHeart])}> </i> </span>
