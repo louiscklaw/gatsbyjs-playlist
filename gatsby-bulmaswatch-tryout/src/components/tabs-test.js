@@ -198,20 +198,20 @@ function TabsTest(props){
         <ul>
           <li>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faAngleLeft])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleLeft])}></i></span>
               <span>Left</span>
             </a>
           </li>
           <li>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faAngleUp])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleUp])}></i></span>
               <span>Up</span>
             </a>
           </li>
           <li>
             <a>
               <span>Right</span>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faAngleRight])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleRight])}></i></span>
             </a>
           </li>
         </ul>
@@ -250,25 +250,25 @@ function TabsTest(props){
         <ul>
           <li className={active_style.isActive}>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faImage])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faImage])}></i></span>
               <span>Pictures</span>
             </a>
           </li>
           <li>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faMusic])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faMusic])}></i></span>
               <span>Music</span>
             </a>
           </li>
           <li>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faFilm])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faFilm])}></i></span>
               <span>Videos</span>
             </a>
           </li>
           <li>
             <a>
-              <span className={combineStyles([active_style.icon}><i className={active_style.fa, active_style.faFileAlt])}></i></span>
+              <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faFileAlt])}></i></span>
               <span>Documents</span>
             </a>
           </li>

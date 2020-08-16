@@ -10,7 +10,8 @@ function ImagesTest(props){
     <section className={active_style.section} id="images">
       <h1 className={active_style.title}> Images </h1>
       <hr />
-      <figure className={combineStyles([active_style.image, active_style.is128x128])}> <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+      <figure className={combineStyles([active_style.image, active_style.is128x128])}>
+        <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg" />
       </figure>
     </section>
   )

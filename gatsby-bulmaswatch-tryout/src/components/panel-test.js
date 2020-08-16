@@ -29,17 +29,17 @@ function PanelTest(props){
             <a>Forks</a>
           </p>
           <a className={combineStyles([active_style.panelBlock, active_style.isActive])}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faBook])}></i> </span> bulma </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])}></i> </span> bulma </a>
           <a className={active_style.panelBlock}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faBook])}></i> </span> marksheet </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])}></i> </span> marksheet </a>
           <a className={active_style.panelBlock}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faBook])}></i> </span> minireset.css </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])}></i> </span> minireset.css </a>
           <a className={active_style.panelBlock}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faBook])}></i> </span> jgthms.github.io </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])}></i> </span> jgthms.github.io </a>
           <a className={active_style.panelBlock}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faCodeBranch])}></i> </span> daniellowtw/infBoard </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faCodeBranch])}></i> </span> daniellowtw/infBoard </a>
           <a className={active_style.panelBlock}>
-            <span className={combineStyles([active_style.panelIcon}> <i className={active_style.fa, active_style.faCodeBranch])}></i> </span> mojs </a>
+            <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faCodeBranch])}></i> </span> mojs </a>
           <label className={active_style.panelBlock}>
             <input type="checkbox"> Remember me </label>
           <div className={active_style.panelBlock}>

@@ -29,6 +29,10 @@ list_file_sections.forEach(file_section => {
 
 })
 
+const find_id_list = list_file_sections.map( file_section => {
+  return file_section.match(/id="(.+?)"/)[1]
+})
+
 const component_index = list_file_sections.map( file_section => {
   const find_id = file_section.match(/id="(.+?)"/)[1]
   return `{/* <${component_name(find_id)}Test /> */}`
@@ -37,9 +41,17 @@ const component_index = list_file_sections.map( file_section => {
 fs.writeFileSync('./component_index.js', component_index.join('\n'))
 
 // component import
-const component_import = list_file_sections.map( file_section => {
-  const find_id = file_section.match(/id="(.+?)"/)[1]
+const component_import = find_id_list.sort().map( find_id => {
   return `// import ${component_name(find_id)}Test from './${find_id}-test'`
 })
 
 fs.writeFileSync('./component_import.js', component_import.join('\n'))
+
+
+
+// component import
+const git_checkouts = find_id_list.sort().map( find_id => {
+  return `# git checkout /home/logic/_workspace/gatsbyjs-playlist/gatsby-bulmaswatch-tryout/src/components/${find_id}-test.js`
+})
+
+fs.writeFileSync('./git_checkout_template.sh', git_checkouts.join('\n'))

@@ -42,7 +42,7 @@ function CardTest(props){
             <header className={active_style.cardHeader}>
               <p className={active_style.cardHeaderTitle}> Component </p>
               <a className={active_style.cardHeaderIcon}>
-                <span className={combineStyles([active_style.icon}> <i className={active_style.fa, active_style.faAngleDown])}></i> </span>
+                <span className={active_style.icon}> <i className={combineStyles([active_style.fa, active_style.faAngleDown])}></i> </span>
               </a>
             </header>
             <div className={active_style.cardContent}>

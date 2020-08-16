@@ -13,7 +13,7 @@ function NotificationsTest(props){
       <div className={combineStyles([active_style.columns, active_style.isMultiline])}>
 
         <div className={combineStyles([active_style.column, active_style.isHalf])}>
-          <div className={combineStyles([active_style.notification, active_style.])}>
+          <div className={combineStyles([active_style.notification])}>
             <button className={active_style.delete}> </button> Lorem ipsum dolor sit amet,
             <a href="#">consectetur</a> adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
         </div>

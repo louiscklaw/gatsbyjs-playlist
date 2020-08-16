@@ -11,7 +11,7 @@ function ProgressTest(props){
       <h1 className={active_style.title}> Progress bars </h1>
       <hr />
 
-      <progress className={combineStyles([active_style.progress, active_style.])} max="100" value="15"> 15% </progress>
+      <progress className={combineStyles([active_style.progress])} max="100" value="15"> 15% </progress>
 
       <progress className={combineStyles([active_style.progress, active_style.isPrimary])} max="100" value="15"> 15% </progress>
 
