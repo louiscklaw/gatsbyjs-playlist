@@ -14,14 +14,16 @@ function CardTest(props){
         <div className={active_style.column}>
           <div className={active_style.card}>
             <div className={active_style.cardImage}>
-              <figure className={combineStyles([active_style.image, active_style.is4by3])}> <img src="https://source.unsplash.com/random/800x600" alt="Image">
+              <figure className={combineStyles([active_style.image, active_style.is4by3])}>
+                <img src="https://source.unsplash.com/random/800x600" alt="Image" />
               </figure>
             </div>
             <div className={active_style.cardContent}>
               <div className={active_style.media}>
                 <div className={active_style.mediaLeft}>
-                  <figure className={active_style.image} style="height: 40px; width: 40px;"> <img
-                      src="https://source.unsplash.com/random/96x96" alt="Image"> </figure>
+                  <figure className={active_style.image} style={{width: '40px', height: '40px'}}>
+                  <img
+                      src="https://source.unsplash.com/random/96x96" alt="Image" /> </figure>
                 </div>
                 <div className={active_style.mediaContent}>
                   <p className={combineStyles([active_style.title, active_style.is4])}>John Smith</p>

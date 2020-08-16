@@ -35,7 +35,7 @@ function DropdownTest(props){
                 <a href="#" className={active_style.dropdownItem}>
                   Other dropdown item
                 </a>
-                <hr className={active_style.dropdownDivider}>
+                <hr className={active_style.dropdownDivider} />
                 <a href="#" className={active_style.dropdownItem}>
                   With a divider
                 </a>
@@ -58,11 +58,11 @@ function DropdownTest(props){
                 <div className={active_style.dropdownItem}>
                   <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
                 </div>
-                <hr className={active_style.dropdownDivider}>
+                <hr className={active_style.dropdownDivider} />
                 <div className={active_style.dropdownItem}>
                   <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
                 </div>
-                <hr className={active_style.dropdownDivider}>
+                <hr className={active_style.dropdownDivider} />
                 <a href="#" className={active_style.dropdownItem}>
                   This is a link
                 </a>

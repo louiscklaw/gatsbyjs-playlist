@@ -13,11 +13,11 @@ function HeroTest(props){
 
       <section>
         <div>
-          <nav className={combineStyles([active_style.navbar, active_style.])}>
+          <nav className={combineStyles([active_style.navbar])}>
             <div className={active_style.container}>
               <div className={active_style.navbarBrand}>
                 <a className={active_style.navbarItem}>
-                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
+                  <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
                 </a>
                 <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero1">
                   <span></span>
@@ -40,8 +40,8 @@ function HeroTest(props){
                     <div className={active_style.navbarLink}>
                       More
                     </div>
-                    <div id="moreDropdown" className={combineStyles([active_style.navbarDropdown, active_style.])}>
-                      <a className={combineStyles([active_style.navbarItem, active_style.])} href="#">
+                    <div id="moreDropdown" className={combineStyles([active_style.navbarDropdow])}>
+                      <a className={combineStyles([active_style.navbarItem])} href="#">
                         <div className={combineStyles([active_style.level, active_style.isMobile])}>
                           <div className={active_style.levelLeft}>
                             <div className={active_style.levelItem}>
@@ -69,8 +69,9 @@ function HeroTest(props){
             </div>
           </nav>
         </div>
-        <!-- Hero content: will be in the middle -->
-        <div className={combineStyles([active_style.hero, active_style.])}>
+
+        {/* <!-- Hero content: will be in the middle --> */}
+        <div className={combineStyles([active_style.hero])}>
           <div className={active_style.heroBody}>
             <div className={combineStyles([active_style.container, active_style.hasTextCentered])}>
               <h1 className={active_style.title}>
@@ -81,7 +82,8 @@ function HeroTest(props){
               </h2>
             </div>
           </div>
-          <!-- Hero footer: will stick at the bottom -->
+          {/* <!-- Hero footer: will stick at the bottom --> */}
+
           <div className={active_style.heroFoot}>
             <nav className={active_style.tabs}>
               <div className={active_style.container}>

@@ -10,9 +10,11 @@ function LevelTest(props){
     <section className={active_style.section} id="level">
       <h1 className={active_style.title}>Level</h1>
       <hr />
-      <!-- Main container -->
+
+      {/* <!-- Main container --> */}
       <nav className={active_style.level}>
-        <!-- Left side -->
+
+        {/* <!-- Left side --> */}
         <div className={active_style.levelLeft}>
           <div className={active_style.levelItem}>
             <p className={combineStyles([active_style.subtitle, active_style.is5])}> <strong>123</strong> posts </p>
@@ -20,7 +22,7 @@ function LevelTest(props){
           <div className={active_style.levelItem}>
             <div className={combineStyles([active_style.field, active_style.hasAddons])}>
               <p className={active_style.control}>
-                <input className={active_style.input} type="text" placeholder="Find a post">
+                <input className={active_style.input} type="text" placeholder="Find a post" />
               </p>
               <p className={active_style.control}>
                 <button className={active_style.button}>
@@ -30,7 +32,8 @@ function LevelTest(props){
             </div>
           </div>
         </div>
-        <!-- Right side -->
+
+        {/* <!-- Right side --> */}
         <div className={active_style.levelRight}>
           <p className={active_style.levelItem}><strong>All</strong></p>
           <p className={active_style.levelItem}>
@@ -82,8 +85,9 @@ function LevelTest(props){
         <p className={combineStyles([active_style.levelItem, active_style.hasTextCentered])}>
           <a className={combineStyles([active_style.link, active_style.isInfo])}>Menu</a>
         </p>
-        <p className={combineStyles([active_style.levelItem, active_style.hasTextCentered])}> <img src="https://bulma.io/images/bulma-type.png" alt=""
-            style="height: 30px;"> </p>
+        <p className={combineStyles([active_style.levelItem, active_style.hasTextCentered])}>
+          <img src="https://bulma.io/images/bulma-type.png" alt="" style={{height: '30px'}} />
+            </p>
         <p className={combineStyles([active_style.levelItem, active_style.hasTextCentered])}>
           <a className={combineStyles([active_style.link, active_style.isInfo])}>Reservations</a>
         </p>
