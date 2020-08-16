@@ -2,3 +2,11 @@
 @import "variables";
 @import "bulma/bulma.sass";
 @import "overrides";
+
+body {
+  font-family: "Segoe UI","Source Sans Pro",Calibri,Candara,Arial,sans-serif !important
+}
+
+.navbar {
+  border-radius: unset
+}

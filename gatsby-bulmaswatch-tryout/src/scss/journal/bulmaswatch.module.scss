@@ -2,3 +2,11 @@
 @import "variables";
 @import "bulma/bulma.sass";
 @import "overrides";
+
+body {
+  font-family: "News Cycle","Arial Narrow Bold",sans-serif　!important
+}
+
+.navbar {
+  border-radius: unset
+}

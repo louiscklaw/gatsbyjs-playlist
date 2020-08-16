@@ -4,7 +4,7 @@ import ThemeContext from '../../contexts/ThemeContext'
 const combineStyle = (styles) => styles.join(' ')
 
 function Navbar(props){
-  const {active_style, rotateStyle} = React.useContext(ThemeContext)
+  const {active_style, rotateStyle, lookUpStyleName} = React.useContext(ThemeContext)
 
   return(
     <nav className={active_style.navbar} role="navigation" aria-label="main navigation">
@@ -28,6 +28,10 @@ function Navbar(props){
 
           <a className={active_style.navbarItem}>
             Documentation
+          </a>
+
+          <a className={active_style.navbarItem} href="//jenil.github.io/bulmaswatch/" target="_blank">
+            Bulmaswatch
           </a>
 
           <div className={combineStyle([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
@@ -55,7 +59,7 @@ function Navbar(props){
                 className={combineStyle([active_style.button, active_style.isLight])}
                 onClick={rotateStyle}
               >
-                test rotate
+                {JSON.stringify(lookUpStyleName(active_style))}next theme
               </button>
               <a className={combineStyle([active_style.button, active_style.isPrimary])}>
                 <strong>Sign up</strong>

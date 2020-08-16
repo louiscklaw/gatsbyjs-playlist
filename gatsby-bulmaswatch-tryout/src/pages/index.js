@@ -19,7 +19,6 @@ function IndexPage(){
 
     <SEO title="Home" />
     <Navbar />
-    <h1 className={active_style.title}>helloworld</h1>
 
     <TestContent />
 
