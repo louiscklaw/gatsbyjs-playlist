@@ -3,28 +3,31 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-function IconsTest(props){
+function ModalTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
-
-    <section className={active_style.section} id="icon">
-      <h1 className={active_style.title}> Icons </h1>
+    <section className={active_style.section} id="modal">
+      <h1 className={active_style.title}>Modal</h1>
       <hr />
-      <span className={active_style.icon}>
-        <i className={combineStyles([active_style.fas, active_style.faHome])}></i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-        <i className={combineStyles([active_style.fas, active_style.faLg, active_style.faHome])}> </i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isLarge])}>
-        <i className={combineStyles([active_style.fas, active_style.fa2x, active_style.faHome])}> </i>
-      </span>
-    </section>
-
-
+      <a className={combineStyles([active_style.button, active_style.isPrimary, active_style.isLarge])} data-target="#myModal"
+        onclick="$('#myModal').toggleClass('is-active')">Launch example modal</a>
+      <div className={active_style.modal} id="myModal">
+        <div className={active_style.modalBackground}></div>
+        <div className={active_style.modalCard}>
+          <header className={active_style.modalCardHead}>
+            <p className={active_style.modalCardTitle}>Modal title</p>
+            <button className={active_style.delete}></button>
+          </header>
+          <section className={active_style.modalCardBody}>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum.
+          </section>
   )
 
 }
 
-export default IconsTest
+export default ModalTest

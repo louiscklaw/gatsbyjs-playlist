@@ -1,6 +1,3 @@
-<sector>
-  blablabl12331a
-</sector>
 <div className={active_style.columns}>
   <div className={combineStyles([active_style.column, active_style.is2])}>
     <aside className={combineStyles([active_style.menu, active_style.section])}>

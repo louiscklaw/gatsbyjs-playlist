@@ -3,29 +3,25 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-function HeroTest(props){
+function NavbarMenuHero6Test(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
-    <section className={active_style.section} id="hero">
-      <h1 className={active_style.title}>Hero</h1>
-      <hr />
-
-      <section>
+    <section>
         <div>
-          <nav className={combineStyles([active_style.navbar, active_style.])}>
+          <nav className={combineStyles([active_style.navbar, active_style.isWarning])}>
             <div className={active_style.container}>
               <div className={active_style.navbarBrand}>
                 <a className={active_style.navbarItem}>
                   <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo">
                 </a>
-                <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero1">
+                <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero6">
                   <span></span>
                   <span></span>
                   <span></span>
                 </span>
               </div>
-              <div id="navbarMenuHero1" className={active_style.navbarMenu}>
+              <div id="navbarMenuHero6" className={active_style.navbarMenu}>
                 <div className={active_style.navbarEnd}>
                   <a className={combineStyles([active_style.navbarItem, active_style.isActive])}>
                     Home
@@ -70,7 +66,7 @@ function HeroTest(props){
           </nav>
         </div>
         <!-- Hero content: will be in the middle -->
-        <div className={combineStyles([active_style.hero, active_style.])}>
+        <div className={combineStyles([active_style.hero, active_style.isWarning])}>
           <div className={active_style.heroBody}>
             <div className={combineStyles([active_style.container, active_style.hasTextCentered])}>
               <h1 className={active_style.title}>
@@ -114,4 +110,4 @@ function HeroTest(props){
 
 }
 
-export default HeroTest
+export default NavbarMenuHero6Test

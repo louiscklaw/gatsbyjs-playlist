@@ -3,28 +3,57 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-function IconsTest(props){
+function PaginationTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
-
-    <section className={active_style.section} id="icon">
-      <h1 className={active_style.title}> Icons </h1>
+    <section className={active_style.section} id="pagination">
+      <h1 className={active_style.title}>Pagination</h1>
       <hr />
-      <span className={active_style.icon}>
-        <i className={combineStyles([active_style.fas, active_style.faHome])}></i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-        <i className={combineStyles([active_style.fas, active_style.faLg, active_style.faHome])}> </i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isLarge])}>
-        <i className={combineStyles([active_style.fas, active_style.fa2x, active_style.faHome])}> </i>
-      </span>
+      <nav className={active_style.pagination}>
+        <a className={combineStyles([active_style.paginationPrevious, active_style.isDisabled])}>Previous</a>
+        <a className={active_style.paginationNext}>Next page</a>
+        <ul className={active_style.paginationList}>
+          <li>
+            <a className={active_style.paginationLink}>1</a>
+          </li>
+          <li>
+            <span className={active_style.paginationEllipsis}>…</span>
+          </li>
+          <li>
+            <a className={active_style.paginationLink}>45</a>
+          </li>
+          <li>
+            <a className={combineStyles([active_style.paginationLink, active_style.isCurrent])}>46</a>
+          </li>
+          <li>
+            <a className={active_style.paginationLink}>47</a>
+          </li>
+          <li>
+            <span className={active_style.paginationEllipsis}>…</span>
+          </li>
+          <li>
+            <a className={active_style.paginationLink}>86</a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+      <nav className={combineStyles([active_style.pagination, active_style.isRounded])} role="navigation" aria-label="pagination">
+        <a className={active_style.paginationPrevious}>Previous</a>
+        <a className={active_style.paginationNext}>Next page</a>
+        <ul className={active_style.paginationList}>
+          <li><a className={active_style.paginationLink} aria-label="Goto page 1">1</a></li>
+          <li><span className={active_style.paginationEllipsis}>…</span></li>
+          <li><a className={active_style.paginationLink} aria-label="Goto page 45">45</a></li>
+          <li><a className={combineStyles([active_style.paginationLink, active_style.isCurrent])} aria-label="Page 46" aria-current="page">46</a></li>
+          <li><a className={active_style.paginationLink} aria-label="Goto page 47">47</a></li>
+          <li><span className={active_style.paginationEllipsis}>…</span></li>
+          <li><a className={active_style.paginationLink} aria-label="Goto page 86">86</a></li>
+        </ul>
+      </nav>
     </section>
-
-
   )
 
 }
 
-export default IconsTest
+export default PaginationTest

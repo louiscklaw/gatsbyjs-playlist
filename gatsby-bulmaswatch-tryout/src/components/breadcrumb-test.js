@@ -3,28 +3,32 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-function IconsTest(props){
+function BreadcrumbTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
-
-    <section className={active_style.section} id="icon">
-      <h1 className={active_style.title}> Icons </h1>
+    <section className={active_style.section} id="breadcrumb">
+      <h1 className={active_style.title}>Breadcrumb</h1>
       <hr />
-      <span className={active_style.icon}>
-        <i className={combineStyles([active_style.fas, active_style.faHome])}></i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-        <i className={combineStyles([active_style.fas, active_style.faLg, active_style.faHome])}> </i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isLarge])}>
-        <i className={combineStyles([active_style.fas, active_style.fa2x, active_style.faHome])}> </i>
-      </span>
+      <nav className={active_style.breadcrumb}>
+        <ul>
+          <li>
+            <a>Bulma</a>
+          </li>
+          <li>
+            <a>Documentation</a>
+          </li>
+          <li>
+            <a>Components</a>
+          </li>
+          <li className={active_style.isActive}>
+            <a>Breadcrumb</a>
+          </li>
+        </ul>
+      </nav>
     </section>
-
-
   )
 
 }
 
-export default IconsTest
+export default BreadcrumbTest

@@ -3,28 +3,18 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-function IconsTest(props){
+function ImagesTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
-
-    <section className={active_style.section} id="icon">
-      <h1 className={active_style.title}> Icons </h1>
+    <section className={active_style.section} id="images">
+      <h1 className={active_style.title}> Images </h1>
       <hr />
-      <span className={active_style.icon}>
-        <i className={combineStyles([active_style.fas, active_style.faHome])}></i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-        <i className={combineStyles([active_style.fas, active_style.faLg, active_style.faHome])}> </i>
-      </span>
-      <span className={combineStyles([active_style.icon, active_style.isLarge])}>
-        <i className={combineStyles([active_style.fas, active_style.fa2x, active_style.faHome])}> </i>
-      </span>
+      <figure className={combineStyles([active_style.image, active_style.is128x128])}> <img src="https://s3.amazonaws.com/uifaces/faces/twitter/zeldman/128.jpg">
+      </figure>
     </section>
-
-
   )
 
 }
 
-export default IconsTest
+export default ImagesTest
