@@ -11,24 +11,24 @@ import CardTest from './card-test'
 import ContentTest from './content-test'
 import DeleteTest from './delete-test'
 import DropdownTest from './dropdown-test'
-// import FormTest from './form-test'
-// import HeroTest from './hero-test'
+import FormTest from './form-test'
+import HeroTest from './hero-test'
 import IconTest from './icon-test'
 import ImagesTest from './images-test'
 import LevelTest from './level-test'
 import MediaTest from './media-test'
-// import MenuTest from './menu-test'
-// import MessageTest from './message-test'
-// import ModalTest from './modal-test'
-// import NavbarTest from './navbar-test'
-// import NavbarMenuHero2Test from './navbarMenuHero2-test'
+import MenuTest from './menu-test'
+import MessageTest from './message-test'
+import ModalTest from './modal-test'
+import NavbarTest from './navbar-test'
+import NavbarMenuHero2Test from './navbarMenuHero2-test'
 
 import NotificationsTest from './notifications-test'
-// import PaginationTest from './pagination-test'
-// import PanelTest from './panel-test'
+import PaginationTest from './pagination-test'
+import PanelTest from './panel-test'
 import ProgressTest from './progress-test'
 import TableTest from './table-test'
-// import TabsTest from './tabs-test'
+import TabsTest from './tabs-test'
 import TagTest from './tag-test'
 import TypographyTest from './typography-test'
 
@@ -50,7 +50,7 @@ function TestContent(props){
         <ButtonTest />
         <ContentTest />
         <DeleteTest />
-        {/* <FormTest /> */}
+        <FormTest />
         <IconTest />
         <ImagesTest />
         <NotificationsTest />
@@ -58,20 +58,19 @@ function TestContent(props){
         <TableTest />
         <TagTest />
         <BreadcrumbTest />
-        {/* <HeroTest /> */}
-        {/* <NavbarMenuHero2Test /> */}
-
+        <HeroTest />
+        <NavbarMenuHero2Test />
         <CardTest />
         <DropdownTest />
         <LevelTest />
         <MediaTest />
-        {/* <MenuTest /> */}
-        {/* <MessageTest /> */}
-        {/* <ModalTest /> */}
-        {/* <NavbarTest /> */}
-        {/* <PaginationTest /> */}
-        {/* <PanelTest /> */}
-        {/* <TabsTest /> */}
+        <MenuTest />
+        <MessageTest />
+        <ModalTest />
+        <NavbarTest />
+        <PaginationTest />
+        <PanelTest />
+        <TabsTest />
 
 
       </div>
