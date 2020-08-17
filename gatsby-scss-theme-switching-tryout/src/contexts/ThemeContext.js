@@ -1,55 +1,61 @@
 import React from "react"
 
+import light_mode from '../scss/light_mode.module.scss'
+import dark_mode from '../scss/dark_mode.module.scss'
+
 const defaultState = {
   dark: false,
   toggleDark: () => {},
+  active_style: {}
 }
 
 const ThemeContext = React.createContext(defaultState)
 
 // Getting dark mode information from OS!
 // You need macOS Mojave + Safari Technology Preview Release 68 to test this currently.
-const supportsDarkMode = () =>
-  window.matchMedia("(prefers-color-scheme: dark)").matches === true
+const supportsDarkMode = () => window.matchMedia("(prefers-color-scheme: dark)").matches === true
 
-class ThemeProvider extends React.Component {
-  state = {
-    dark: false,
+function ThemeProvider(props){
+  let [dark, setDark] = React.useState(defaultState.dark)
+  let [active_style, setActiveStyle] = React.useState(light_mode)
+
+  const toggleDark = () => {
+    // let dark = !this.state.dark
+    // localStorage.setItem("dark", JSON.stringify(dark))
+    // this.setState({ dark })
+    // console.log('dark ?')
+    setDark(!dark)
   }
 
-  toggleDark = () => {
-    let dark = !this.state.dark
-    localStorage.setItem("dark", JSON.stringify(dark))
-    this.setState({ dark })
-    console.log('dark ?')
-  }
+  React.useEffect(()=>{
+    setActiveStyle(dark? dark_mode: light_mode)
+  }, [dark])
 
-  componentDidMount() {
-    // Getting dark mode value from localStorage!
-    const lsDark = JSON.parse(localStorage.getItem("dark"))
-    if (lsDark) {
-      this.setState({ dark: lsDark })
-    } else if (supportsDarkMode()) {
-      this.setState({ dark: true })
-    }
-  }
+  React.useEffect(()=>{
+    // TODO: translate
+    // componentDidMount() {
+    //   // Getting dark mode value from localStorage!
+    //   const lsDark = JSON.parse(localStorage.getItem("dark"))
+    //   if (lsDark) {
+    //     this.setState({ dark: lsDark })
+    //   } else if (supportsDarkMode()) {
+    //     this.setState({ dark: true })
+    //   }
+    // }
 
-  render() {
-    const { children } = this.props
-    const { dark } = this.state
-    return (
-      <ThemeContext.Provider
-        value={{
-          dark,
-          toggleDark: this.toggleDark,
-        }}
-      >
-        {children}
-      </ThemeContext.Provider>
-    )
-  }
+  },[])
+
+  return(
+    <ThemeContext.Provider value={{
+      dark, toggleDark,
+      active_style,
+      active_style, setActiveStyle
+    }}>
+      {props.children}
+    </ThemeContext.Provider>
+
+  )
 }
 
 export default ThemeContext
-
 export { ThemeProvider }
