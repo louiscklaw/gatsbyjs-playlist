@@ -13,7 +13,7 @@ import litera_style from '../scss/litera/bulmaswatch.module.scss'
 import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
 // import lux_style from '../scss/lux/bulmaswatch.module.scss'
 // import materia_style from '../scss/materia/bulmaswatch.module.scss'
-// import minty_style from '../scss/minty/bulmaswatch.module.scss'
+import minty_style from '../scss/minty/bulmaswatch.module.scss'
 // import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
 // import pulse_style from '../scss/pulse/bulmaswatch.module.scss'
 // import sandstone_style from '../scss/sandstone/bulmaswatch.module.scss'
@@ -41,7 +41,32 @@ function ThemeContextProvider(props){
     console.log('hello_func from global.js')
   }
 
-  const [active_style, setActiveStyle] = React.useState(style)
+
+  const style_name = [
+    'style',
+    'cerulean',
+    'cosmo',
+    // 'cyborg',  // dark background
+    // 'darkly',  // dark background
+    // 'default',  // dark background
+    'flatly',
+    'journal',
+    'litera',
+    'lumen',
+    // 'lux',  // uppercase letter
+    // 'materia',  // font-family problem
+    'minty',
+    // 'nuclear',
+    // 'pulse',
+    // 'sandstone',
+    // 'simplex',
+    // 'slate',
+    // 'solar',
+    // 'spacelab',
+    // 'superhero',
+    // 'united',
+    // 'yeti',
+  ]
 
   const style_list = [
     style,
@@ -56,7 +81,7 @@ function ThemeContextProvider(props){
     lumen_style,
     // lux_style,
     // materia_style,
-    // minty_style,
+    minty_style,
     // nuclear_style,
     // pulse_style,
     // sandstone_style,
@@ -69,31 +94,6 @@ function ThemeContextProvider(props){
     // yeti_style,
   ]
 
-  const style_name = [
-    'style',
-    'cerulean',
-    'cosmo',
-    // 'cyborg',
-    // 'darkly',
-    // 'default',
-    'flatly',
-    'journal',
-    'litera',
-    'lumen',
-    // 'lux',
-    // 'materia',
-    // 'minty',
-    // 'nuclear',
-    // 'pulse',
-    // 'sandstone',
-    // 'simplex',
-    // 'slate',
-    // 'solar',
-    // 'spacelab',
-    // 'superhero',
-    // 'united',
-    // 'yeti',
-  ]
 
   const getStyleIdx = (style) => style_list.indexOf(style)
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max))
@@ -112,6 +112,8 @@ function ThemeContextProvider(props){
     // active_style == style ? setActiveStyle(flatly_style): setActiveStyle(style)
     setActiveStyle(nextStyle(active_style))
   }
+
+  const [active_style, setActiveStyle] = React.useState(minty_style)
 
   return(
     <ThemeContext.Provider value={{

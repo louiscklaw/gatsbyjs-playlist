@@ -1,4 +1,12 @@
-/*! bulma/bulma.sassswatch v0.8.1 | MIT License */
+/*! bulmaswatch v0.8.1 | MIT License */
 @import "variables";
 @import "bulma/bulma.sass";
 @import "overrides";
+
+body {
+  font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif !important
+}
+
+.navbar {
+  border-radius: unset
+}
