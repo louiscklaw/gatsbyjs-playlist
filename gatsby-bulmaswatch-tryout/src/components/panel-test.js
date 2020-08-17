@@ -3,6 +3,29 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCheck,
+  faCoffee,
+  faCoins,
+  faDice,
+  faEnvelop,
+  faUser,
+  faCloudUploadAlt,
+  faUpload,
+  faEnvelope,
+  faWarning,
+  faLock,
+  faSearch,
+  faBook,
+  faCodeBranch
+} from '@fortawesome/free-solid-svg-icons'
+
 function PanelTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -17,7 +40,7 @@ function PanelTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
             <input className={combineStyles([active_style.input, active_style.isSmall])} type="text" placeholder="Search" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <i className={combineStyles([active_style.fa, active_style.faSearch])} />
+              <FontAwesomeIcon icon={faSearch} size="1x" />
             </span>
           </p>
         </div>
@@ -29,17 +52,17 @@ function PanelTest(props){
           <a>Forks</a>
         </p>
         <a className={combineStyles([active_style.panelBlock, active_style.isActive])}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])} /> </span> bulma </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> bulma </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])} /> </span> marksheet </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> marksheet </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])} /> </span> minireset.css </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> minireset.css </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faBook])} /> </span> jgthms.github.io </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> jgthms.github.io </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faCodeBranch])} /> </span> daniellowtw/infBoard </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faCodeBranch} size="1x" /> </span> daniellowtw/infBoard </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <i className={combineStyles([active_style.fa, active_style.faCodeBranch])} /> </span> mojs </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faCodeBranch} size="1x" /> </span> mojs </a>
         <label className={active_style.panelBlock}>
           <input type="checkbox" /> Remember me </label>
         <div className={active_style.panelBlock}>

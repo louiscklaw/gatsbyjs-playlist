@@ -23,10 +23,6 @@ import {
   faLock,
 } from '@fortawesome/free-solid-svg-icons'
 
-import {
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons'
-
 function FormTest(props){
   const {active_style} = React.useContext(ThemeContext)
 

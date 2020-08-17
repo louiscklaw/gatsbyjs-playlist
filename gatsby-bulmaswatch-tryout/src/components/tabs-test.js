@@ -3,6 +3,33 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAngleLeft,
+  faAngleRight,
+  faAngleUp,
+  faAtom,
+  faBus,
+  faCheck,
+  faCloudUploadAlt,
+  faCoffee,
+  faCoins,
+  faDice,
+  faEnvelop,
+  faEnvelope,
+  faFileAlt,
+  faFilm,
+  faImage,
+  faLock,
+  faMusic,
+  faUpload,
+  faUser,
+  faWarning,
+} from '@fortawesome/free-solid-svg-icons'
+
 function TabsTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -31,25 +58,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
@@ -111,25 +138,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
@@ -140,25 +167,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
@@ -169,25 +196,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
@@ -198,20 +225,20 @@ function TabsTest(props){
       <ul>
         <li>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleLeft])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faAngleLeft} size="1x" /></span>
             <span>Left</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleUp])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faAngleUp} size="1x" /></span>
             <span>Up</span>
           </a>
         </li>
         <li>
           <a>
             <span>Right</span>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faAngleRight])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faAngleRight} size="1x" /></span>
           </a>
         </li>
       </ul>
@@ -221,25 +248,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
@@ -250,25 +277,25 @@ function TabsTest(props){
       <ul>
         <li className={active_style.isActive}>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faImage])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faImage} size="1x" /></span>
             <span>Pictures</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faMusic])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faMusic} size="1x" /></span>
             <span>Music</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faFilm])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faFilm} size="1x" /></span>
             <span>Videos</span>
           </a>
         </li>
         <li>
           <a>
-            <span className={active_style.icon}><i className={combineStyles([active_style.fa, active_style.faFileAlt])} /></span>
+            <span className={active_style.icon}><FontAwesomeIcon icon={faFileAlt} size="1x" /></span>
             <span>Documents</span>
           </a>
         </li>
