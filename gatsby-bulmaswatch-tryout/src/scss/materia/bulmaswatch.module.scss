@@ -3,8 +3,8 @@
 @import "bulma/bulma.sass";
 @import "overrides";
 
-.columns {
-  font-family: "Roboto","Helvetica Neue","Helvetica","Arial",sans-serif;
+.main {
+  font-family: $family-sans-serif
 }
 
 .navbar {

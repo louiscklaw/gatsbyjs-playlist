@@ -17,12 +17,11 @@ function IndexPage(){
   return(
     <Layout>
 
-    <SEO title="Home" />
-    <Navbar />
+      <SEO title="Home" />
+      <Navbar />
+      <TestContent />
 
-    <TestContent />
-
-  </Layout>
+    </Layout>
   )
 }
 

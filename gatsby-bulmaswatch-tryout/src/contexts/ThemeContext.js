@@ -7,8 +7,8 @@ import cerulean_style from '../scss/cerulean/bulmaswatch.module.scss'
 // import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
 // import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
 // import default_style from '../scss/default/bulmaswatch.module.scss'
-import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
-// import journal_style from '../scss/journal/bulmaswatch.module.scss'
+// import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
+import journal_style from '../scss/journal/bulmaswatch.module.scss'
 // import litera_style from '../scss/litera/bulmaswatch.module.scss'
 // import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
 // import lux_style from '../scss/lux/bulmaswatch.module.scss'
@@ -49,8 +49,8 @@ function ThemeContextProvider(props){
     // 'cyborg',  // dark background
     // 'darkly',  // dark background
     // 'default',  // dark background
-    'flatly',
-    // 'journal',
+    // 'flatly',
+    'journal',
     // 'litera',
     // 'lumen',
     // 'lux',  // uppercase letter
@@ -75,8 +75,8 @@ function ThemeContextProvider(props){
     // cyborg_style,
     // darkly_style,
     // default_style,
-    flatly_style,
-    // journal_style,
+    // flatly_style,
+    journal_style,
     // litera_style,
     // lumen_style,
     // lux_style,

@@ -1,10 +1,10 @@
-/*! bulma/bulma.sassswatch v0.8.1 | MIT License */
+/*! bulmaswatch v0.8.1 | MIT License */
 @import "variables";
 @import "bulma/bulma.sass";
 @import "overrides";
 
-.columns {
-  font-family: "News Cycle","Arial Narrow Bold",sans-serif;
+.main {
+  font-family: $family-sans-serif
 }
 
 .navbar {

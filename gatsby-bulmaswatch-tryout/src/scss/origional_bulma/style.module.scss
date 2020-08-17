@@ -1,9 +1,9 @@
-@charset "utf-8";
-// @import "variables.scss";
+/*! bulmaswatch v0.8.1 | MIT License */
+@import "variables";
 @import "bulma/bulma.sass";
 
 .main {
-  // font-family: $family-sans-serif;
+  font-family: "Helvetica Neue";
 }
 
 .navbar {
