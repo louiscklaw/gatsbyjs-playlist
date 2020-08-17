@@ -13,6 +13,9 @@ import {
   faBus,
   faCoins,
   faDice,
+  faReply,
+  faRetweet,
+  faHeart,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -53,11 +56,13 @@ function BoxTest(props){
               </a>
               <a className={active_style.levelItem}>
                 <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                  <i className={combineStyles([active_style.fa, active_style.faRetweet])}> </i>
+                  <FontAwesomeIcon icon={faRetweet} size="1x" />
                 </span>
               </a>
               <a className={active_style.levelItem}>
-                <span className={combineStyles([active_style.icon, active_style.isSmall])}> <i className={combineStyles([active_style.fa, active_style.faHeart])}> </i> </span>
+                <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                  <FontAwesomeIcon icon={faHeart} size="1x" />
+                </span>
               </a>
             </div>
           </nav>

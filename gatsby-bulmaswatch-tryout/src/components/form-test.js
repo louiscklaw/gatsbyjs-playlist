@@ -3,6 +3,26 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCoffee,
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCoins,
+  faDice,
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faReply
+} from '@fortawesome/fontawesome-svg-core'
+
+import {
+  faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+
 function FormTest(props){
   const {active_style} = React.useContext(ThemeContext)
 

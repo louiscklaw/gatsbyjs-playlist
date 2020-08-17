@@ -2,27 +2,27 @@ import React from 'react'
 
 import style from '../scss/origional_bulma/style.module.scss'
 
-import cerulean_style from '../scss/cerulean/bulmaswatch.module.scss'
-import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
-import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
-import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
+// import cerulean_style from '../scss/cerulean/bulmaswatch.module.scss'
+// import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
+// import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
+// import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
 import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
-import journal_style from '../scss/journal/bulmaswatch.module.scss'
-import litera_style from '../scss/litera/bulmaswatch.module.scss'
-import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
-import lux_style from '../scss/lux/bulmaswatch.module.scss'
-import materia_style from '../scss/materia/bulmaswatch.module.scss'
-import minty_style from '../scss/minty/bulmaswatch.module.scss'
-import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
-import pulse_style from '../scss/pulse/bulmaswatch.module.scss'
-import sandstone_style from '../scss/sandstone/bulmaswatch.module.scss'
-import simplex_style from '../scss/simplex/bulmaswatch.module.scss'
-import slate_style from '../scss/slate/bulmaswatch.module.scss'
-import solar_style from '../scss/solar/bulmaswatch.module.scss'
-import spacelab_style from '../scss/spacelab/bulmaswatch.module.scss'
-import superhero_style from '../scss/superhero/bulmaswatch.module.scss'
-import united_style from '../scss/united/bulmaswatch.module.scss'
-import yeti_style from '../scss/yeti/bulmaswatch.module.scss'
+// import journal_style from '../scss/journal/bulmaswatch.module.scss'
+// import litera_style from '../scss/litera/bulmaswatch.module.scss'
+// import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
+// import lux_style from '../scss/lux/bulmaswatch.module.scss'
+// import materia_style from '../scss/materia/bulmaswatch.module.scss'
+// import minty_style from '../scss/minty/bulmaswatch.module.scss'
+// import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
+// import pulse_style from '../scss/pulse/bulmaswatch.module.scss'
+// import sandstone_style from '../scss/sandstone/bulmaswatch.module.scss'
+// import simplex_style from '../scss/simplex/bulmaswatch.module.scss'
+// import slate_style from '../scss/slate/bulmaswatch.module.scss'
+// import solar_style from '../scss/solar/bulmaswatch.module.scss'
+// import spacelab_style from '../scss/spacelab/bulmaswatch.module.scss'
+// import superhero_style from '../scss/superhero/bulmaswatch.module.scss'
+// import united_style from '../scss/united/bulmaswatch.module.scss'
+// import yeti_style from '../scss/yeti/bulmaswatch.module.scss'
 
 
 
@@ -52,7 +52,7 @@ function ThemeContextProvider(props){
     // 'litera',
     // 'lumen',
     // 'lux',
-    'materia',
+    // 'materia',
     // 'minty',
     // 'nuclear',
     // 'pulse',
@@ -77,7 +77,7 @@ function ThemeContextProvider(props){
     // litera_style,
     // lumen_style,
     // lux_style,
-    materia_style,
+    // materia_style,
     // minty_style,
     // nuclear_style,
     // pulse_style,
@@ -91,7 +91,7 @@ function ThemeContextProvider(props){
     // yeti_style,
   ]
 
-  const default_style = materia_style
+  const default_style = flatly_style
 
   const [active_style, setActiveStyle] = React.useState(default_style)
 

@@ -3,12 +3,44 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+
+import {
+  faAlignCenter,
+  faAlignLeft,
+  faAlignRight,
+  faAngleDown,
+  faBold,
+  faCheck,
+  faCloudUploadAlt,
+  faEnvelope,
+  faFileAlt,
+  faHeading,
+  faHeart,
+  faHome,
+  faItalic,
+  faReply,
+  faRetweet,
+  faTimes,
+  faUnderline,
+  faUpload,
+  faUser,
+  faWarning,
+} from '@fortawesome/free-solid-svg-icons'
+
+import {
+  faGithub,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+
 function ButtonTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
   return(
     <section className={active_style.section} id="button">
     <h1 className={active_style.title}> Button </h1>
+
     <hr />
     <div className={active_style.columns}>
       <div className={active_style.column}>
@@ -63,41 +95,42 @@ function ButtonTest(props){
         <p className={active_style.field}>
           <a className={active_style.button}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faBold])}> </i>
+              <FontAwesomeIcon icon={faBold} size="1x" />
             </span>
           </a>
           <a className={active_style.button}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faItalic])}> </i>
+              <FontAwesomeIcon icon={faItalic} size="1x" />
             </span>
           </a>
           <a className={active_style.button}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faUnderline])}> </i>
+              <FontAwesomeIcon icon={faUnderline} size="1x" />
             </span>
           </a>
           <a className={active_style.button}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fab, active_style.faGithub])}> </i>
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </span>
             <span> GitHub </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isPrimary])}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fab, active_style.faTwitter])}> </i>
+              <FontAwesomeIcon icon={faTwitter} size="1x" />
             </span>
             <span> Twitter </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isSuccess])}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faCheck])}> </i>
+              <FontAwesomeIcon icon={faCheck} size="1x" />
             </span>
             <span> Save </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isDanger, active_style.isOutlined])}>
             <span> Delete </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faTimes])}> </i>
+              <FontAwesomeIcon icon={faTimes} size="1x" />
+
             </span>
           </a>
         </p>
@@ -105,7 +138,8 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faBold])} />
+                <FontAwesomeIcon icon={faBold} size="1x" />
+
               </span>
               <span>Bold</span>
             </a>
@@ -113,7 +147,9 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faItalic])} />
+
+                <FontAwesomeIcon icon={faItalic} size="1x" />
+
               </span>
               <span>Italic</span>
             </a>
@@ -121,7 +157,8 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faUnderline])} />
+                <FontAwesomeIcon icon={faUnderline} size="1x" />
+
               </span>
               <span>Underline</span>
             </a>
@@ -131,7 +168,8 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faAlignLeft])} />
+                <FontAwesomeIcon icon={faAlignLeft} size="1x" />
+
               </span>
               <span>Left</span>
             </a>
@@ -139,7 +177,8 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faAlignCenter])} />
+                <FontAwesomeIcon icon={faAlignCenter} size="1x" />
+
               </span>
               <span>Center</span>
             </a>
@@ -147,7 +186,8 @@ function ButtonTest(props){
           <p className={active_style.control}>
             <a className={active_style.button}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <i className={combineStyles([active_style.fa, active_style.faAlignRight])} />
+                <FontAwesomeIcon icon={faAlignRight} size="1x" />
+
               </span>
               <span>Right</span>
             </a>
@@ -191,25 +231,25 @@ function ButtonTest(props){
         <p className={active_style.buttons}>
           <a className={combineStyles([active_style.button, active_style.isSmall])}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fab, active_style.faGithub])}> </i>
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </span>
             <span> GitHub </span>
           </a>
           <a className={active_style.button}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fab, active_style.faGithub])}> </i>
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </span>
             <span> GitHub </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isMedium])}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fab, active_style.faGithub])}> </i>
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </span>
             <span> GitHub </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isLarge])}>
             <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-              <i className={combineStyles([active_style.fab, active_style.faGithub])}> </i>
+              <FontAwesomeIcon icon={faGithub} size="1x" />
             </span>
             <span> GitHub </span>
           </a>
@@ -217,53 +257,58 @@ function ButtonTest(props){
         <p className={active_style.field}>
           <a className={combineStyles([active_style.button, active_style.isSmall])}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="1x" />
             </span>
           </a>
         </p>
+        https://fontawesome.com/how-to-use/on-the-web/styling/sizing-icons
         <p className={active_style.field}>
           <a className={active_style.button}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="1x" />
             </span>
           </a>
           <a className={active_style.button}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading, active_style.faLg])}> </i>
+              <FontAwesomeIcon icon={faHeading} style={{fontSize:'1.3em'}} />
             </span>
           </a>
         </p>
         <p className={active_style.field}>
           <a className={combineStyles([active_style.button, active_style.isMedium])}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="1x" />
             </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isMedium])}>
             <span className={active_style.icon}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading, active_style.faLg])}> </i>
+              <FontAwesomeIcon icon={faHeading} style={{fontSize:'1.3em'}} />
             </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isMedium])}>
             <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading, active_style.fa2x])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="2x" />
+
             </span>
           </a>
         </p>
         <p className={active_style.field}>
           <a className={combineStyles([active_style.button, active_style.isLarge])}>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="1x" />
             </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isLarge])}>
             <span className={combineStyles([active_style.icon, active_style.isMedium])}>
-              <i className={combineStyles([active_style.fa, active_style.faHeading, active_style.faLg])}> </i>
+              <FontAwesomeIcon icon={faHeading} style={{fontSize:'1.3em'}} />
+
             </span>
           </a>
           <a className={combineStyles([active_style.button, active_style.isLarge])}>
             <span className={combineStyles([active_style.icon, active_style.isLarge])}>
               <i className={combineStyles([active_style.fa, active_style.faHeading, active_style.fa2x])}> </i>
+              <FontAwesomeIcon icon={faHeading} size="2x" />
+
             </span>
           </a>
         </p>
