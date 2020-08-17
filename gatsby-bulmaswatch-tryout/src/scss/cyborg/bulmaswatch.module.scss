@@ -4,7 +4,8 @@
 @import "overrides";
 
 .main {
-  font-family: $family-sans-serif
+  font-family: $family-sans-serif;
+  background-color: $body-background-color;
 }
 
 .navbar {
