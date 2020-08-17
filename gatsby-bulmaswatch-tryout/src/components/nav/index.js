@@ -1,5 +1,6 @@
 import React from 'react'
 import ThemeContext from '../../contexts/ThemeContext'
+import ThemeChangeButton from '../buttons/theme_change'
 
 const combineStyle = (styles) => styles.join(' ')
 
@@ -55,12 +56,7 @@ function Navbar(props){
         <div className={active_style.navbarEnd}>
           <div className={active_style.navbarItem}>
             <div className={active_style.buttons}>
-              <button
-                className={combineStyle([active_style.button, active_style.isLight])}
-                onClick={rotateStyle}
-              >
-                {JSON.stringify(lookUpStyleName(active_style))}next theme
-              </button>
+              <ThemeChangeButton />
               <a className={combineStyle([active_style.button, active_style.isPrimary])}>
                 <strong>Sign up</strong>
               </a>
