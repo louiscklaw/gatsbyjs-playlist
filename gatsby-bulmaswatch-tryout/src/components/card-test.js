@@ -3,6 +3,27 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCheck,
+  faCoffee,
+  faCoins,
+  faDice,
+  faEnvelop,
+  faUser,
+  faCloudUploadAlt,
+  faUpload,
+  faEnvelope,
+  faWarning,
+  faLock,
+  faAngleDown
+} from '@fortawesome/free-solid-svg-icons'
+
 function CardTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -39,7 +60,7 @@ function CardTest(props){
           <header className={active_style.cardHeader}>
             <p className={active_style.cardHeaderTitle}> Component </p>
             <a className={active_style.cardHeaderIcon}>
-              <span className={active_style.icon}> <i className={combineStyles([active_style.fa, active_style.faAngleDown])} /> </span>
+              <span className={active_style.icon}> <FontAwesomeIcon icon={faAngleDown} size="1x" /> </span>
             </a>
           </header>
           <div className={active_style.cardContent}>
