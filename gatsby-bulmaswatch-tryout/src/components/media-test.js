@@ -3,6 +3,21 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faCoffee,
+  faAddressBook,
+  faAirFreshener,
+  faAmbulance,
+  faAtom,
+  faBus,
+  faCoins,
+  faDice,
+  faReply,
+  faRetweet,
+  faHeart,
+} from '@fortawesome/free-solid-svg-icons'
+
 function MediaTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -27,13 +42,19 @@ function MediaTest(props){
         <nav className={active_style.level}>
           <div className={active_style.levelLeft}>
             <a className={active_style.levelItem}>
-              <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faReply])} /></span>
+              <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                <FontAwesomeIcon icon={faReply} size="1x" />
+              </span>
             </a>
             <a className={active_style.levelItem}>
-              <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faRetweet])} /></span>
+              <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                <FontAwesomeIcon icon={faRetweet} size="1x" />
+              </span>
             </a>
             <a className={active_style.levelItem}>
-              <span className={combineStyles([active_style.icon, active_style.isSmall])}><i className={combineStyles([active_style.fa, active_style.faHeart])} /></span>
+              <span className={combineStyles([active_style.icon, active_style.isSmall])}>
+                <FontAwesomeIcon icon={faHeart} size="1x" />
+              </span>
             </a>
           </div>
         </nav>
