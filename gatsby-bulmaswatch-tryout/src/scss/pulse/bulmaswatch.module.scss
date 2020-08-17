@@ -2,3 +2,11 @@
 @import "variables";
 @import "bulma/bulma.sass";
 @import "overrides";
+
+.columns {
+  font-family: "Muli", "Helvetica Neue", Arial, sans-serif !important;
+}
+
+.navbar {
+  border-radius: unset
+}

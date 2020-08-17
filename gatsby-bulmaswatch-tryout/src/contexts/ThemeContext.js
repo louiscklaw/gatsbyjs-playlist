@@ -1,20 +1,20 @@
 import React from 'react'
 
-import style from '../scss/style.module.scss'
+import style from '../scss/origional_bulma/style.module.scss'
 
 import cerulean_style from '../scss/cerulean/bulmaswatch.module.scss'
-import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
-// // import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
-// // import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
+// import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
+// import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
+// import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
 // import default_style from '../scss/default/bulmaswatch.module.scss'
 import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
-import journal_style from '../scss/journal/bulmaswatch.module.scss'
-import litera_style from '../scss/litera/bulmaswatch.module.scss'
-import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
+// import journal_style from '../scss/journal/bulmaswatch.module.scss'
+// import litera_style from '../scss/litera/bulmaswatch.module.scss'
+// import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
 // import lux_style from '../scss/lux/bulmaswatch.module.scss'
 // import materia_style from '../scss/materia/bulmaswatch.module.scss'
-import minty_style from '../scss/minty/bulmaswatch.module.scss'
-import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
+// import minty_style from '../scss/minty/bulmaswatch.module.scss'
+// import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
 // import pulse_style from '../scss/pulse/bulmaswatch.module.scss'
 // import sandstone_style from '../scss/sandstone/bulmaswatch.module.scss'
 // import simplex_style from '../scss/simplex/bulmaswatch.module.scss'
@@ -45,18 +45,18 @@ function ThemeContextProvider(props){
   const style_name = [
     'style',
     'cerulean',
-    'cosmo',
+    // 'cosmo',
     // 'cyborg',  // dark background
     // 'darkly',  // dark background
     // 'default',  // dark background
     'flatly',
-    'journal',
-    'litera',
-    'lumen',
+    // 'journal',
+    // 'litera',
+    // 'lumen',
     // 'lux',  // uppercase letter
     // 'materia',  // font-family problem
-    'minty',
-    'nuclear',
+    // 'minty',
+    // 'nuclear',
     // 'pulse',
     // 'sandstone',
     // 'simplex',
@@ -71,18 +71,18 @@ function ThemeContextProvider(props){
   const style_list = [
     style,
     cerulean_style,
-    cosmo_style,
+    // cosmo_style,
     // cyborg_style,
     // darkly_style,
     // default_style,
     flatly_style,
-    journal_style,
-    litera_style,
-    lumen_style,
+    // journal_style,
+    // litera_style,
+    // lumen_style,
     // lux_style,
     // materia_style,
-    minty_style,
-    nuclear_style,   // lower priority
+    // minty_style,
+    // nuclear_style,
     // pulse_style,
     // sandstone_style,
     // simplex_style,
@@ -93,7 +93,7 @@ function ThemeContextProvider(props){
     // united_style,
     // yeti_style,
   ]
-
+  const [active_style, setActiveStyle] = React.useState(cerulean_style)
 
   const getStyleIdx = (style) => style_list.indexOf(style)
   const getRandomInt = (max) => Math.floor(Math.random() * Math.floor(max))
@@ -113,7 +113,7 @@ function ThemeContextProvider(props){
     setActiveStyle(nextStyle(active_style))
   }
 
-  const [active_style, setActiveStyle] = React.useState(nuclear_style)
+
 
   return(
     <ThemeContext.Provider value={{

@@ -9,7 +9,13 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Layout = ({ children }) => {
+import ThemeContext from '../contexts/ThemeContext'
+
+function Layout(props) {
+  let {children} = props
+
+  let {active_style} = React.useContext(ThemeContext)
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -20,11 +26,12 @@ const Layout = ({ children }) => {
     }
   `)
 
-  return (
-    <>
-      <main>{children}</main>
-    </>
-  )
+return (
+  <>
+    <main className={active_style.main}>{children}</main>
+  </>
+)
+
 }
 
 Layout.propTypes = {
