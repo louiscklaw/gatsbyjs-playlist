@@ -2,9 +2,13 @@
 @import "variables";
 @import "bulma/bulma.sass";
 
-.main {
+.main ,
+.main button
+{
   font-family: "Helvetica Neue";
 }
+
+
 
 .navbar {
   border-radius: unset

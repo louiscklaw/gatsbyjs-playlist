@@ -7,11 +7,11 @@
   background-color: $grey-darker;
 }
 
-hr {
+.main hr {
   height: $border-width;
 }
 
-h6 {
+.main h6 {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
@@ -20,7 +20,7 @@ h6 {
   background-color: $grey-dark;
 }
 
-a {
+.main a {
   transition: all 200ms ease;
 }
 
