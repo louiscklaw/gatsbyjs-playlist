@@ -10,6 +10,7 @@ function ThemeChangeButton(props){
     <button
       className={combineStyles([active_style.button, active_style.isLight])}
       onClick={rotateStyle}
+      id="theme-change"
     >
       {JSON.stringify(lookUpStyleName(active_style))}next theme
     </button>

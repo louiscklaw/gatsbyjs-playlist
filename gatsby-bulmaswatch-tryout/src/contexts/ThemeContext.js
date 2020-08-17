@@ -91,7 +91,7 @@ function ThemeContextProvider(props){
     yeti_style,
   ]
 
-  const default_style = flatly_style
+  const default_style = style
 
   const [active_style, setActiveStyle] = React.useState(default_style)
 
