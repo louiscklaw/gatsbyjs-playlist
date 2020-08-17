@@ -14,7 +14,7 @@ import lumen_style from '../scss/lumen/bulmaswatch.module.scss'
 // import lux_style from '../scss/lux/bulmaswatch.module.scss'
 // import materia_style from '../scss/materia/bulmaswatch.module.scss'
 import minty_style from '../scss/minty/bulmaswatch.module.scss'
-// import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
+import nuclear_style from '../scss/nuclear/bulmaswatch.module.scss'
 // import pulse_style from '../scss/pulse/bulmaswatch.module.scss'
 // import sandstone_style from '../scss/sandstone/bulmaswatch.module.scss'
 // import simplex_style from '../scss/simplex/bulmaswatch.module.scss'
@@ -56,7 +56,7 @@ function ThemeContextProvider(props){
     // 'lux',  // uppercase letter
     // 'materia',  // font-family problem
     'minty',
-    // 'nuclear',
+    'nuclear',
     // 'pulse',
     // 'sandstone',
     // 'simplex',
@@ -82,7 +82,7 @@ function ThemeContextProvider(props){
     // lux_style,
     // materia_style,
     minty_style,
-    // nuclear_style,
+    nuclear_style,   // lower priority
     // pulse_style,
     // sandstone_style,
     // simplex_style,
@@ -113,7 +113,7 @@ function ThemeContextProvider(props){
     setActiveStyle(nextStyle(active_style))
   }
 
-  const [active_style, setActiveStyle] = React.useState(minty_style)
+  const [active_style, setActiveStyle] = React.useState(nuclear_style)
 
   return(
     <ThemeContext.Provider value={{
