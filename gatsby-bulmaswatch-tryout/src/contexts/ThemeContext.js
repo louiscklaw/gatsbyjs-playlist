@@ -6,7 +6,6 @@ import cerulean_style from '../scss/cerulean/bulmaswatch.module.scss'
 import cosmo_style from '../scss/cosmo/bulmaswatch.module.scss'
 import cyborg_style from '../scss/cyborg/bulmaswatch.module.scss'
 import darkly_style from '../scss/darkly/bulmaswatch.module.scss'
-// // import default_style from '../scss/default/bulmaswatch.module.scss'
 import flatly_style from '../scss/flatly/bulmaswatch.module.scss'
 import journal_style from '../scss/journal/bulmaswatch.module.scss'
 import litera_style from '../scss/litera/bulmaswatch.module.scss'
@@ -46,14 +45,14 @@ function ThemeContextProvider(props){
     'style',
     // 'cerulean',
     // 'cosmo',
-    // 'cyborg',  // dark background
-    // 'darkly',  // dark background
+    // 'cyborg',
+    // 'darkly',
     'flatly',
     // 'journal',
     // 'litera',
     // 'lumen',
-    // 'lux',  // uppercase letter
-    'materia',  // font-family problem
+    // 'lux',
+    'materia',
     // 'minty',
     // 'nuclear',
     // 'pulse',
