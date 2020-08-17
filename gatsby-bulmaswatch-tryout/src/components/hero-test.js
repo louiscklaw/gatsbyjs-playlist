@@ -16,7 +16,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero1">
                 <span />
@@ -116,7 +116,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero2">
                 <span />
@@ -216,7 +216,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero3">
                 <span />
@@ -316,7 +316,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero4">
                 <span />
@@ -416,7 +416,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero5">
                 <span />
@@ -516,7 +516,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero6">
                 <span />
@@ -616,7 +616,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero7">
                 <span />
@@ -716,7 +716,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero8">
                 <span />
@@ -816,7 +816,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero9">
                 <span />
@@ -916,7 +916,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero10">
                 <span />
@@ -1016,7 +1016,7 @@ function HeroTest(props){
           <div className={active_style.container}>
             <div className={active_style.navbarBrand}>
               <a className={active_style.navbarItem}>
-                <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo" />
+                <img src="//bulma.io/images/bulma-type-white.png" alt="Logo" />
               </a>
               <span className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navbarMenuHero11">
                 <span />
