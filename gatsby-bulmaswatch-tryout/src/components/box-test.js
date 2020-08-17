@@ -18,14 +18,6 @@ import {
   faHeart,
 } from '@fortawesome/free-solid-svg-icons'
 
-import {
-  faReply
-} from '@fortawesome/fontawesome-svg-core'
-
-import {
-  faGithub,
-} from '@fortawesome/free-brands-svg-icons'
-
 function BoxTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
