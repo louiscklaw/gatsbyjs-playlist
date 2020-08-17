@@ -2,7 +2,8 @@ import React from 'react'
 import ThemeContext from '../../contexts/ThemeContext'
 import ThemeChangeButton from '../buttons/theme_change'
 
-const combineStyle = (styles) => styles.join(' ')
+// const combineStyle = (styles) => styles.join(' ')
+import {combineStyles} from '../../utils/common'
 
 function Navbar(props){
   const {active_style, rotateStyle, lookUpStyleName} = React.useContext(ThemeContext)
@@ -35,7 +36,7 @@ function Navbar(props){
             Bulmaswatch
           </a>
 
-          <div className={combineStyle([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
+          <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink}>
               More
             </a>
@@ -57,10 +58,10 @@ function Navbar(props){
           <div className={active_style.navbarItem}>
             <div className={active_style.buttons}>
               <ThemeChangeButton />
-              <a className={combineStyle([active_style.button, active_style.isPrimary])}>
+              <a className={combineStyles([active_style.button, active_style.isPrimary])}>
                 <strong>Sign up</strong>
               </a>
-              <a className={combineStyle([active_style.button, active_style.isLight])}>
+              <a className={combineStyles([active_style.button, active_style.isLight])}>
                 Log in
               </a>
             </div>
