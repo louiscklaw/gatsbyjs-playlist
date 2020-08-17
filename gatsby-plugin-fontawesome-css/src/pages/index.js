@@ -12,25 +12,26 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
+  faAlignCenter,
+  faAlignLeft,
+  faAlignRight,
+  faAngleDown,
+  faBold,
+  faCheck,
+  faCloudUploadAlt,
+  faEnvelope,
+  faFileAlt,
+  faHeading,
+  faHeart,
+  faHome,
+  faItalic,
   faReply,
   faRetweet,
-  faHeart,
-  faBold,
-  faItalic,
+  faTimes,
   faUnderline,
-  faCheck,
-  faAlignLeft,
-  faAlignCenter,
-  faAlignRight,
-  faHeading,
-  faAngleDown,
-  faUser,
-  faEnvelope,
-  faWarning,
   faUpload,
-  faCloudUploadAlt,
-  faHome,
-  faFileAlt,
+  faUser,
+  faWarning,
 
 } from '@fortawesome/free-solid-svg-icons'
 
@@ -77,7 +78,6 @@ const IndexPage = () => (
       <FontAwesomeIcon icon={faCloudUploadAlt} size="1x" />
       <FontAwesomeIcon icon={faHome} size="1x" />
       <FontAwesomeIcon icon={faFileAlt} size="1x" />
-      <FontAwesomeIcon icon={faBold} size="1x" />
       <FontAwesomeIcon icon={faBold} size="1x" />
       <FontAwesomeIcon icon={faBold} size="1x" />
       <FontAwesomeIcon icon={faBold} size="1x" />
