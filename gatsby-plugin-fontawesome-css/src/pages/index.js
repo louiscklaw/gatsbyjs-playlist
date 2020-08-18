@@ -32,7 +32,8 @@ import {
   faUpload,
   faUser,
   faWarning,
-
+  faBug,
+  faPalette
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -78,8 +79,8 @@ const IndexPage = () => (
       <FontAwesomeIcon icon={faCloudUploadAlt} size="1x" />
       <FontAwesomeIcon icon={faHome} size="1x" />
       <FontAwesomeIcon icon={faFileAlt} size="1x" />
-      <FontAwesomeIcon icon={faBold} size="1x" />
-      <FontAwesomeIcon icon={faBold} size="1x" />
+      <FontAwesomeIcon icon={faBug} size="1x" />
+      <FontAwesomeIcon icon={faPalette} size="1x" />
       <FontAwesomeIcon icon={faBold} size="1x" />
     </div>
   </main>
