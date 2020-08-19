@@ -32,6 +32,8 @@ import {
   faUpload,
   faUser,
   faWarning,
+  faEnvelop,
+  faLock,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -89,7 +91,8 @@ function FontAwesomeContextProvider(props){
   faUpload,
   faUser,
   faWarning,
-
+  faEnvelop,
+  faLock,
   faGithub,
   faTwitter,
 

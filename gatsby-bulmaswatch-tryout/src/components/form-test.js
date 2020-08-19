@@ -1,30 +1,27 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
+
+import FontAwesomeContext from '../contexts/FontAwesomeContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faAddressBook,
-  faAirFreshener,
-  faAmbulance,
-  faAtom,
-  faBus,
-  faCheck,
-  faCoffee,
-  faCoins,
-  faDice,
-  faEnvelop,
-  faUser,
-  faCloudUploadAlt,
-  faUpload,
-  faEnvelope,
-  faWarning,
-  faLock,
-} from '@fortawesome/free-solid-svg-icons'
-
 function FormTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
+  const fa = React.useContext(FontAwesomeContext)
 
   return(
     <section className={active_style.section} id="form">
@@ -35,18 +32,18 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={active_style.label}>Name</label>
           <p className={active_style.control}>
-            <input className={active_style.input} type="text" placeholder="Text input" />
+            <input className={active_style.input} type="text" placeholder={'Text input'+chineseTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <label className={active_style.label}>Username</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isSuccess])} type="text" placeholder="Text input" defaultValue="bulma" />
+            <input className={combineStyles([active_style.input, active_style.isSuccess])} type="text" placeholder={'Text input'+chineseTestShort()} defaultValue={'bulma'+chineseTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faUser} size="1x" />
+              <FontAwesomeIcon icon={fa.faUser} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
 
             </span>
           </p>
@@ -55,13 +52,13 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={active_style.label}>Email</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder="Email input" defaultValue="hello@" />
+            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder="Email input" defaultValue={`hello@`+chineseTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
 
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faWarning} size="1x" />
+              <FontAwesomeIcon icon={fa.faWarning} size="1x" />
 
             </span>
           </p>
@@ -72,8 +69,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={active_style.select}>
               <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -83,8 +80,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={combineStyles([active_style.select, active_style.isMultiple])}>
               <select multiple>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -98,18 +95,19 @@ function FormTest(props){
         <div className={active_style.field}>
           <p className={active_style.control}>
             <label className={active_style.checkbox}>
-              <input type="checkbox" /> I agree to the
-              <a href="#">terms and conditions</a>
+              <input type="checkbox" />
+                I agree to the
+                <a href="#">terms and conditions + {chineseTest() + emojiTest()}</a>
             </label>
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
             <label className={active_style.radio}>
-              <input type="radio" name="question" /> Yes
+              <input type="radio" name="question" /> Yes {chineseTestShort()}
             </label>
             <label className={active_style.radio}>
-              <input type="radio" name="question" /> No
+              <input type="radio" name="question" /> No {chineseTestShort()}
             </label>
           </p>
         </div>
@@ -171,7 +169,7 @@ function FormTest(props){
               <p className={combineStyles([active_style.control, active_style.isExpanded, active_style.hasIconsLeft])}>
                 <input className={active_style.input} type="text" placeholder="Name" />
                 <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-                  <FontAwesomeIcon icon={faUser} size="1x" />
+                  <FontAwesomeIcon icon={fa.faUser} size="1x" />
                 </span>
               </p>
             </div>
@@ -179,10 +177,10 @@ function FormTest(props){
               <p className={combineStyles([active_style.control, active_style.isExpanded, active_style.hasIconsLeft, active_style.hasIconsRight])}>
                 <input className={combineStyles([active_style.input, active_style.isSuccess])} type="email" placeholder="Email" defaultValue="alex@smith.com" />
                 <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-                  <FontAwesomeIcon icon={faEnvelope} size="1x" />
+                  <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
                 </span>
                 <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-                  <FontAwesomeIcon icon={faCheck} size="1x" />
+                  <FontAwesomeIcon icon={fa.faCheck} size="1x" />
                 </span>
               </p>
               <p className={combineStyles([active_style.help, active_style.isSuccess])}>This email is correct</p>
@@ -291,7 +289,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faUpload} size="1x" />
+                  <FontAwesomeIcon icon={fa.faUpload} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Choose a file…
@@ -306,7 +304,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faUpload} size="1x" />
+                  <FontAwesomeIcon icon={fa.faUpload} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Choose a file…
@@ -324,7 +322,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faUpload} size="1x" />
+                  <FontAwesomeIcon icon={fa.faUpload} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Primary file…
@@ -339,7 +337,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faUpload} size="1x" />
+                  <FontAwesomeIcon icon={fa.faUpload} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Info file…
@@ -357,7 +355,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faCloudUploadAlt} size="1x" />
+                  <FontAwesomeIcon icon={fa.faCloudUploadAlt} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Warning file…
@@ -372,7 +370,7 @@ function FormTest(props){
               <input className={active_style.fileInput} type="file" name="resume" />
               <span className={active_style.fileCta}>
                 <span className={active_style.fileIcon}>
-                  <FontAwesomeIcon icon={faCloudUploadAlt} size="1x" />
+                  <FontAwesomeIcon icon={fa.faCloudUploadAlt} size="1x" />
                 </span>
                 <span className={active_style.fileLabel}>
                   Danger file…
@@ -449,8 +447,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={combineStyles([active_style.select, active_style.isSmall])}>
               <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -459,8 +457,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={active_style.select}>
               <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -469,8 +467,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={combineStyles([active_style.select, active_style.isMedium])}>
               <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -479,8 +477,8 @@ function FormTest(props){
           <p className={active_style.control}>
             <span className={combineStyles([active_style.select, active_style.isLarge])}>
               <select>
-                <option>Select dropdown</option>
-                <option>With options</option>
+                <option>{`Select dropdown`+chineseTestShort()+emojiTestShort()}</option>
+                <option>{`With options`+chineseTestShort()+emojiTestShort()}</option>
               </select>
             </span>
           </p>
@@ -490,10 +488,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isSmall])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -502,10 +500,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={active_style.input} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -513,10 +511,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={active_style.input} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -525,10 +523,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -536,10 +534,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -547,10 +545,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -559,10 +557,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -570,10 +568,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -581,10 +579,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -592,10 +590,10 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
             <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isLarge, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
             <span className={combineStyles([active_style.icon, active_style.isLarge, active_style.isRight])}>
-              <FontAwesomeIcon icon={faCheck} size="1x" />
+              <FontAwesomeIcon icon={fa.faCheck} size="1x" />
             </span>
           </p>
         </div>
@@ -606,7 +604,7 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
             <input className={active_style.input} type="email" placeholder="Email" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faEnvelope} size="1x" />
+              <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
 
             </span>
           </p>
@@ -615,7 +613,7 @@ function FormTest(props){
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
             <input className={active_style.input} type="password" placeholder="Password" />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faLock} size="1x" />
+              <FontAwesomeIcon icon={fa.faLock} size="1x" />
 
             </span>
           </p>
