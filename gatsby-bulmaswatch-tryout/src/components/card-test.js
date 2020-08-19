@@ -44,11 +44,13 @@ function CardTest(props){
                 <p className={combineStyles([active_style.subtitle, active_style.is6])}>@johnsmith</p>
               </div>
             </div>
-            <div className={active_style.content}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <div className={active_style.content}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.{chineseTest()+emojiTest()+japaneseTest()+koreaTest()}
               <a>@bulmaio</a>.
               <a>#css</a>
               <a>#responsive</a>
-              <br /> <small>11:09 PM - 1 Jan 2016</small> </div>
+              <a>#{chineseTestShort()}</a>
+              <br />
+              <small>11:09 PM - 1 Jan 2016</small> </div>
           </div>
         </div>
       </div>
@@ -61,11 +63,13 @@ function CardTest(props){
             </a>
           </header>
           <div className={active_style.cardContent}>
-            <div className={active_style.content}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.
+            <div className={active_style.content}> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.{chineseTest()+emojiTest()+japaneseTest()+koreaTest()}
               <a>@bulmaio</a>.
               <a>#css</a>
               <a>#responsive</a>
-              <br /> <small>11:09 PM - 1 Jan 2016</small> </div>
+              <a>#{chineseTestShort()}</a>
+              <br />
+              <small>11:09 PM - 1 Jan 2016</small> </div>
           </div>
           <footer className={active_style.cardFooter}>
             <a className={active_style.cardFooterItem}>Save</a>

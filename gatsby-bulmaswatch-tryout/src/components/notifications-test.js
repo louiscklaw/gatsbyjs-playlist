@@ -1,10 +1,22 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
 
 import {combineStyles} from '../utils/common'
 
 function NotificationsTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
 
   return(
     <section className={active_style.section} id="notifications">
@@ -14,7 +26,13 @@ function NotificationsTest(props){
       <div className={combineStyles([active_style.column, active_style.isHalf])}>
         <div className={active_style.notification}>
           <button className={active_style.delete}> </button> Lorem ipsum dolor sit amet,
-          <a href="#">consectetur</a> adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit </div>
+          <a href="#">consectetur</a>
+          adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+          {chineseTest()}<br/>
+          {emojiTest()}<br/>
+          {japaneseTest()}<br/>
+          {koreaTest()}<br/>
+        </div>
       </div>
       <div className={combineStyles([active_style.column, active_style.isHalf])}>
         <div className={combineStyles([active_style.notification, active_style.isPrimary])}>

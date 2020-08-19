@@ -1,10 +1,22 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
 
 import {combineStyles} from '../utils/common'
 
 function HeroTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
 
   return(
     <section className={active_style.section} id="hero">
@@ -73,10 +85,10 @@ function HeroTest(props){
         <div className={active_style.heroBody}>
           <div className={combineStyles([active_style.container, active_style.hasTextCentered])}>
             <h1 className={active_style.title}>
-              Title
+              Title {chineseTestShort()+emojiTestShort()}
             </h1>
             <h2 className={active_style.subtitle}>
-              Subtitle
+              Subtitle {chineseTestShort()+emojiTestShort()}
             </h2>
           </div>
         </div>
@@ -86,22 +98,22 @@ function HeroTest(props){
             <div className={active_style.container}>
               <ul>
                 <li className={active_style.isActive}>
-                  <a>Overview</a>
+                  <a>Overview { chineseTestShort()+emojiTestShort() }</a>
                 </li>
                 <li>
-                  <a>Modifiers</a>
+                  <a>Modifiers { chineseTestShort()+emojiTestShort() }</a>
                 </li>
                 <li>
-                  <a>Grid</a>
+                  <a>Grid { chineseTestShort()+emojiTestShort() }</a>
                 </li>
                 <li>
-                  <a>Elements</a>
+                  <a>Elements { chineseTestShort()+emojiTestShort() }</a>
                 </li>
                 <li>
-                  <a>Components</a>
+                  <a>Components { chineseTestShort()+emojiTestShort() }</a>
                 </li>
                 <li>
-                  <a>Layout</a>
+                  <a>Layout { chineseTestShort()+emojiTestShort() }</a>
                 </li>
               </ul>
             </div>
