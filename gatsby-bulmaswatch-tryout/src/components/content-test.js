@@ -1,10 +1,25 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
 
 import {combineStyles} from '../utils/common'
 
 function ContentTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    LoremTest,
+    LoremTest2,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort,
+
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest
+  } = React.useContext( LangContext )
 
   return(
     <section className={active_style.section} id="content">
@@ -12,13 +27,14 @@ function ContentTest(props){
     <hr />
     <div className={active_style.content}>
       <h1> Hello World </h1>
-      <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla accumsan, metus ultrices eleifend gravida,
-        nulla nunc varius lectus, nec rutrum justo nibh eu lectus. Ut vulputate semper dui. Fusce erat odio,
-        sollicitudin vel erat vel, interdum mattis neque. </p>
+      <p> { LoremTest()+ chineseTest()+emojiTest()+japaneseTest()+koreaTest() } </p>
       <h2> Second level </h2>
-      <p> Curabitur accumsan turpis pharetra <strong> augue tincidunt </strong> blandit. Quisque condimentum maximus mi,
+      <p>
+        Curabitur accumsan turpis pharetra <strong> augue tincidunt </strong> blandit. Quisque condimentum maximus mi,
         sit amet commodo arcu rutrum id. Proin pretium urna vel cursus venenatis. Suspendisse potenti. Etiam mattis sem
-        rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl. </p>
+        rhoncus lacus dapibus facilisis. Donec at dignissim dui. Ut et neque nisl.
+        { LoremTest2()+ chineseTest()+emojiTest()+japaneseTest()+koreaTest() }
+      </p>
       <ul>
         <li> In fermentum leo eu lectus mollis, quis dictum mi aliquet. </li>
         <li> Morbi eu nulla lobortis, lobortis est in, fringilla felis. </li>
@@ -38,8 +54,11 @@ function ContentTest(props){
         <li> Quisque aliquam cursus urna, non bibendum massa viverra eget. </li>
         <li> Vivamus maximus ultricies pulvinar. </li>
       </ol>
-      <blockquote> Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est
-        tellus sit amet turpis. </blockquote>
+      <blockquote>
+        Ut venenatis, nisl scelerisque sollicitudin fermentum, quam libero hendrerit ipsum, ut blandit est<br/>
+        tellus sit amet turpis.<br/>
+        {chineseTest()+emojiTest()}
+      </blockquote>
       <p> Quisque at semper enim, eu hendrerit odio. Etiam auctor nisl et <em> justo sodales </em> elementum. Maecenas
         ultrices lacus quis neque consectetur, et lobortis nisi molestie. </p>
       <p> Sed sagittis enim ac tortor maximus rutrum. Nulla facilisi. Donec mattis vulputate risus in luctus. Maecenas
@@ -54,30 +73,30 @@ function ContentTest(props){
       <table>
         <thead>
           <tr>
-            <th> One </th>
-            <th> Two </th>
+            <th> One{chineseTestShort()+emojiTestShort()} </th>
+            <th> Two{chineseTestShort()+emojiTestShort()} </th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td> Three </td>
-            <td> Four </td>
+            <td> Three {chineseTestShort()+emojiTestShort()}  </td>
+            <td> Four {chineseTestShort()+emojiTestShort()}  </td>
           </tr>
           <tr>
-            <td> Five </td>
-            <td> Six </td>
+            <td> Five {chineseTestShort()+emojiTestShort()}  </td>
+            <td> Six {chineseTestShort()+emojiTestShort()}  </td>
           </tr>
           <tr>
-            <td> Seven </td>
-            <td> Eight </td>
+            <td> Seven {chineseTestShort()+emojiTestShort()}  </td>
+            <td> Eight {chineseTestShort()+emojiTestShort()}  </td>
           </tr>
           <tr>
-            <td> Nine </td>
-            <td> Ten </td>
+            <td> Nine {chineseTestShort()+emojiTestShort()}  </td>
+            <td> Ten {chineseTestShort()+emojiTestShort()}  </td>
           </tr>
           <tr>
-            <td> Eleven </td>
-            <td> Twelve </td>
+            <td> Eleven {chineseTestShort()+emojiTestShort()}  </td>
+            <td> Twelve {chineseTestShort()+emojiTestShort()}  </td>
           </tr>
         </tbody>
       </table>
