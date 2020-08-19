@@ -9,11 +9,18 @@ import SEO from "../components/seo"
 
 import TestContent from '../components/test-content'
 
+import LangContext from '../contexts/LangContext'
 import ThemeContext from '../contexts/ThemeContext'
 
 
 function IndexPage(){
   const {active_style, rotateStyle} = React.useContext(ThemeContext)
+  const {helloFunc} = React.useContext(LangContext)
+
+  React.useEffect(()=>{
+    helloFunc()
+  })
+
   return(
     <Layout>
 
