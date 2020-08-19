@@ -16,7 +16,7 @@ function LangContextProvider(props){
   }
 
   const chineseTest = () => {
-    return "文善"
+    return "文善洋也加一業未太……麼起專聽"
   }
 
   const emojiTest = () => {
@@ -31,19 +31,19 @@ function LangContextProvider(props){
     return "タハネ文会ヲツレ端作"
   }
 
-  const chineseTestTitle = () => {
+  const chineseTestShort = () => {
     return "文善"
   }
 
-  const emojiTestTitle = () => {
+  const emojiTestShort = () => {
     return "🔯🍣"
   }
 
-  const koreaTestTitle = () => {
+  const koreaTestShort = () => {
     return "제자"
   }
 
-  const japaneseTestTitle = () => {
+  const japaneseTestShort = () => {
     return "タハ"
   }
 
@@ -57,10 +57,10 @@ function LangContextProvider(props){
       koreaTest,
       japaneseTest,
 
-      chineseTestTitle,
-      emojiTestTitle,
-      koreaTestTitle,
-      japaneseTestTitle
+      chineseTestShort,
+      emojiTestShort,
+      koreaTestShort,
+      japaneseTestShort
       }}>
       {children}
     </LangContext.Provider>
