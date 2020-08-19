@@ -1,10 +1,23 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
 
 import {combineStyles} from '../utils/common'
 
 function DropdownTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
 
   return(
     <section className={active_style.section} id="dropdown">
@@ -39,6 +52,9 @@ function DropdownTest(props){
               <a href="#" className={active_style.dropdownItem}>
                 With a divider
               </a>
+              <a href="#" className={active_style.dropdownItem}>
+                {chineseTest()}
+              </a>
             </div>
           </div>
         </div>
@@ -61,6 +77,18 @@ function DropdownTest(props){
               <hr className={active_style.dropdownDivider} />
               <div className={active_style.dropdownItem}>
                 <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+              </div>
+              <div className={active_style.dropdownItem}>
+                <p>{chineseTest()}</p>
+              </div>
+              <div className={active_style.dropdownItem}>
+                <p>{japaneseTest()}</p>
+              </div>
+              <div className={active_style.dropdownItem}>
+                <p>{emojiTest()}</p>
+              </div>
+              <div className={active_style.dropdownItem}>
+                <p>{koreaTest()}</p>
               </div>
               <hr className={active_style.dropdownDivider} />
               <a href="#" className={active_style.dropdownItem}>
