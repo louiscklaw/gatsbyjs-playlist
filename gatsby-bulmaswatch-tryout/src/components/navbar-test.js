@@ -51,45 +51,47 @@ function NavbarTest(props){
       <div id="navMenuExample1" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
                 <div>version
-                  <p className={combineStyles([active_style.hasTextInfo, active_style.isSize6Desktop])}>0.4.3</p>
+                  <p className={combineStyles([active_style.hasTextInfo, active_style.isSize6Desktop])}>
+                    0.4.3
+                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -97,27 +99,28 @@ function NavbarTest(props){
                   <p>
                     <small className={active_style.hasTextInfo}>10 Mar 2017</small>
                   </p>
-                  <p>New field element (for better controls)</p>
+                  <p>New field element (for better controls){chineseTestShort()}</p>
                 </div>
               </a>
               <a className={active_style.navbarItem} href="/2016/04/11/metro-ui-css-grid-with-bulma-tiles/">
                 <div className={active_style.navbarContent}>
                   <p>
                     <small className={active_style.hasTextInfo}>11 Apr 2016</small>
-                  </p>
-                  <p>Metro UI CSS grid with Bulma tiles</p>
+                  {chineseTestShort()}</p>
+                  <p>Metro UI CSS grid with Bulma tiles{chineseTestShort()}</p>
                 </div>
               </a>
               <a className={active_style.navbarItem} href="/2016/02/09/blog-launched-new-responsive-columns-new-helpers/">
                 <div className={active_style.navbarContent}>
                   <p>
                     <small className={active_style.hasTextInfo}>09 Feb 2016</small>
+                    {chineseTestShort()}
                   </p>
-                  <p>Blog launched, new responsive columns, new helpers</p>
+                  <p>Blog launched, new responsive columns, new helpers{chineseTestShort()}</p>
                 </div>
               </a>
               <a className={active_style.navbarItem} href="#blog/">
-                More posts
+                More posts {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -146,7 +149,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -154,9 +157,9 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>Side projects to enhance Bulma {chineseTestShort()}</small>
                       </p>
                     </div>
                   </div>
@@ -217,33 +220,33 @@ function NavbarTest(props){
       <div id="navMenuExample2" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -255,7 +258,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -311,7 +314,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -319,9 +322,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -382,33 +388,33 @@ function NavbarTest(props){
       <div id="navMenuExample3" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -420,7 +426,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -476,7 +482,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -484,9 +490,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -547,33 +556,33 @@ function NavbarTest(props){
       <div id="navMenuExample4" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -585,7 +594,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -641,7 +650,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -649,9 +658,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -712,33 +724,33 @@ function NavbarTest(props){
       <div id="navMenuExample5" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -750,7 +762,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -806,7 +818,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -814,9 +826,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -877,33 +892,33 @@ function NavbarTest(props){
       <div id="navMenuExample6" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -915,7 +930,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -971,7 +986,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -979,9 +994,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1042,33 +1060,33 @@ function NavbarTest(props){
       <div id="navMenuExample7" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -1080,7 +1098,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -1136,7 +1154,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -1144,9 +1162,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1207,33 +1228,33 @@ function NavbarTest(props){
       <div id="navMenuExample8" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -1245,7 +1266,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -1301,7 +1322,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -1309,9 +1330,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1372,33 +1396,33 @@ function NavbarTest(props){
       <div id="navMenuExample9" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -1410,7 +1434,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -1466,7 +1490,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -1474,9 +1498,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1537,33 +1564,33 @@ function NavbarTest(props){
       <div id="navMenuExample10" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -1575,7 +1602,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -1631,7 +1658,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -1639,9 +1666,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1702,33 +1732,33 @@ function NavbarTest(props){
       <div id="navMenuExample11" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Modifiers
+                Modifiers {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Grid
+                Grid {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Form
+                Form {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Elements
+                Elements {chineseTestShort()}
               </a>
               <a className={combineStyles([active_style.navbarItem, active_style.isActive])} href="#">
-                Components
+                Components {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Layout
+                Layout {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
@@ -1740,7 +1770,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={active_style.navbarLink} href="#blog/">
-              Blog
+              Blog {chineseTestShort()}
             </a>
             <div id="blogDropdown" className={active_style.navbarDropdown} data-style="width: 18rem;">
               <a className={active_style.navbarItem} href="/2017/03/10/new-field-element/">
@@ -1796,7 +1826,7 @@ function NavbarTest(props){
           </div>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <div className={active_style.navbarLink}>
-              More
+              More {chineseTestShort()}
             </div>
             <div id="moreDropdown" className={active_style.navbarDropdown}>
               <a className={active_style.navbarItem} href="#extensions/">
@@ -1804,9 +1834,12 @@ function NavbarTest(props){
                   <div className={active_style.levelLeft}>
                     <div className={active_style.levelItem}>
                       <p>
-                        <strong>Extensions</strong>
+                        <strong>Extensions {chineseTestShort()}</strong>
                         <br />
-                        <small>Side projects to enhance Bulma</small>
+                        <small>
+                          Side projects to enhance Bulma
+                          {chineseTest()}
+                        </small>
                       </p>
                     </div>
                   </div>
@@ -1868,23 +1901,23 @@ function NavbarTest(props){
       <div id="navMenuExamplet" className={active_style.navbarMenu}>
         <div className={active_style.navbarStart}>
           <a className={active_style.navbarItem} href="#">
-            Home
+            Home {chineseTestShort()}
           </a>
           <div className={combineStyles([active_style.navbarItem, active_style.hasDropdown, active_style.isHoverable])}>
             <a className={combineStyles([active_style.navbarLink, active_style.isActive])} href="#">
-              Docs
+              Docs {chineseTestShort()}
             </a>
             <div className={combineStyles([active_style.navbarDropdown, active_style.isBoxed])}>
               <a className={active_style.navbarItem} href="#">
-                Overview
+                Overview {chineseTestShort()}
               </a>
               <a className={active_style.navbarItem} href="#">
-                Discover
+                Discover {chineseTestShort()}
               </a>
               <hr className={active_style.navbarDivider} />
               <div className={active_style.navbarItem}>
                 <div>version
-                  <p className={combineStyles([active_style.hasTextInfo, active_style.isSize6Desktop])}>0.4.3</p>
+                  <p className={combineStyles([active_style.hasTextInfo, active_style.isSize6Desktop])}>0.4.3</p> {chineseTestShort()}
                 </div>
               </div>
             </div>

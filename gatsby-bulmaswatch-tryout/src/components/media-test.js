@@ -7,7 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
-
 function MediaTest(props){
   const {active_style} = React.useContext(ThemeContext)
   const {
@@ -37,9 +36,16 @@ function MediaTest(props){
       <div className={active_style.mediaContent}>
         <div className={active_style.content}>
           <p>
-            <strong>John Smith</strong> <small>@johnsmith</small> <small>31m</small>
-            <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque
-            tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+            <strong>John Smith</strong>
+            <small>@johnsmith</small>
+            <small>31m</small>
+            <br />
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+            <br />
+            {chineseTest()}<br />
+            {japaneseTest()}<br />
+            {koreaTest()}<br />
+            {emojiTest()}
           </p>
         </div>
         <nav className={active_style.level}>
@@ -110,6 +116,10 @@ function MediaTest(props){
             <br /> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit
             blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
             <br />
+            {chineseTest()}<br />
+            {japaneseTest()}<br />
+            {koreaTest()}<br />
+            {emojiTest()}
             <small><a>Like</a> · <a>Reply</a> · 3 hrs</small>
           </p>
         </div>
@@ -127,6 +137,10 @@ function MediaTest(props){
                 senectus et netus et malesuada fames ac turpis egestas. Aliquam blandit nisl a nulla sagittis, a
                 lobortis leo feugiat.
                 <br />
+                {chineseTest()}<br />
+                {japaneseTest()}<br />
+                {koreaTest()}<br />
+                {emojiTest()}
                 <small><a>Like</a> · <a>Reply</a> · 2 hrs</small>
               </p>
             </div>

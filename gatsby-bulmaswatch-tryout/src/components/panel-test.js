@@ -46,21 +46,41 @@ function PanelTest(props){
           <a>Forks</a>
         </p>
         <a className={combineStyles([active_style.panelBlock, active_style.isActive])}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> bulma </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span>
+            bulma
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> marksheet </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span>
+            marksheet
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> minireset.css </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span>
+            minireset.css
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> jgthms.github.io </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span>
+            jgthms.github.io
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span> daniellowtw/infBoard </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span>
+            daniellowtw/infBoard
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span> mojs </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span>
+            mojs
+            {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+        </a>
         <label className={active_style.panelBlock}>
           <input type="checkbox" /> Remember me </label>
         <div className={active_style.panelBlock}>
-          <button className={combineStyles([active_style.button, active_style.isPrimary, active_style.isOutlined, active_style.isFullwidth])}> Reset all filters </button>
+          <button className={combineStyles([active_style.button, active_style.isPrimary, active_style.isOutlined, active_style.isFullwidth])}>
+            Reset all filters {chineseTestShort()+emojiTestShort()+japaneseTestShort()+koreaTestShort()}
+          </button>
         </div>
       </nav>
     </div>

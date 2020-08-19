@@ -31,16 +31,16 @@ function TabsTest(props){
     <div className={active_style.tabs}>
       <ul>
         <li className={active_style.isActive}>
-          <a>Pictures</a>
+          <a>Pictures {chineseTestShort()}</a>
         </li>
         <li>
-          <a>Music</a>
+          <a>Music {chineseTestShort()}</a>
         </li>
         <li>
-          <a>Videos</a>
+          <a>Videos {chineseTestShort()}</a>
         </li>
         <li>
-          <a>Documents</a>
+          <a>Documents {chineseTestShort()}</a>
         </li>
       </ul>
     </div>
@@ -50,25 +50,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
@@ -77,16 +77,16 @@ function TabsTest(props){
     <div className={combineStyles([active_style.tabs, active_style.isSmall])}>
       <ul>
         <li className={active_style.isActive}>
-          <a>Pictures</a>
+          <a>Pictures{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Music</a>
+          <a>Music{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Videos</a>
+          <a>Videos{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Documents</a>
+          <a>Documents{chineseTestShort()}</a>
         </li>
       </ul>
     </div>
@@ -94,16 +94,16 @@ function TabsTest(props){
     <div className={combineStyles([active_style.tabs, active_style.isMedium])}>
       <ul>
         <li className={active_style.isActive}>
-          <a>Pictures</a>
+          <a>Pictures{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Music</a>
+          <a>Music{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Videos</a>
+          <a>Videos{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Documents</a>
+          <a>Documents{chineseTestShort()}</a>
         </li>
       </ul>
     </div>
@@ -111,16 +111,16 @@ function TabsTest(props){
     <div className={combineStyles([active_style.tabs, active_style.isLarge])}>
       <ul>
         <li className={active_style.isActive}>
-          <a>Pictures</a>
+          <a>Pictures{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Music</a>
+          <a>Music{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Videos</a>
+          <a>Videos{chineseTestShort()}</a>
         </li>
         <li>
-          <a>Documents</a>
+          <a>Documents{chineseTestShort()}</a>
         </li>
       </ul>
     </div>
@@ -130,25 +130,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
@@ -159,25 +159,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
@@ -188,25 +188,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
@@ -240,25 +240,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={combineStyles([active_style.icon, active_style.isSmall])}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
@@ -269,25 +269,25 @@ function TabsTest(props){
         <li className={active_style.isActive}>
           <a>
             <span className={active_style.icon}><FontAwesomeIcon icon={fa.faImage} size="1x" /></span>
-            <span>Pictures</span>
+            <span>Pictures {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={active_style.icon}><FontAwesomeIcon icon={fa.faMusic} size="1x" /></span>
-            <span>Music</span>
+            <span>Music {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={active_style.icon}><FontAwesomeIcon icon={fa.faFilm} size="1x" /></span>
-            <span>Videos</span>
+            <span>Videos {chineseTestShort()}</span>
           </a>
         </li>
         <li>
           <a>
             <span className={active_style.icon}><FontAwesomeIcon icon={fa.faFileAlt} size="1x" /></span>
-            <span>Documents</span>
+            <span>Documents {chineseTestShort()}</span>
           </a>
         </li>
       </ul>
