@@ -1,17 +1,30 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
 
 import {combineStyles} from '../utils/common'
 
 function DeleteTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
 
   return(
     <section className={active_style.section} id="delete">
     <h1 className={active_style.title}> Delete </h1>
     <hr />
     <div className={active_style.block}>
-      <span className={combineStyles([active_style.tag, active_style.isSuccess])}> Hello World
+      <span className={combineStyles([active_style.tag, active_style.isSuccess])}>
+        Hello World
         <button className={combineStyles([active_style.delete, active_style.isSmall])}> </button>
       </span>
       <span style={{width: '0.5em'}} > </span>
@@ -42,7 +55,8 @@ function DeleteTest(props){
         quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et
         dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et
         sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et
-        sem eget, facilisis sodales sem.
+        sem eget, facilisis sodales sem.<br />
+        {}
       </div>
     </article>
   </section>
