@@ -52,7 +52,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={active_style.label}>Email</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder="Email input" defaultValue={`hello@`+chineseTestShort()} />
+            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder={`Email input`+chineseTestShort()+emojiTestShort()} defaultValue={`hello@`+chineseTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
 
@@ -89,7 +89,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={active_style.label}>Message</label>
           <p className={active_style.control}>
-            <textarea className={active_style.textarea} placeholder="Textarea" defaultValue={""} />
+            <textarea className={active_style.textarea} placeholder={`Textarea`+chineseTestShort()+emojiTestShort()} defaultValue={""} />
           </p>
         </div>
         <div className={active_style.field}>
@@ -124,12 +124,12 @@ function FormTest(props){
         <hr />
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={active_style.input} disabled placeholder="Disabled input" type="text" />
+            <input className={active_style.input} disabled placeholder={`Disabled input`+chineseTestShort()+emojiTestShort()} type="text" />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <textarea className={active_style.textarea} disabled placeholder="Disabled textarea" defaultValue={" "} />
+            <textarea className={active_style.textarea} disabled placeholder={`Disabled textarea`+chineseTestShort()+emojiTestShort()} defaultValue={" "} />
           </p>
         </div>
         <div className={active_style.field}>
@@ -167,7 +167,7 @@ function FormTest(props){
           <div className={active_style.fieldBody}>
             <div className={combineStyles([active_style.field, active_style.isGrouped])}>
               <p className={combineStyles([active_style.control, active_style.isExpanded, active_style.hasIconsLeft])}>
-                <input className={active_style.input} type="text" placeholder="Name" />
+                <input className={active_style.input} type="text" placeholder={`Name`+chineseTestShort()+emojiTestShort()} />
                 <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
                   <FontAwesomeIcon icon={fa.faUser} size="1x" />
                 </span>
@@ -175,7 +175,7 @@ function FormTest(props){
             </div>
             <div className={active_style.field}>
               <p className={combineStyles([active_style.control, active_style.isExpanded, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-                <input className={combineStyles([active_style.input, active_style.isSuccess])} type="email" placeholder="Email" defaultValue="alex@smith.com" />
+                <input className={combineStyles([active_style.input, active_style.isSuccess])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} defaultValue="alex@smith.com" />
                 <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
                   <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
                 </span>
@@ -246,7 +246,7 @@ function FormTest(props){
           <div className={active_style.fieldBody}>
             <div className={active_style.field}>
               <div className={active_style.control}>
-                <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder="e.g. Partnership opportunity" />
+                <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder={`e.g. Partnership opportunity`+chineseTestShort()+emojiTestShort()} />
               </div>
               <p className={combineStyles([active_style.help, active_style.isDanger])}>
                 This field is required
@@ -261,7 +261,7 @@ function FormTest(props){
           <div className={active_style.fieldBody}>
             <div className={active_style.field}>
               <div className={active_style.control}>
-                <textarea className={active_style.textarea} placeholder="Explain how we can help you" defaultValue={""} />
+                <textarea className={active_style.textarea} placeholder={`Explain how we can help you`+chineseTestShort()+emojiTestShort()} defaultValue={""} />
               </div>
             </div>
           </div>
@@ -389,7 +389,7 @@ function FormTest(props){
         <hr />
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isRounded])} type="text" placeholder="Rounded input" />
+            <input className={combineStyles([active_style.input, active_style.isRounded])} type="text" placeholder={`Rounded input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <br />
@@ -397,27 +397,27 @@ function FormTest(props){
         <hr />
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isPrimary])} type="text" placeholder="Primary input" />
+            <input className={combineStyles([active_style.input, active_style.isPrimary])} type="text" placeholder={`Primary input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isInfo])} type="text" placeholder="Info input" />
+            <input className={combineStyles([active_style.input, active_style.isInfo])} type="text" placeholder={`Info input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isSuccess])} type="text" placeholder="Success input" />
+            <input className={combineStyles([active_style.input, active_style.isSuccess])} type="text" placeholder={`Success input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isWarning])} type="text" placeholder="Warning input" />
+            <input className={combineStyles([active_style.input, active_style.isWarning])} type="text" placeholder={`Warning input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder="Danger input" />
+            <input className={combineStyles([active_style.input, active_style.isDanger])} type="text" placeholder={`Danger input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <br />
@@ -425,22 +425,22 @@ function FormTest(props){
         <hr />
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isSmall])} type="text" placeholder="Small input" />
+            <input className={combineStyles([active_style.input, active_style.isSmall])} type="text" placeholder={`Small input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={active_style.input} type="text" placeholder="Normal input" />
+            <input className={active_style.input} type="text" placeholder={`Normal input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isMedium])} type="text" placeholder="Medium input" />
+            <input className={combineStyles([active_style.input, active_style.isMedium])} type="text" placeholder={`Medium input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="text" placeholder="Large input" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="text" placeholder={`Large input`+chineseTestShort()+emojiTestShort()} />
           </p>
         </div>
         <div className={active_style.field}>
@@ -486,7 +486,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={combineStyles([active_style.label, active_style.isSmall])}>Small input</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isSmall])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isSmall])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -498,7 +498,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={active_style.label}>Normal input</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={active_style.input} type="email" placeholder="Email" />
+            <input className={active_style.input} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -509,7 +509,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={active_style.input} type="email" placeholder="Email" />
+            <input className={active_style.input} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -521,7 +521,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={combineStyles([active_style.label, active_style.isMedium])}>Medium input</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -532,7 +532,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -543,7 +543,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isMedium])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -555,7 +555,7 @@ function FormTest(props){
         <div className={active_style.field}>
           <label className={combineStyles([active_style.label, active_style.isLarge])}>Large input</label>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -566,7 +566,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -577,7 +577,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isMedium, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -588,7 +588,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft, active_style.hasIconsRight])}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder="Email" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isLarge, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
             </span>
@@ -602,7 +602,7 @@ function FormTest(props){
         <hr />
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
-            <input className={active_style.input} type="email" placeholder="Email" />
+            <input className={active_style.input} type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
 
@@ -611,7 +611,7 @@ function FormTest(props){
         </div>
         <div className={active_style.field}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
-            <input className={active_style.input} type="password" placeholder="Password" />
+            <input className={active_style.input} type="password" placeholder={`Password`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
               <FontAwesomeIcon icon={fa.faLock} size="1x" />
 
@@ -630,7 +630,7 @@ function FormTest(props){
         <hr />
         <div className={combineStyles([active_style.field, active_style.hasAddons])}>
           <p className={active_style.control}>
-            <input className={active_style.input} type="text" placeholder="Find a repository" />
+            <input className={active_style.input} type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()} />
           </p>
           <p className={active_style.control}>
             <a className={combineStyles([active_style.button, active_style.isInfo])}>
@@ -640,7 +640,7 @@ function FormTest(props){
         </div>
         <div className={combineStyles([active_style.field, active_style.hasAddons])}>
           <p className={active_style.control}>
-            <input className={combineStyles([active_style.input, active_style.isLarge])} type="text" placeholder="Find a repository" />
+            <input className={combineStyles([active_style.input, active_style.isLarge])} type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()} />
           </p>
           <p className={active_style.control}>
             <a className={combineStyles([active_style.button, active_style.isInfo, active_style.isLarge])}>
@@ -659,7 +659,7 @@ function FormTest(props){
             </span>
           </p>
           <p className={active_style.control}>
-            <input className={active_style.input} type="text" placeholder="Amount of money" />
+            <input className={active_style.input} type="text" placeholder={`Amount of money`+chineseTestShort()+emojiTestShort()} />
           </p>
           <p className={active_style.control}>
             <a className={active_style.button}>
@@ -678,7 +678,7 @@ function FormTest(props){
             </span>
           </p>
           <p className={combineStyles([active_style.control, active_style.isExpanded])}>
-            <input className={active_style.input} type="text" placeholder="Amount of money" />
+            <input className={active_style.input} type="text" placeholder={`Amount of money`+chineseTestShort()+emojiTestShort()} />
           </p>
           <p className={active_style.control}>
             <a className={active_style.button}>
@@ -711,7 +711,7 @@ function FormTest(props){
         </div>
         <div className={combineStyles([active_style.field, active_style.isGrouped])}>
           <p className={combineStyles([active_style.control, active_style.isExpanded])}>
-            <input className={active_style.input} type="text" placeholder="Find a repository" />
+            <input className={active_style.input} type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()} />
           </p>
           <p className={active_style.control}>
             <a className={combineStyles([active_style.button, active_style.isInfo])}>

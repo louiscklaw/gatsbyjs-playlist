@@ -1,31 +1,28 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
+
+import FontAwesomeContext from '../contexts/FontAwesomeContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faAddressBook,
-  faAirFreshener,
-  faAmbulance,
-  faAtom,
-  faBus,
-  faCheck,
-  faCoffee,
-  faCoins,
-  faDice,
-  faEnvelop,
-  faUser,
-  faCloudUploadAlt,
-  faUpload,
-  faEnvelope,
-  faWarning,
-  faLock,
-  faAngleDown
-} from '@fortawesome/free-solid-svg-icons'
 
 function CardTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
+  const fa = React.useContext(FontAwesomeContext)
 
   return(
     <section className={active_style.section} id="card">
@@ -60,7 +57,7 @@ function CardTest(props){
           <header className={active_style.cardHeader}>
             <p className={active_style.cardHeaderTitle}> Component </p>
             <a className={active_style.cardHeaderIcon}>
-              <span className={active_style.icon}> <FontAwesomeIcon icon={faAngleDown} size="1x" /> </span>
+              <span className={active_style.icon}> <FontAwesomeIcon icon={fa.faAngleDown} size="1x" /> </span>
             </a>
           </header>
           <div className={active_style.cardContent}>

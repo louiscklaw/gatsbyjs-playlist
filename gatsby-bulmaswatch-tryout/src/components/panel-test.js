@@ -1,33 +1,27 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
+
+import FontAwesomeContext from '../contexts/FontAwesomeContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faAddressBook,
-  faAirFreshener,
-  faAmbulance,
-  faAtom,
-  faBus,
-  faCheck,
-  faCoffee,
-  faCoins,
-  faDice,
-  faEnvelop,
-  faUser,
-  faCloudUploadAlt,
-  faUpload,
-  faEnvelope,
-  faWarning,
-  faLock,
-  faSearch,
-  faBook,
-  faCodeBranch
-} from '@fortawesome/free-solid-svg-icons'
-
 function PanelTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
+  const fa = React.useContext(FontAwesomeContext)
 
   return(
     <section className={active_style.section} id="panel">
@@ -38,9 +32,9 @@ function PanelTest(props){
         <p className={active_style.panelHeading}> Repositories </p>
         <div className={active_style.panelBlock}>
           <p className={combineStyles([active_style.control, active_style.hasIconsLeft])}>
-            <input className={combineStyles([active_style.input, active_style.isSmall])} type="text" placeholder="Search" />
+            <input className={combineStyles([active_style.input, active_style.isSmall])} type="text" placeholder={`Search`+chineseTestShort()+emojiTestShort()} />
             <span className={combineStyles([active_style.icon, active_style.isSmall, active_style.isLeft])}>
-              <FontAwesomeIcon icon={faSearch} size="1x" />
+              <FontAwesomeIcon icon={fa.faSearch} size="1x" />
             </span>
           </p>
         </div>
@@ -52,17 +46,17 @@ function PanelTest(props){
           <a>Forks</a>
         </p>
         <a className={combineStyles([active_style.panelBlock, active_style.isActive])}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> bulma </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> bulma </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> marksheet </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> marksheet </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> minireset.css </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> minireset.css </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faBook} size="1x" /> </span> jgthms.github.io </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faBook} size="1x" /> </span> jgthms.github.io </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faCodeBranch} size="1x" /> </span> daniellowtw/infBoard </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span> daniellowtw/infBoard </a>
         <a className={active_style.panelBlock}>
-          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={faCodeBranch} size="1x" /> </span> mojs </a>
+          <span className={active_style.panelIcon}> <FontAwesomeIcon icon={fa.faCodeBranch} size="1x" /> </span> mojs </a>
         <label className={active_style.panelBlock}>
           <input type="checkbox" /> Remember me </label>
         <div className={active_style.panelBlock}>

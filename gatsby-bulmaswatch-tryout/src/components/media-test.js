@@ -1,25 +1,28 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
+
+import FontAwesomeContext from '../contexts/FontAwesomeContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faCoffee,
-  faAddressBook,
-  faAirFreshener,
-  faAmbulance,
-  faAtom,
-  faBus,
-  faCoins,
-  faDice,
-  faReply,
-  faRetweet,
-  faHeart,
-} from '@fortawesome/free-solid-svg-icons'
 
 function MediaTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
+  const fa = React.useContext(FontAwesomeContext)
 
   return(
     <section className={active_style.section} id="media">
@@ -43,17 +46,17 @@ function MediaTest(props){
           <div className={active_style.levelLeft}>
             <a className={active_style.levelItem}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <FontAwesomeIcon icon={faReply} size="1x" />
+                <FontAwesomeIcon icon={fa.faReply} size="1x" />
               </span>
             </a>
             <a className={active_style.levelItem}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <FontAwesomeIcon icon={faRetweet} size="1x" />
+                <FontAwesomeIcon icon={fa.faRetweet} size="1x" />
               </span>
             </a>
             <a className={active_style.levelItem}>
               <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                <FontAwesomeIcon icon={faHeart} size="1x" />
+                <FontAwesomeIcon icon={fa.faHeart} size="1x" />
               </span>
             </a>
           </div>
@@ -73,7 +76,7 @@ function MediaTest(props){
       <div className={active_style.mediaContent}>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <textarea className={active_style.textarea} placeholder="Add a comment..." defaultValue={""} />
+            <textarea className={active_style.textarea} placeholder={`Add a comment...`+chineseTestShort()+emojiTestShort()} defaultValue={""} />
           </p>
         </div>
         <nav className={active_style.level}>
@@ -167,7 +170,7 @@ function MediaTest(props){
       <div className={active_style.mediaContent}>
         <div className={active_style.field}>
           <p className={active_style.control}>
-            <textarea className={active_style.textarea} placeholder="Add a comment..." defaultValue={""} />
+            <textarea className={active_style.textarea} placeholder={`Add a comment...`+chineseTestShort()+emojiTestShort()} defaultValue={""} />
           </p>
         </div>
         <div className={active_style.field}>

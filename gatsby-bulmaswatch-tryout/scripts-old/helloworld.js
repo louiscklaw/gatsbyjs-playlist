@@ -544,13 +544,13 @@
           <div class="field">
             <label class="label">Name</label>
             <p class="control">
-              <input class="input" type="text" placeholder="Text input">
+              <input class="input" type="text" placeholder={`Text input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <label class="label">Username</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+              <input class="input is-success" type="text" placeholder={`Text input`+chineseTestShort()+emojiTestShort()} value="bulma">
               <span class="icon is-small is-left">
                 <i class="fa fa-user"></i>
               </span>
@@ -563,7 +563,7 @@
           <div class="field">
             <label class="label">Email</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-danger" type="text" placeholder="Email input" value="hello@">
+              <input class="input is-danger" type="text" placeholder={`Email input`+chineseTestShort()+emojiTestShort()} value="hello@">
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -598,7 +598,7 @@
           <div class="field">
             <label class="label">Message</label>
             <p class="control">
-              <textarea class="textarea" placeholder="Textarea"></textarea>
+              <textarea class="textarea" placeholder={`Textarea`+chineseTestShort()+emojiTestShort()}></textarea>
             </p>
           </div>
           <div class="field">
@@ -632,12 +632,12 @@
           <hr>
           <div class="field">
             <p class="control">
-              <input class="input" disabled="" placeholder="Disabled input" type="text">
+              <input class="input" disabled="" placeholder={`Disabled input`+chineseTestShort()+emojiTestShort()} type="text">
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <textarea class="textarea" disabled="" placeholder="Disabled textarea"> </textarea>
+              <textarea class="textarea" disabled="" placeholder={`Disabled textarea`+chineseTestShort()+emojiTestShort()}> </textarea>
             </p>
           </div>
           <div class="field">
@@ -675,7 +675,7 @@
             <div class="field-body">
               <div class="field is-grouped">
                 <p class="control is-expanded has-icons-left">
-                  <input class="input" type="text" placeholder="Name">
+                  <input class="input" type="text" placeholder={`Name`+chineseTestShort()+emojiTestShort()}>
                   <span class="icon is-small is-left">
                     <i class="fa fa-user"></i>
                   </span>
@@ -683,7 +683,7 @@
               </div>
               <div class="field">
                 <p class="control is-expanded has-icons-left has-icons-right">
-                  <input class="input is-success" type="email" placeholder="Email" value="alex@smith.com">
+                  <input class="input is-success" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()} value="alex@smith.com">
                   <span class="icon is-small is-left">
                     <i class="fa fa-envelope"></i>
                   </span>
@@ -754,7 +754,7 @@
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <input class="input is-danger" type="text" placeholder="e.g. Partnership opportunity">
+                  <input class="input is-danger" type="text" placeholder={`e.g. Partnership opportunity`+chineseTestShort()+emojiTestShort()}>
                 </div>
                 <p class="help is-danger">
                   This field is required
@@ -769,7 +769,7 @@
             <div class="field-body">
               <div class="field">
                 <div class="control">
-                  <textarea class="textarea" placeholder="Explain how we can help you"></textarea>
+                  <textarea class="textarea" placeholder={`Explain how we can help you`+chineseTestShort()+emojiTestShort()}></textarea>
                 </div>
               </div>
             </div>
@@ -900,7 +900,7 @@
           <hr>
           <div class="field">
             <p class="control">
-              <input class="input is-rounded" type="text" placeholder="Rounded input">
+              <input class="input is-rounded" type="text" placeholder={`Rounded input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <br>
@@ -908,27 +908,27 @@
           <hr>
           <div class="field">
             <p class="control">
-              <input class="input is-primary" type="text" placeholder="Primary input">
+              <input class="input is-primary" type="text" placeholder={`Primary input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-info" type="text" placeholder="Info input">
+              <input class="input is-info" type="text" placeholder={`Info input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-success" type="text" placeholder="Success input">
+              <input class="input is-success" type="text" placeholder={`Success input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-warning" type="text" placeholder="Warning input">
+              <input class="input is-warning" type="text" placeholder={`Warning input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-danger" type="text" placeholder="Danger input">
+              <input class="input is-danger" type="text" placeholder={`Danger input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <br>
@@ -936,22 +936,22 @@
           <hr>
           <div class="field">
             <p class="control">
-              <input class="input is-small" type="text" placeholder="Small input">
+              <input class="input is-small" type="text" placeholder={`Small input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input" type="text" placeholder="Normal input">
+              <input class="input" type="text" placeholder={`Normal input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-medium" type="text" placeholder="Medium input">
+              <input class="input is-medium" type="text" placeholder={`Medium input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
             <p class="control">
-              <input class="input is-large" type="text" placeholder="Large input">
+              <input class="input is-large" type="text" placeholder={`Large input`+chineseTestShort()+emojiTestShort()}>
             </p>
           </div>
           <div class="field">
@@ -997,7 +997,7 @@
           <div class="field">
             <label class="label is-small">Small input</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-small" type="email" placeholder="Email">
+              <input class="input is-small" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1009,7 +1009,7 @@
           <div class="field">
             <label class="label">Normal input</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Email">
+              <input class="input" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1020,7 +1020,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input" type="email" placeholder="Email">
+              <input class="input" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1032,7 +1032,7 @@
           <div class="field">
             <label class="label is-medium">Medium input</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-medium" type="email" placeholder="Email">
+              <input class="input is-medium" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1043,7 +1043,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-medium" type="email" placeholder="Email">
+              <input class="input is-medium" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1054,7 +1054,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-medium" type="email" placeholder="Email">
+              <input class="input is-medium" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-medium is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1066,7 +1066,7 @@
           <div class="field">
             <label class="label is-large">Large input</label>
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-large" type="email" placeholder="Email">
+              <input class="input is-large" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1077,7 +1077,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-large" type="email" placeholder="Email">
+              <input class="input is-large" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1088,7 +1088,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-large" type="email" placeholder="Email">
+              <input class="input is-large" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-medium is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1099,7 +1099,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left has-icons-right">
-              <input class="input is-large" type="email" placeholder="Email">
+              <input class="input is-large" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-large is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1113,7 +1113,7 @@
           <hr>
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="email" placeholder="Email">
+              <input class="input" type="email" placeholder={`Email`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -1121,7 +1121,7 @@
           </div>
           <div class="field">
             <p class="control has-icons-left">
-              <input class="input" type="password" placeholder="Password">
+              <input class="input" type="password" placeholder={`Password`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-lock"></i>
               </span>
@@ -1139,7 +1139,7 @@
           <hr>
           <div class="field has-addons">
             <p class="control">
-              <input class="input" type="text" placeholder="Find a repository">
+              <input class="input" type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()}>
             </p>
             <p class="control">
               <a class="button is-info">
@@ -1149,7 +1149,7 @@
           </div>
           <div class="field has-addons">
             <p class="control">
-              <input class="input is-large" type="text" placeholder="Find a repository">
+              <input class="input is-large" type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()}>
             </p>
             <p class="control">
               <a class="button is-info is-large">
@@ -1168,7 +1168,7 @@
               </span>
             </p>
             <p class="control">
-              <input class="input" type="text" placeholder="Amount of money">
+              <input class="input" type="text" placeholder={`Amount of money`+chineseTestShort()+emojiTestShort()}>
             </p>
             <p class="control">
               <a class="button">
@@ -1187,7 +1187,7 @@
               </span>
             </p>
             <p class="control is-expanded">
-              <input class="input" type="text" placeholder="Amount of money">
+              <input class="input" type="text" placeholder={`Amount of money`+chineseTestShort()+emojiTestShort()}>
             </p>
             <p class="control">
               <a class="button">
@@ -1220,7 +1220,7 @@
           </div>
           <div class="field is-grouped">
             <p class="control is-expanded">
-              <input class="input" type="text" placeholder="Find a repository">
+              <input class="input" type="text" placeholder={`Find a repository`+chineseTestShort()+emojiTestShort()}>
             </p>
             <p class="control">
               <a class="button is-info">
@@ -3228,7 +3228,7 @@
           <div class="level-item">
             <div class="field has-addons">
               <p class="control">
-                <input class="input" type="text" placeholder="Find a post">
+                <input class="input" type="text" placeholder={`Find a post`+chineseTestShort()+emojiTestShort()}>
               </p>
               <p class="control">
                 <button class="button">
@@ -3374,7 +3374,7 @@
         <div class="media-content">
           <div class="field">
             <p class="control">
-              <textarea class="textarea" placeholder="Add a comment..."></textarea>
+              <textarea class="textarea" placeholder={`Add a comment...`+chineseTestShort()+emojiTestShort()}></textarea>
             </p>
           </div>
           <nav class="level">
@@ -3468,7 +3468,7 @@
         <div class="media-content">
           <div class="field">
             <p class="control">
-              <textarea class="textarea" placeholder="Add a comment..."></textarea>
+              <textarea class="textarea" placeholder={`Add a comment...`+chineseTestShort()+emojiTestShort()}></textarea>
             </p>
           </div>
           <div class="field">
@@ -5758,7 +5758,7 @@
           <p class="panel-heading"> Repositories </p>
           <div class="panel-block">
             <p class="control has-icons-left">
-              <input class="input is-small" type="text" placeholder="Search">
+              <input class="input is-small" type="text" placeholder={`Search`+chineseTestShort()+emojiTestShort()}>
               <span class="icon is-small is-left">
                 <i class="fa fa-search"></i>
               </span>

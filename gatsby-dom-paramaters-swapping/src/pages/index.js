@@ -41,7 +41,7 @@ function IndexPage() {
   }
 
   const getPlaceholderById = (placeholder) => {
-    return document.querySelector(`div[data-placeholder="${placeholder}"]`)
+    return document.querySelector(`div[data-placeholder={`${placeholder}`+chineseTestShort()+emojiTestShort()}]`)
   }
 
   const placeIntoPosition = (ele_video) => {
@@ -96,13 +96,13 @@ function IndexPage() {
     <Layout>
       <SEO title="Home" />
       <div className={style.boxes}>
-        <div className={style.box1Placeholder} data-placeholder="0">
+        <div className={style.box1Placeholder} data-placeholder={`0`+chineseTestShort()+emojiTestShort()}>
           box1 placeholder
         </div>
-        <div className={style.box2Placeholder} data-placeholder="1">
+        <div className={style.box2Placeholder} data-placeholder={`1`+chineseTestShort()+emojiTestShort()}>
           box2 placeholder
         </div>
-        <div className={style.box3Placeholder} data-placeholder="2">
+        <div className={style.box3Placeholder} data-placeholder={`2`+chineseTestShort()+emojiTestShort()}>
           box3 placeholder
         </div>
 

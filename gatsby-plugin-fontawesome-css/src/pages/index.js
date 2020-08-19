@@ -50,38 +50,38 @@ const IndexPage = () => (
   >
     <h1 style={{ textAlign: 'center' }}>Gatsby Font Awesome example</h1>
     <div>
-      {/* <FontAwesomeIcon icon={faCoffee} size="1x" />
-      <FontAwesomeIcon icon={faAddressBook} size="1x" />
-      <FontAwesomeIcon icon={faAirFreshener} size="1x" />
-      <FontAwesomeIcon icon={faAtom} size="1x" />
-      <FontAwesomeIcon icon={faAmbulance} size="1x" />
-      <FontAwesomeIcon icon={faBus} size="1x" />
-      <FontAwesomeIcon icon={faCoins} size="1x" />
-      <FontAwesomeIcon icon={faDice} size="1x" /> */}
-      <FontAwesomeIcon icon={faGithub} size="1x" />
-      <FontAwesomeIcon icon={faTwitter} size="1x" />
-      <FontAwesomeIcon icon={faReply} size="1x" />
-      <FontAwesomeIcon icon={faRetweet} size="1x" />
-      <FontAwesomeIcon icon={faHeart} size="1x" />
-      <FontAwesomeIcon icon={faItalic} size="1x" />
-      <FontAwesomeIcon icon={faUnderline} size="1x" />
-      <FontAwesomeIcon icon={faTwitter} size="1x" />
-      <FontAwesomeIcon icon={faCheck} size="1x" />
-      <FontAwesomeIcon icon={faAlignLeft} size="1x" />
-      <FontAwesomeIcon icon={faAlignCenter} size="1x" />
-      <FontAwesomeIcon icon={faAlignRight} size="1x" />
-      <FontAwesomeIcon icon={faHeading} size="1x" />
-      <FontAwesomeIcon icon={faAngleDown} size="1x" />
-      <FontAwesomeIcon icon={faUser} size="1x" />
-      <FontAwesomeIcon icon={faEnvelope} size="1x" />
-      <FontAwesomeIcon icon={faWarning} size="1x" />
-      <FontAwesomeIcon icon={faUpload} size="1x" />
-      <FontAwesomeIcon icon={faCloudUploadAlt} size="1x" />
-      <FontAwesomeIcon icon={faHome} size="1x" />
-      <FontAwesomeIcon icon={faFileAlt} size="1x" />
-      <FontAwesomeIcon icon={faBug} size="1x" />
-      <FontAwesomeIcon icon={faPalette} size="1x" />
-      <FontAwesomeIcon icon={faBold} size="1x" />
+      {/* <FontAwesomeIcon icon={fa.faCoffee} size="1x" />
+      <FontAwesomeIcon icon={fa.faAddressBook} size="1x" />
+      <FontAwesomeIcon icon={fa.faAirFreshener} size="1x" />
+      <FontAwesomeIcon icon={fa.faAtom} size="1x" />
+      <FontAwesomeIcon icon={fa.faAmbulance} size="1x" />
+      <FontAwesomeIcon icon={fa.faBus} size="1x" />
+      <FontAwesomeIcon icon={fa.faCoins} size="1x" />
+      <FontAwesomeIcon icon={fa.faDice} size="1x" /> */}
+      <FontAwesomeIcon icon={fa.faGithub} size="1x" />
+      <FontAwesomeIcon icon={fa.faTwitter} size="1x" />
+      <FontAwesomeIcon icon={fa.faReply} size="1x" />
+      <FontAwesomeIcon icon={fa.faRetweet} size="1x" />
+      <FontAwesomeIcon icon={fa.faHeart} size="1x" />
+      <FontAwesomeIcon icon={fa.faItalic} size="1x" />
+      <FontAwesomeIcon icon={fa.faUnderline} size="1x" />
+      <FontAwesomeIcon icon={fa.faTwitter} size="1x" />
+      <FontAwesomeIcon icon={fa.faCheck} size="1x" />
+      <FontAwesomeIcon icon={fa.faAlignLeft} size="1x" />
+      <FontAwesomeIcon icon={fa.faAlignCenter} size="1x" />
+      <FontAwesomeIcon icon={fa.faAlignRight} size="1x" />
+      <FontAwesomeIcon icon={fa.faHeading} size="1x" />
+      <FontAwesomeIcon icon={fa.faAngleDown} size="1x" />
+      <FontAwesomeIcon icon={fa.faUser} size="1x" />
+      <FontAwesomeIcon icon={fa.faEnvelope} size="1x" />
+      <FontAwesomeIcon icon={fa.faWarning} size="1x" />
+      <FontAwesomeIcon icon={fa.faUpload} size="1x" />
+      <FontAwesomeIcon icon={fa.faCloudUploadAlt} size="1x" />
+      <FontAwesomeIcon icon={fa.faHome} size="1x" />
+      <FontAwesomeIcon icon={fa.faFileAlt} size="1x" />
+      <FontAwesomeIcon icon={fa.faBug} size="1x" />
+      <FontAwesomeIcon icon={fa.faPalette} size="1x" />
+      <FontAwesomeIcon icon={fa.faBold} size="1x" />
     </div>
   </main>
 )

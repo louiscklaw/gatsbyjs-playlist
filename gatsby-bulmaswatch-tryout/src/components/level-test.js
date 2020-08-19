@@ -1,10 +1,29 @@
 import React from 'react'
 import ThemeContext from '../contexts/ThemeContext'
+import LangContext from '../contexts/LangContext'
+
+import FontAwesomeContext from '../contexts/FontAwesomeContext'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import {combineStyles} from '../utils/common'
 
+
+
 function LevelTest(props){
   const {active_style} = React.useContext(ThemeContext)
+  const {
+    chineseTest,
+    emojiTest,
+    koreaTest,
+    japaneseTest,
+
+    chineseTestShort,
+    emojiTestShort,
+    koreaTestShort,
+    japaneseTestShort
+  } = React.useContext( LangContext )
+
+  const fa = React.useContext(FontAwesomeContext)
 
   return(
     <section className={active_style.section} id="level">
@@ -20,7 +39,7 @@ function LevelTest(props){
         <div className={active_style.levelItem}>
           <div className={combineStyles([active_style.field, active_style.hasAddons])}>
             <p className={active_style.control}>
-              <input className={active_style.input} type="text" placeholder="Find a post" />
+              <input className={active_style.input} type="text" placeholder={`Find a post`+chineseTestShort()+emojiTestShort()} />
             </p>
             <p className={active_style.control}>
               <button className={active_style.button}>
