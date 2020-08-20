@@ -33,12 +33,14 @@ import {
   faUser,
   faWarning,
   faBug,
-  faPalette
+  faPalette,
+  faPaste
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
   faGithub,
   faTwitter,
+  faFacebookSquare,
 } from '@fortawesome/free-brands-svg-icons'
 
 const IndexPage = () => (
@@ -81,7 +83,8 @@ const IndexPage = () => (
       <FontAwesomeIcon icon={faFileAlt} size="1x" />
       <FontAwesomeIcon icon={faBug} size="1x" />
       <FontAwesomeIcon icon={faPalette} size="1x" />
-      <FontAwesomeIcon icon={faBold} size="1x" />
+      <FontAwesomeIcon icon={faFacebookSquare} size="1x" />
+      <FontAwesomeIcon icon={faPaste} size="1x" />
     </div>
   </main>
 )

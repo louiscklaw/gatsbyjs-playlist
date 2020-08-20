@@ -3,33 +3,6 @@ import ThemeContext from '../contexts/ThemeContext'
 
 import {combineStyles} from '../utils/common'
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faAddressBook,
-  faAirFreshener,
-  faAmbulance,
-  faAtom,
-  faBus,
-  faCheck,
-  faCoffee,
-  faCoins,
-  faDice,
-  faEnvelop,
-  faUser,
-  faCloudUploadAlt,
-  faUpload,
-  faEnvelope,
-  faWarning,
-  faLock,
-  faDownload,
-  faRss,
-
-} from '@fortawesome/free-solid-svg-icons'
-
-import {
-  faGithub, faTwitter
-} from '@fortawesome/free-brands-svg-icons'
-
 function NavbarTest(props){
   const {active_style} = React.useContext(ThemeContext)
 
@@ -39,17 +12,17 @@ function NavbarTest(props){
     <hr />
     <nav className={active_style.navbar}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample1">
@@ -142,8 +115,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
-
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -176,10 +148,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -190,9 +162,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -205,17 +177,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isPrimary])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample2">
@@ -308,7 +280,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -341,10 +313,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -355,9 +327,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -370,17 +342,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isLink])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample3">
@@ -473,7 +445,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -506,10 +478,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -520,9 +492,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -535,17 +507,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isInfo])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample4">
@@ -638,7 +610,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -671,10 +643,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -685,9 +657,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -700,17 +672,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isSuccess])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample5">
@@ -803,7 +775,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -836,10 +808,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -850,9 +822,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -865,17 +837,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isWarning])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample6">
@@ -968,7 +940,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1001,10 +973,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1015,9 +987,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1030,17 +1002,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isDanger])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample7">
@@ -1133,7 +1105,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1166,10 +1138,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1180,9 +1152,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1195,17 +1167,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isWhite])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample8">
@@ -1298,7 +1270,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1331,10 +1303,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1345,9 +1317,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1360,17 +1332,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isBlack])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample9">
@@ -1463,7 +1435,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1496,10 +1468,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1510,9 +1482,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1525,17 +1497,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isLight])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample10">
@@ -1628,7 +1600,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1661,10 +1633,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1675,9 +1647,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1690,17 +1662,17 @@ function NavbarTest(props){
     <br />
     <nav className={combineStyles([active_style.navbar, active_style.isDark])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExample11">
@@ -1793,7 +1765,7 @@ function NavbarTest(props){
                       <div className={active_style.levelItem}>
                         <a className={combineStyles([active_style.button, active_style.isRss, active_style.isSmall])} href="#atom.xml">
                           <span className={combineStyles([active_style.icon, active_style.isSmall])}>
-                            <FontAwesomeIcon icon={faRss} size="1x" />
+                            <i className={combineStyles([active_style.fa, active_style.faRss])} />
                           </span>
                           <span>Subscribe</span>
                         </a>
@@ -1826,10 +1798,10 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
-          <a className={active_style.navbarItem} href="//twitter.com/jgthms" target="_blank">
+          <a className={active_style.navbarItem} href="https://twitter.com/jgthms" target="_blank">
             Twitter
           </a>
           <div className={active_style.navbarItem}>
@@ -1840,9 +1812,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
@@ -1856,17 +1828,17 @@ function NavbarTest(props){
     <h2 className={active_style.subtitle}>Transparent</h2>
     <nav className={combineStyles([active_style.navbar, active_style.isTransparent])}>
       <div className={active_style.navbarBrand}>
-        <a className={active_style.navbarItem} href="//bulma.io">
+        <a className={active_style.navbarItem} href="https://bulma.io">
           <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width={112} height={28} />
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//github.com/jgthms/bulma" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://github.com/jgthms/bulma" target="_blank">
           <span className={active_style.icon} style={{color: '#333'}}>
-            <FontAwesomeIcon icon={faGithub} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faGithub])} />
           </span>
         </a>
-        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="//twitter.com/jgthms" target="_blank">
+        <a className={combineStyles([active_style.navbarItem, active_style.isHiddenDesktop])} href="https://twitter.com/jgthms" target="_blank">
           <span className={active_style.icon} style={{color: '#55acee'}}>
-            <FontAwesomeIcon icon={faTwitter} size="1x" />
+            <i className={combineStyles([active_style.fab, active_style.faTwitter])} />
           </span>
         </a>
         <div className={combineStyles([active_style.navbarBurger, active_style.burger])} data-target="navMenuExamplet">
@@ -1901,7 +1873,7 @@ function NavbarTest(props){
           </div>
         </div>
         <div className={active_style.navbarEnd}>
-          <a className={active_style.navbarItem} href="//github.com/jgthms/bulma" target="_blank">
+          <a className={active_style.navbarItem} href="https://github.com/jgthms/bulma" target="_blank">
             Github
           </a>
           <div className={active_style.navbarItem}>
@@ -1912,9 +1884,9 @@ function NavbarTest(props){
                 </a>
               </p>
               <p className={active_style.control}>
-                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="//github.com/jgthms/bulma/archive/0.4.3.zip">
+                <a className={combineStyles([active_style.button, active_style.isPrimary])} href="https://github.com/jgthms/bulma/archive/0.4.3.zip">
                   <span className={active_style.icon}>
-                    <FontAwesomeIcon icon={faDownload} size="1x" />
+                    <i className={combineStyles([active_style.fa, active_style.faDownload])} />
                   </span>
                   <span>Download</span>
                 </a>
