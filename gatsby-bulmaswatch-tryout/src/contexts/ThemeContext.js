@@ -29,7 +29,8 @@ import yeti_style from '../scss/yeti/bulmaswatch.module.scss'
 const default_value ={
   hello:'world',
   hello_func: () => {},
-  active_style:{}
+  active_style:{},
+  lookUpStyleName: () => {}
 }
 const ThemeContext = React.createContext(default_value)
 
