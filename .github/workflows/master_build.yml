@@ -5,6 +5,19 @@ on:
 
 jobs:
 
+  # 
+  # /home/logic/_workspace/gatsbyjs-playlist/gatsbyjs-helloworld-tryout/build.yml
+  # 
+  gatsbyjs-helloworld:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+  
+      - run: |
+          cd gatsbyjs-helloworld
+            yarn
+            yarn build
+  
   
 
   # 
@@ -38,7 +51,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [test_merger]
+    needs: [gatsbyjs-helloworld, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
