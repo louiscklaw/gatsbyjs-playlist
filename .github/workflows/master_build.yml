@@ -34,7 +34,7 @@ jobs:
   
 
   # 
-  # /home/logic/_poc/gatsbyjs-playlist/github-build-merger/subjob.yml
+  # /home/logic/_workspace/gatsbyjs-playlist/github-build-merger/subjob.yml
   # 
   test_merger:
     runs-on: ubuntu-latest
