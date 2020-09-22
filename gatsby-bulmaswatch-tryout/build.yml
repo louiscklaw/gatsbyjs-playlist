@@ -1,0 +1,9 @@
+gatsby-bulmaswatch-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+
+    - run: |
+        cd gatsby-bulmaswatch-tryout
+          yarn
+          yarn build
