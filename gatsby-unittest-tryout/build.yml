@@ -1,9 +1,10 @@
-gatsbyjs-helloworld-tryout:
+gatsby-unittest-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
 
     - run: |
-        cd gatsbyjs-helloworld-tryout
+        cd gatsby-unittest-tryout
           yarn
+          yarn test
           yarn build
