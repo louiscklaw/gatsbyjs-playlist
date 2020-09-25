@@ -1,0 +1,10 @@
+
+gatsby-sass-module-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+
+    - run: |
+        cd gatsby-sass-module-tryout
+          yarn
+          yarn build

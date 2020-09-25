@@ -9,7 +9,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <div class={test_style.testClass}>
-      helloworld
+      helloworld 123231
     </div>
   </Layout>
 )
