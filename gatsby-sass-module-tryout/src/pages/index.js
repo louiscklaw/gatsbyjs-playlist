@@ -1,17 +1,22 @@
 import React from "react"
+import {Link} from 'gatsby'
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import test_style from './styles.module.scss'
+import style from '../scss/styles.module.scss'
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <div class={test_style.testClass}>
-      helloworld 123231
-    </div>
-  </Layout>
-)
+function IndexPage() {
+
+  return (
+    <Layout>
+      <SEO title="Home" />
+      <div class={style.testClass}>
+        helloworld 123231
+      </div>
+      <Link to='/page-1'> to page 1</Link>
+    </Layout>
+    )
+  }
 
 export default IndexPage
