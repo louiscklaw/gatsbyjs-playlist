@@ -1,6 +1,6 @@
 .env
 
-**/public
+public
 **/node_modules
 **/build
 
