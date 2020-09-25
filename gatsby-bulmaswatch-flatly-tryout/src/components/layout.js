@@ -9,13 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import ThemeContext from '../contexts/ThemeContext'
+import Header from "./header"
+import "./layout.css"
 
-function Layout(props) {
-  let {children} = props
-
-  let {active_style} = React.useContext(ThemeContext)
-
+const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,12 +23,25 @@ function Layout(props) {
     }
   `)
 
-return (
-  <>
-    <main className={active_style.main}>{children}</main>
-  </>
-)
-
+  return (
+    <>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <div
+        style={{
+          margin: `0 auto`,
+          maxWidth: 960,
+          padding: `0 1.0875rem 1.45rem`,
+        }}
+      >
+        <main>{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, Built with
+          {` `}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </footer>
+      </div>
+    </>
+  )
 }
 
 Layout.propTypes = {
