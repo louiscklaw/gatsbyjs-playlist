@@ -1,0 +1,15 @@
+/*! bulmaswatch v0.8.1 | MIT License */
+@import "variables";
+@import "bulma/bulma.sass";
+
+.main ,
+.main button
+{
+  font-family: "Helvetica Neue";
+}
+
+
+
+.navbar {
+  border-radius: unset
+}
