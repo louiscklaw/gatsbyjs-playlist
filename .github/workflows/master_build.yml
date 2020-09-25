@@ -6,6 +6,19 @@ on:
 jobs:
 
   # 
+  # /home/logic/_workspace/gatsbyjs-playlist/gatsby-bulmaswatch-flatly-tryout/build.yml
+  # 
+  gatsby-bulmaswatch-flatly-tryout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+  
+      - run: |
+          cd gatsby-bulmaswatch-flatly-tryout
+            yarn
+            yarn build
+  
+  # 
   # /home/logic/_workspace/gatsbyjs-playlist/gatsby-bulmaswatch-tryout/build.yml
   # 
   gatsby-bulmaswatch-tryout:
@@ -78,7 +91,7 @@ jobs:
           github-build-merger/test.sh
   
   merge:
-    needs: [gatsby-bulmaswatch-tryout, gatsby-unittest-tryout, gatsbyjs-helloworld-tryout, test_merger]
+    needs: [gatsby-bulmaswatch-flatly-tryout, gatsby-bulmaswatch-tryout, gatsby-unittest-tryout, gatsbyjs-helloworld-tryout, test_merger]
     runs-on: ubuntu-latest
     steps:
       - name: checkout
