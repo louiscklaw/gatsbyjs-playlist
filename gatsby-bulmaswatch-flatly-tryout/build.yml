@@ -1,9 +1,9 @@
-gatsby-bulmaswatch-flatly-tryout:
+gatsby-bulmaswatch-tryout:
   runs-on: ubuntu-latest
   steps:
     - uses: actions/checkout@v2
 
     - run: |
-        cd gatsby-bulmaswatch-flatly-tryout
+        cd gatsby-bulmaswatch-tryout
           yarn
           yarn build
