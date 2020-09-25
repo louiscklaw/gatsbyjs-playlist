@@ -13,10 +13,13 @@ import ThemeContext from '../contexts/ThemeContext'
 
 
 function IndexPage(){
+  const helloworld='hello world'
+
   const {active_style, rotateStyle} = React.useContext(ThemeContext)
+
   return(
     <Layout>
-
+      {JSON.stringify(active_style)}
       <SEO title="Home" />
       <Navbar />
       <TestContent />
