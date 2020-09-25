@@ -1,0 +1,9 @@
+gatsby-scss-theme-switching-tryout:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/checkout@v2
+
+    - run: |
+        cd gatsby-scss-theme-switching-tryout
+          yarn
+          yarn build
