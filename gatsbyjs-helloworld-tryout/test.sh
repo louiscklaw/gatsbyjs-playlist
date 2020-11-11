@@ -2,25 +2,17 @@
 
 set -ex
 
+TMP_DIR=$(mktemp -d)
+
 trap 'catch' ERR EXIT KILL
 catch() {
-  echo "error found"
+  kill $LIVE_SERVER_PID
+  sleep 1
   rm -rf $TMP_DIR
 }
 
-TMP_DIR=$(mktemp -d)
+test/test_build.sh
+test/start_test_server.sh &
+LIVE_SERVER_PID=$!
 
-rsync -avzh \
-  --exclude "node_modules" \
-  --exclude "build" \
-  --exclude ".cache" \
-  --exclude ".git" \
-  --exclude "public" \
-  --progress ./ $TMP_DIR
-
-cd $TMP_DIR
-  yarn
-  yarn build
-
-cd public
-  live-server --port=8001 .
+node test/puppeteer/puppeteer_helloworld.js
