@@ -2,7 +2,7 @@
 
 set -ex
 
-trap 'error_exit' ERR KILL EXIT
+trap 'error_exit' ERR KILL
 error_exit() {
   kill $LIVE_SERVER_PID
 }
@@ -14,8 +14,10 @@ test/test_build.sh $TMP_DIR
 pushd $TMP_DIR
 
   pushd public
-    live-server --port=$LOCAL_TEST_PORT . &
+    live-server --no-browser --port=$LOCAL_TEST_PORT . &
     LIVE_SERVER_PID=$!
   popd
 
 popd
+
+sleep 900

@@ -2,11 +2,6 @@
 
 set -ex
 
-trap 'error_exit' ERR KILL EXIT
-error_exit() {
-  rm -rf $TMP_DIR
-}
-
 TMP_DIR=$1
 echo $TMP_DIR
 

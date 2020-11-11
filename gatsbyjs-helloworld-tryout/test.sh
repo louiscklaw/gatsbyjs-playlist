@@ -6,13 +6,15 @@ TMP_DIR=$(mktemp -d)
 
 trap 'catch' ERR EXIT KILL
 catch() {
-  kill $LIVE_SERVER_PID
+  kill $START_TEST_SERVER_PID
   sleep 1
   rm -rf $TMP_DIR
 }
 
-test/test_build.sh
+# build and start local test server
 test/start_test_server.sh &
-LIVE_SERVER_PID=$!
+START_TEST_SERVER_PID=$!
 
-node test/puppeteer/puppeteer_helloworld.js
+echo 'sleep a while to let build ready'
+sleep 90
+# node test/puppeteer/puppeteer_helloworld.js
