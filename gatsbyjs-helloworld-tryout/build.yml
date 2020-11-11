@@ -5,5 +5,9 @@ gatsbyjs-helloworld-tryout:
 
     - run: |
         cd gatsbyjs-helloworld-tryout
+          test.sh
+
+    - run: |
+        cd gatsbyjs-helloworld-tryout
           yarn
           yarn build
