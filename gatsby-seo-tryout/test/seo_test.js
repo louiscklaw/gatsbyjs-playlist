@@ -1,0 +1,51 @@
+const path = require( 'path' );
+const puppeteer = require( 'puppeteer' );
+const fs = require( 'fs' );
+const assert = require('assert');
+const chalk = require('chalk');
+
+const visit_url='http://0.0.0.0:8002'
+
+const SEO_SANITY_TEST_ERROR = -1
+const ERR_ASSERT_WANTED_TEXT_NOT_FOUND = 'the wanted text not found'
+
+function textMustAppear( content, wanted_text ) {
+  var result = content.search( wanted_text ) != -1
+  return result
+}
+
+function consoleHighlight( text_in){
+  console.log(chalk.green(`sero_test.js ${text_in}`))
+}
+
+async function test(){
+
+  const browser = await puppeteer.launch( {
+    defaultViewport: {
+      width: 1920,
+      height: 1080
+    },
+    ignoreHTTPSErrors: true,
+    // headless: false,
+    // slowMo: 1000
+  } );
+
+  const page = await browser.newPage();
+
+  await page.goto( visit_url );
+  var page_content = await page.content()
+
+  await browser.close();
+
+  var result = textMustAppear(page_content,'Gatsby Default Starter')
+
+  assert(result, ERR_ASSERT_WANTED_TEXT_NOT_FOUND)
+
+}
+
+( async () => {
+  await test()
+  consoleHighlight('SEO test done');
+
+
+} )()

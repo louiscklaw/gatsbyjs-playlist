@@ -2,25 +2,15 @@
 
 set -ex
 
-trap 'catch' ERR EXIT KILL
-catch() {
-  echo "error found"
-  rm -rf $TMP_DIR
-}
+echo 'setup local test server instance'
+test/local_server_up.sh &
+LOCAL_SERVER_PID=$!
 
-TMP_DIR=$(mktemp -d)
+echo 'sleep a while to let server steady'
+sleep 90
 
-rsync -avzh \
-  --exclude "node_modules" \
-  --exclude "build" \
-  --exclude ".cache" \
-  --exclude ".git" \
-  --exclude "public" \
-  --progress ./ $TMP_DIR
+echo 'start test'
+test/seo_test.sh
 
-cd $TMP_DIR
-  yarn
-  yarn build
-
-cd public
-  live-server --port=8001 .
+echo 'test done, kill local server isntance'
+kill $LOCAL_SERVER_PID
