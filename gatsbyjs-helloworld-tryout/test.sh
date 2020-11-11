@@ -17,4 +17,4 @@ START_TEST_SERVER_PID=$!
 
 echo 'sleep a while to let build ready'
 sleep 90
-# node test/puppeteer/puppeteer_helloworld.js
+node test/puppeteer/puppeteer_helloworld.js
