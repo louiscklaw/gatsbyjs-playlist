@@ -2,7 +2,7 @@
 
 set -ex
 
-trap 'error_exit' ERR KILL
+trap 'error_exit' ERR KILL EXIT
 error_exit() {
   kill $LIVE_SERVER_PID
 }

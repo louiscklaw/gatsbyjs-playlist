@@ -37,7 +37,7 @@ async function test_helloworld(){
 
   await browser.close();
 
-  var result = textMustAppear(page_content,'helloworld')
+  var result = textMustAppear(page_content,'Welcome to your new Gatsby site.')
 
   assert(result, ERR_ASSERT_WANTED_TEXT_NOT_FOUND)
 
