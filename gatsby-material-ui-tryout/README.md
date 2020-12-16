@@ -1,30 +1,49 @@
-# Gatsby example
+<p align="center">
+  <a href="https://www.gatsbyjs.org">
+    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  </a>
+</p>
+<h1 align="center">
+  Gatsby Material UI Starter
+</h1>
 
-## How to use
+This starter includes [Material UI](https://material-ui.com/) boilerplate and configuration files along with the standard Gatsby configuration files. It provides a starting point for developing Gatsby apps with Material UI. 
 
-Download the example [or clone the repo](https://github.com/mui-org/material-ui):
+View the demo app [here](https://material-ui-starter.netlify.com/).
 
-```sh
-curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/gatsby
-cd gatsby
-```
+## Features
 
-Install it and run:
+- Material UI Framework
+- Roboto Typeface (self hosted)
+- SEO
+- Offline Support
+- Based on Gatsby Default Starter
 
-```sh
-npm install
-npm run develop
-```
+## Quick start
 
-or:
+1.  **Create a Gatsby site.**
 
-[![Edit on CodeSandbox](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/github/mui-org/material-ui/tree/master/examples/gatsby)
+    Use the Gatsby CLI to create a new site, specifying the default starter.
 
-## The idea behind the example
+    ```sh
+    # create a new Gatsby site using the Material UI starter
+    gatsby new <project-name> https://github.com/dominicabela/gatsby-starter-material-ui
+    ```
 
-[Gatsby](https://github.com/gatsbyjs/gatsby) is a static site generator for React.
+2.  **Start developing.**
 
-## gatsby-theme-material-ui
+    Navigate into your new site’s directory and start it up.
 
-Looking for an example with less boilerplate but also less freedom?
-Check [`/examples/gatsby-theme`](https://github.com/mui-org/material-ui/tree/master/examples/gatsby-theme) out.
+    ```sh
+    cd <project-name>
+    gatsby develop
+    ```
+
+3.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:8000`!
+
+    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+
+    Open the `<project-name>` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
