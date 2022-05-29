@@ -15,9 +15,9 @@
     "gatsby-source-filesystem": "^2.3.4",
     "gatsby-transformer-sharp": "^2.5.2",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.0.0"
+    "react": "latest",
+    "react-dom": "latest",
+    "react-helmet": "latest"
   },
   "devDependencies": {
     "prettier": "latest",
@@ -37,6 +37,7 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "dev":"yarn --dev && yarn develop",
     "clear_node_module":"rm -rf node_modules",
+    "reYarn":"yarn clear_node_module && yarn --dev",
     "gitUpdate":"git add . && git commit -m\"gatsby-starter-default\" && git pull && git push"
   },
   "repository": {
