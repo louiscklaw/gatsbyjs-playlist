@@ -1,0 +1,24 @@
+{
+  "name": "gatsby-nginx-docker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "gatsby-nginx-docker",
+  "author": "Louis Law",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "clean_node_module": "rm -rf node_modules .cache",
+    "docker_rebuild": "docker-compose build && docker-compose down && docker-compose up -d && docker-compose logs -f "
+  },
+  "dependencies": {
+    "gatsby": "^4.15.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
