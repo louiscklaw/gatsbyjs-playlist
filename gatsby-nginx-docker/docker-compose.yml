@@ -16,4 +16,4 @@ services:
     #   - GATSBY_WEBPACK_PUBLICPATH=/
 
     ports:
-      - 8080:80
+      - 8081:80
